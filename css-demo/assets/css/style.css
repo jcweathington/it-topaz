@@ -13,7 +13,76 @@
     #CCCCCC - Lt.Grey
 */
 
-body{
-    font-family: 'Montserrat', sans-serif;
-}
 
+/* ---------------Box Sizing----------------- */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  
+  /* ---------------Global Styles----------------- */
+  
+  body{
+      font-family: 'Montserrat', sans-serif;
+    margin:0;
+  }
+    
+  
+  header.primary {
+    background-color:#CCCCCC;
+    text-align:center;
+    color: #2D3340;
+    padding: 20px;
+  }
+  
+  
+  header.primary h1{
+    font-size: 2.8rem;
+    margin: 20px 0;
+  }
+  
+  
+  header.primary h1 a{
+    color: #2D3340;
+    text-decoration: none;
+  }
+  
+  
+  header.primary h2{
+    color: #2D3340;
+    font-size: 2rem;
+    /* Top | L/R | Bottom */
+    margin: 20px auto 40px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  /*Every heading has default margin */
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+  
+  
+  
