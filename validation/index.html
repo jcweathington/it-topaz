@@ -24,10 +24,10 @@
       <label class="formlabel" for="Email">Email:</label><input type="text" id="Email" name="Email" size="30" maxlength="30" />
           <br><br>
   
-      <label class="formlabel" for="Sex">Sex:</label>
-      <label for="Male">Male</label><input type="radio" id="male" name="male" value="M">
-      <label for="Female">Female</label><input type="radio" id="female" name="female" value="F">
-      <label for="N/A">N/A</label><input type="radio" id="n/a" name="n/a" value="N">
+      <label>Sex:</label>
+      <label for="male">Male</label><input type="radio" id="male" name="Sex" value="M">
+      <label for="female">Female</label><input type="radio" id="female" name="Sex" value="F">
+      <label for="n/a">N/A</label><input type="radio" id="n/a" name="Sex" value="N">
           <br><br>
   
       <label class="formlabel" for="Birthday">Birthday:</label><input type="text" id="Birthday" name="Birthday" size="8" maxlength="8"/>
@@ -53,14 +53,14 @@
       </select>
           <br><br>
   
-      <label class="formlabel" for="address">Address</label><input type="text" id="address" name="address" size="30" maxlength="30"/>
+      <label class="formlabel" for="address">Address</label><input type="text" id="address" name="Address" size="30" maxlength="30"/>
           <br><br>
   
       <label class="formlabel" for="City">City:</label><input type="text" id="City" name="City" size="30" maxlength="30"/>
           <br><br>
 
-      <label class="formlabel" for="State">State</label>
-      <select name="state" id="state">
+      <label class="formlabel">State</label>
+      <select name="State" id="state">
         <option value="null" selected="selected">Select a State</option>
   <option value="AL">Alabama</option>
   <option value="AK">Alaska</option>
@@ -119,12 +119,13 @@
       <label class="formlabel" for="Zip">Zip:</label><input type="text" id="Zip" name="Zip" size="5" maxlength="5"/>
           <br><br>
 
-      <label class="formlabel" for="Medications">Taking Medications:</label>
-      <label for="yes">Yes</label><input type="radio" id="yes" name="yes" value="Y">
-      <label for="no">No</label><input type="radio" id="no" name="no" value="N">
+      <label class="formlabel">Taking Medications:</label>
+      <label for="yes">Yes</label><input type="radio" id="yes" name="Medications" value="Y">
+      <label for="no">No</label><input type="radio" id="no" name="Medications" value="N">
           <br><br>
       
-      <label class="formlabel" for="MedicationsList">If yes, list medications here:</label><input type="text" id="MedicationsList" name="MedicationsList" rows="3" cols="30"/>
+      <label class="formlabel" for="MedicationsList">If yes, list medications here:</label>
+      <textarea id="MedicationsList" name="MedicationsList" rows="3" cols="30"></textarea>
           <br><br> 
   
       <input type="submit" value="Submit Patient Form"/> 
