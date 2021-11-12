@@ -2,8 +2,6 @@
 /*Fonts:
     font-family: 'Montserrat', sans-serif;
     font-family: 'Zen Antique Soft', serif;
-    to push, to push 2
-  
 */
 
 
@@ -19,49 +17,116 @@
 /* ---------------Box Sizing----------------- */
 
 html {
-    box-sizing: border-box;
-  }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-  
-  
-  /* ---------------Global Styles----------------- */
-  
-  body{
-      font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+/* ---------------Global Styles----------------- */
+
+body{
+    font-family: 'Montserrat', sans-serif;
     margin:0;
+    background-color: rgba(107,130,109, .8);  /* background-color:rgba(); to customize opacity*/
+}
+  
+
+header.primary {
+  background-color:#CCCCCC;
+  text-align:center;
+  color: #2D3340;
+  padding: 20px;
+}
+
+
+header.primary h1{
+  font-size: 2.8rem;
+  margin: 20px 0;
+}
+
+
+header.primary h1 a{
+  color: #2D3340;
+  text-decoration: none;
+}
+
+
+header.primary h2{
+  color: #2D3340;
+  font-size: 2rem;
+  /* Top | L/R | Bottom */
+  margin: 20px auto 40px;
+}
+
+
+header.primary nav {
+  width: 70vw;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+
+header.primary nav ul{
+  display: flex;
+  padding: 0;  /*remove padding from list styles*/
+  justify-content: space-around;
+}
+
+
+header.primary nav ul li{
+  list-style-type: none;  
+}
+
+
+header.primary nav ul li a:link, 
+header.primary nav ul li a:visited{
+  color: #f6f6f6;
+  text-decoration: none;
+  background-color: #2D3340;  
+  padding: 8px 16px;
+  border-radius: 16px;
+  transition: .5s;
+}
+
+
+header.primary nav ul li a:hover,
+header.primary nav ul li a:active{
+  border: 2px solid rgba(255,255,255);/*maybe change border only*/
+  background-color: #6B826D;
+}
+
+
+@media screen and (max-width:757px){
+  
+  header.primary nav ul {
+    flex-direction: column;
   }
-    
+
   
-  header.primary {
-    background-color:#CCCCCC;
-    text-align:center;
-    color: #2D3340;
-    padding: 20px;
+  header.primary nav ul li {
+    margin-bottom:25px;
   }
   
-  
-  header.primary h1{
-    font-size: 2.8rem;
-    margin: 20px 0;
+
+  header.primary nav ul li a{
+    display:block;
   }
   
-  
-  header.primary h1 a{
-    color: #2D3340;
-    text-decoration: none;
-  }
-  
-  
-  header.primary h2{
-    color: #2D3340;
-    font-size: 2rem;
-    /* Top | L/R | Bottom */
-    margin: 20px auto 40px;
-  }
+
+
+}
+
+
+
+
+
+
+/*Every heading has default margin */
+
   
   
   
@@ -69,22 +134,12 @@ html {
   
   
   
-  /*Every heading has default margin */
-  
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
   
   
   
   
+  
+  
+
+
+
