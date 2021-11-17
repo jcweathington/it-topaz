@@ -1,5 +1,5 @@
 <script>
-$( "#EmployeeForm" ).validate({
+$( "#validation" ).validate({
 
 });
 </script>
