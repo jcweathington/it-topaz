@@ -1,5 +1,4 @@
-<script>
+
 $( "#validation" ).validate({
 
 });
-</script>
