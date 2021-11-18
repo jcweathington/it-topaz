@@ -13,35 +13,64 @@
       <label>Please fill out the form below</label><br><br>
       <label for="FirstName" class="formlabel">First Name: </label>
       <input type="text" id="FirstName" name="FirstName" size="30" maxlength="30"
-          data-rule-required="true"  data-msg-required="First Name is Required" >
+          data-rule-required="true"  data-msg-required="First Name is Required" />
       <label for="FirstName" class="error"></label>
           <br><br>
   
-      <label class="formlabel" for="MiddleInitial">Middle Initial:</label><input type="text" id="MiddleInitial" name="MiddleInitial" size="1" maxlength="1"/>
+      <label class="formlabel" for="MiddleInitial">Middle Initial:</label>
+      <input type="text" id="MiddleInitial" name="MiddleInitial" size="1" maxlength="1" />
           <br><br>
   
-      <label class="formlabel" for="LastName">Last Name:</label><input type="text" id="LastName" name="LastName" size="30" maxlength="30" />
+      <label class="formlabel" for="LastName">Last Name:</label>
+      <input type="text" id="LastName" name="LastName" size="30" maxlength="30" 
+          data-rule-required="true"  data-msg-required="Last Name is Required" />
+      <label for="LastName" class="error"></label>
           <br><br>
   
-      <label class="formlabel" for="Email">Email:</label><input type="email" id="Email" name="Email" size="30" maxlength="30" />
+      <label class="formlabel" for="Email">Email:</label>
+      <input type="email" id="Email" name="Email" size="30" maxlength="30" 
+          data-rule-required="true"  data-msg-required="Email is Required" />
+      <label for="Email" class="error"></label>
           <br><br>
   
       <label class="formlabel">Sex:</label>
-      <label for="male">Male</label><input type="radio" id="male" name="Sex" value="M">
+      <label for="male">Male
+      <input type="radio" id="male" name="Sex" value="M" 
+          data-rule-required="true"  data-msg-required="Sex is Required" >
+      </label>
       <label for="female">Female</label><input type="radio" id="female" name="Sex" value="F">
       <label for="n/a">N/A</label><input type="radio" id="n/a" name="Sex" value="N">
+      <label for="Sex" class="error"></label>
           <br><br>
   
-      <label class="formlabel" for="Birthday">Birthday:</label><input type="text" id="Birthday" name="Birthday" size="8" maxlength="8"/>
+      <label class="formlabel" for="Birthday">Birthday:</label>
+      <input type="date" id="Birthday" name="Birthday" size="8" maxlength="8"
+          data-rule-required="true"  data-msg-required="Birthday is Required" />
+      <label for="Birthday" class="error"></label>
           <br><br>
   
-      <label class="formlabel" for="Height">Height:</label><input type="text" id="Height" name="Height" size="3" maxlength="3"/>
+      <label class="formlabel" for="Height">Height:</label>
+      <input type="text" id="Height" name="Height" size="3" maxlength="3"
+          data-rule-required="true"  data-msg-required="Height is Required" 
+          data-rule-number="true" data-msg-number="Height must be in inches"
+          data-rule-min="12" data-msg-min="Height must be greater than 12 inches"
+          data-rule-max="120" data-msg-max="Height must be less than or equal to 120 inches"/>
+      <label for="Height" class="error"></label>
           <br><br>
 
-      <label class="formlabel" for="Weight">Weight:</label><input type="text" id="Weight" name="Weight" size="3" maxlength="3"/>
+      <label class="formlabel" for="Weight">Weight:</label>
+      <input type="text" id="Weight" name="Weight" size="3" maxlength="3"
+          data-rule-required="true"  data-msg-required="Weight is Required" 
+          data-rule-number="true" data-msg-number="Weight must be in pounds"
+          data-rule-min="10" data-msg-min="Weight must be greater than 10 pounds"
+          data-rule-max="500" data-msg-max="Weight must be less than or equal to 500 pounds"/>
+          <label for="Weight" class="error"></label>
           <br><br><hr>
   
-      <label class="formlabel" for="PhoneNumber">Phone Number:</label><input type="tel" id="PhoneNumber" name="PhoneNumber" placeholder="123-456-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" size="14" maxlength="14"/>
+      <label class="formlabel" for="PhoneNumber">Phone Number:</label>
+      <input type="tel" id="PhoneNumber" name="PhoneNumber" placeholder="123-456-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" size="14" maxlength="14"
+          data-rule-required="true"  data-msg-required="US Phone is Required"/>
+          <label for="PhoneNumber" class="error"></label>
           <br><br>
 
       <label class="formlabel" for="MaritalStatus">Marital Status:</label>
