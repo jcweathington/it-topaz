@@ -25,13 +25,31 @@ html {
   box-sizing: inherit;
 }
 
+/* ---------------Utility Styles----------------- */
+.container{
+  width: 70vw;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+
+/* ---------------Responsive Images----------------- */
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+
 
 /* ---------------Global Styles----------------- */
 
 body{
     font-family: 'Montserrat', sans-serif;
     margin:0;
-    background-color: rgba(107,130,109, .8);  /* background-color:rgba(); to customize opacity*/
+    background-color: rgba(107,130,109, .8);
+    line-height: 1.4;
 }
   
 
@@ -87,6 +105,7 @@ header.primary nav ul li a:visited{
   color: #f6f6f6;
   text-decoration: none;
   background-color: #2D3340;  
+  /* background-color:rgba(); to customize opacity*/
   padding: 8px 16px;
   border-radius: 16px;
   transition: .5s;
@@ -100,7 +119,134 @@ header.primary nav ul li a:active{
 }
 
 
-@media screen and (max-width:757px){
+#intro h2{
+  color: #FF9D87;
+  border-bottom: 1px solid #c0c0c0;
+  text-shadow: 1px 1px #2D3340;
+}
+
+
+#intro p{
+  line-height: 1.5;
+  border-bottom: 1px solid #c0c0c0;
+  padding-bottom: .9rem;
+}
+
+
+#content {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#content article.post {
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0,0,0,.4);
+  padding:.4rem;
+  font-size: .7rem;
+  transition: .5s;
+}
+
+
+article.post:hover{
+  box-shadow: 0 8px 16px rgba(0,0,0,.4);
+}
+
+
+article.post figure{
+  margin: 0;
+}
+
+
+.post-date, 
+figcaption,
+.post-meta
+{
+  text-transform: uppercase;
+  color: #CCCCCC;
+  font-weight: bold;
+  text-shadow: .3px .5px #2D3340;
+}
+
+
+article.post a:link{
+  color: #2D3340;
+}
+
+
+article a:hover, article a:active{
+  text-decoration: none;
+}
+
+#content {
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 2.9rem;
+}
+
+
+aside[role="complementary"]{
+  background-color: #2D3340;
+  color: #fff;
+  padding: 1.8rem;
+}
+
+
+aside .container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+aside article{
+  width: 45%;
+}
+
+
+aside article a:link{
+  color: #ffff;
+}
+
+
+aside article:nth-child(2){
+  width: 100%;
+}
+
+aside article:nth-child(1){
+  background: #FF9D87;
+  margin: 40px auto;
+  padding: 4rem;
+  width: 80%;
+  color: #2D3340;
+  background-color: rgba(255,157,135, .8);
+  border-radius: 80px 4px;
+}
+
+aside article a{
+  display: block;
+  margin-top: 20px;
+}
+
+
+aside article footer{
+  display: none;
+}
+
+
+#colophon{
+  display: ;
+  background-color: #CCCCCC;
+  padding: 10px;
+}
+
+#colophon h6{
+  margin: 0;
+  text-align: center;
+  color: #2D3340;
+  font-size: .9rem;
+}
+
+@media screen and (max-width:757px){ 
   
   header.primary nav ul {
     flex-direction: column;
