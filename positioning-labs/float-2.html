@@ -4,6 +4,30 @@
 <meta charset="UTF-8" />
 <title>Positioning Lab</title>
 <style type="text/css">
+
+
+
+/*-------ADDITIONAL STYLE-------*/
+#wrapper{
+  display: flex;
+  flex-flow: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+#wrapper >div:nth-child(-n+4){
+  height: 150px;
+  width: 175px;
+}
+
+
+#footer{
+  width: 100%;
+  margin: auto 20px;
+}
+
+
 * {
 	margin: 0px;
 	padding: 0px;
@@ -51,37 +75,11 @@ h1 {
 	padding: 50px;
 }
 
-
-/*-------ADDITIONAL STYLE-------*/
-#wrapper{
-  display: flex;
-  flex-flow: wrap;
-  gap: 20px;
-  justify-content: center;
-  padding: 20px 0;
-}
-
-#red,
-#green,
-#blue,
-#purple{
-  height: 150px;
-  width: 175px;
-}
-
-
-#footer{
-  width: 100%;
-  margin: auto 20px;
-}
-
-
-
 </style>
 </head>
 
 <body>
-<h1>Exercise 1</h1>
+<h1><strike>Float</strike> Flexbox 2</h1>
 <div id="wrapper">
   <div id="red">Red</div>
   <div id="green">Green</div>
