@@ -33,6 +33,28 @@ html {
 }
 
 
+
+
+
+
+.img-center{
+  display: block;
+  margin: 30px auto;
+}
+
+
+/*from css-tricks' hacks*/
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+
 /* ---------------Responsive Images----------------- */
 
 img{
@@ -119,14 +141,15 @@ header.primary nav ul li a:active{
 }
 
 
-#intro h2{
+#intro h2,
+#additional-elements h2{
   color: #FF9D87;
   border-bottom: 1px solid #c0c0c0;
   text-shadow: 1px 1px #2D3340;
 }
 
 
-#intro p{
+#intro p {
   line-height: 1.5;
   border-bottom: 1px solid #c0c0c0;
   padding-bottom: .9rem;
@@ -174,14 +197,85 @@ article.post a:link{
 }
 
 
-article a:hover, article a:active{
+article a:hover, 
+article a:active,
+#additional-elements a:hover,
+#additional-elements a:active{
   text-decoration: none;
 }
 
+
 #content {
-  border-bottom: 1px solid #cccccc;
   padding-bottom: 2.9rem;
 }
+
+
+/*---Additional Elements---*/
+
+#additional-elements h3,
+#additional-elements h4{
+  color: #2D3340;
+  margin-top: 50px;
+}
+
+
+#additional-elements ol{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+#additional-elements ol li{
+  padding: .9rem;
+}
+
+
+#additional-elements ul{
+  float: left;
+  width: 70%;
+}
+
+
+ #additional-elements ul:nth-last-child(even){
+ border: 1px solid #cccc;
+}
+
+
+#additional-elements ul li{
+  padding: 1rem;
+}
+
+
+#additional-elements dl{
+  float: right;
+}
+
+
+#additional-elements dt{
+  background: grey;
+}
+
+
+#additional-elements dd {
+  padding: 0;
+  margin: 0;
+}
+
+
+#additional-elements h4{
+  clear: both;
+  padding-top: 3rem;
+}
+
+
+blockquote{
+  border: 6px double #cccc;
+  padding: .9rem;
+  margin: 0 auto;
+}
+
+
 
 
 aside[role="complementary"]{
@@ -203,7 +297,8 @@ aside article{
 }
 
 
-aside article a:link{
+aside article a:link,
+#additional-elements a:link{
   color: #ffff;
 }
 
@@ -216,7 +311,7 @@ aside article:nth-child(1){
   background: #FF9D87;
   margin: 40px auto;
   padding: 4rem;
-  width: 80%;
+  width: 60%;
   color: #2D3340;
   background-color: rgba(255,157,135, .8);
   border-radius: 80px 4px;
@@ -231,6 +326,39 @@ aside article a{
 aside article footer{
   display: none;
 }
+
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+tr:nth-child(even){
+  background: #2D3340;
+  color: #cccc;
+}
+
+
+th{
+  background: #2D3340;
+  color: #cccc;
+  padding: 8px;
+}
+
+
+td{
+  border: 1px solid #ffff;
+  padding: 4px;
+  text-align: right;
+  width:33.3%;
+}
+
+
+td:nth-child(3n+1){
+  text-align: left;
+}
+
 
 
 #colophon{
