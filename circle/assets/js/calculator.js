@@ -68,8 +68,6 @@ function calculate(){
      document.getElementById("diameter").innerHTML = "";
      document.getElementById("circumference").innerHTML = "";
      document.getElementById("area").innerHTML = "";
-     document.getElementById("radiuserror").innerHTML = "";
- 
  }
  
  

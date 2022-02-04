@@ -24,7 +24,6 @@ html {
 /* ---------------Utility Styles----------------- */
 .container{
   margin: 40px auto;
-  width: 70vw;
   max-width: 1200px;
 }
 
