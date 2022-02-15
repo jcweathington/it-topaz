@@ -1,23 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Web Design Project">
-    <meta name="keywords" content="WeB Design Project">
-    <meta name="author" content="Josephine Weathington">
-    <title>IT Topaz Web Design Project</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta charset="utf-8">
+  <title>Need To Feed</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="WeB Design Project">
+  <meta name="author" content="Josephine Weathington">
+  <meta name="description" content="Supplying homeless and transitioning homeless with things they need to help them sustain.">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Montserrat:wght@300;400&family=Satisfy&display=swap" rel="stylesheet">
+ 
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/0fe2d80c01.js" crossorigin="anonymous"></script>
 </head>
-  
+  <!--Questions
+ 1. how can i make paralax images accessible?
+-->
 <body>
-  <div class="container">
-  <header>
-    <h1>Coming Soon!</h1>
-    <h2>Need To Feed</h2>
-    <h3>An individual web project</h3>
+  <div class="grid">
+  <header id="header" class="primary">
+    <div class="fixed-wrap">
+    <div class="banner">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <span class="hamburger" onclick="openNav()">&#9776;</span></a>
+    <nav id="sidenav" class="menu">
+      <ul>
+        <li><a href="javascript:void(0);" class="closebtn" onclick="closeNav()">&times;</a></li>
+        <li><a href="#intro">About</a></li>
+        <li><a href="#success-stories">Success Stories</a></li>
+        <li><a href="#donors-volunteers">Volunteer & Donate</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="brand">
+    <h1><a href="#top">Need To Feed</a></h1>
+    </div>
+    </div><!--banner-->
+    </div>
   </header>
-  <p>Check out my progress at <a href="https://codepen.io/144000/full/ZEaBMmz">Codepen</a></p>
-  </div>
+    <section id="intro" class="container">
+      <div id="join" class="wrap">
+       <article class="post">
+        <header class="post-header">
+        <h2>Join The Movement! Be The Change!</h2>
+        <a class="donate-button" href="http://www.need-to-feed.com/contact-us.html">Donate or Cash App to $Needtofeed</a>
+        </header>
+          <p>Covid-19 is out here and so is Need to Feed. We are still making sure the homeless community are being taken care of. Your tax deductible donation will help!</p>
+       </article>
+        <div class="overlay">
+          <p>Caring for the people during COVID-19, "Corna Prevention Packs"</p>
+        </div>
+      </div>
+      
+      <div id="about" class="wrap">
+       <article class="post">
+        <header class="post-header">
+         <h2>Why We Give</h2>
+        </header>
+       <!--Table Goes Here-->
+          <p>Renewing spirits and showing genuine love is our goal. Need to feed corp has given inspiration to people, seeking a way off of the streets. We have now surpassed our first year as a nonprofit organization and have obtained our 501c3.</p>
+          <blockquote>“The number of homeless people in Dallas and Collin Counties have increased 9% over the past year." - Dallas Morning News.</blockquote>
+          <p>We are currently serving the homeless every 3rd Sunday of every month in Downtown Dallas and hope to obtain more of a permanent presence for the homeless. With your generous contributions, via monetary, time, etc... we will come closer to feeding, meeting the needs, and rehabilitating the homeless across our city, state, and eventually across our country!!
+       </p>
+       </article> 
+        <div class="overlay">
+        </div>
+      </div>
+      
+      <div id="team" class="wrap" >
+       <article class="post">
+        <header class="secondary-header">
+         <h2>Meet The Board</h2>
+        </header>
+         <div class="founders">
+          <figure>
+           <img src="https://via.placeholder.com/300C/O https://placeholder.com/" alt="Amir Johnson" />
+            <figcaption>Amir Johnson, CEO</figcaption>
+          </figure>
+          <figure>
+           <img src="https://via.placeholder.com/300C/O https://placeholder.com/" alt="Lodeana Jones" />
+            <figcaption>Lodeana Jones</figcaption>
+          </figure>
+          <figure>
+           <img src="https://via.placeholder.com/300C/O https://placeholder.com/" alt="Cornelius Hunter" />
+            <figcaption>Cornelius Hunter</figcaption>
+          </figure>
+         </div>
+       </article>
+      </div>
+      <div class="overlay">
+      </div>
+    </section><!--#intro-->
+        
+    <section id="success-stories" class="container">
+      <div id="story-1" class="wrap">
+        <article class="post">
+         <header class="post-header">
+         <h2>The Experience</h2>
+         <h3>Meet Wilbur!</h3>
+         </header>
+          <p>He was one of our first participants at the Need to Feed events, and came to every event for help. Thankfully, Need to Feed was able to assist financially with obtaining a home, through the state, and deliver furniture, thanks to great supporters and givers like you! Now, Wilbur attends the events as a volunteer to help serve the same people that are on the same streets as he used to be. On this page, we hope to share more success stories such as these, with your continued support!</p>
+        </article>
+          <div class="overlay">
+          </div>
+      </div>
+      
+      <div id="story-2" class="wrap">
+       <article class="post"> 
+         <header class="post-header">
+           <h2>Meet Mr. Melvin!</h2>
+         </header>
+           <p>He was also one of our participants on the street and now Need to Feed Corp. is able to help him with food in his very own home!</p>
+         <!--Youtube Embed-->
+       </article>
+        <div class="overlay">
+        </div>
+      </div>
+    </section><!--#success-stories-->
+    
+    <section id="donors-volunteers" class="container">
+       <div id="gratitudes" class="wrap">
+        <article class="post">
+         <header class="post-header">
+           <h2>Special Thank You To Our Donors & Volunteers!</h2>
+         </header>
+           <blockquote>“We cannot thank you enough!! To everyone you see throughout this website, we cannot do this without you. Thank you for giving your time, money, and effort in making each event a success!! Also, we wanted to give a special shout out to the companies, above, who have donated so far and we welcome and look forward to future partnerships.”  CEO, Amir Johnson</blockquote>
+        </article>
+          <div class="overlay">
+         </div>
+       </div>
+      
+       <div id="sponsors" class="wrap">
+        <article class="post-header">
+         <header>
+           <h2>Sponsors</h2>
+         </header>
+           <div class="sponsor-logos">
+             <div class="platinum-sponsors">
+              <figure>
+               <img src="https://via.placeholder.com/100C/O https://placeholder.com/" alt="starbucks coffee logo" />
+              </figure>
+              <figure>
+               <img src="https://via.placeholder.com/100C/O https://placeholder.com/" alt="Bombas logo" />
+              </figure>
+              <figure>
+               <img src="https://via.placeholder.com/100C/O https://placeholder.com/" alt="krispy kreme donut logo" />
+              </figure>
+             </div>
+             <div class="gold-sponsors">
+              <figure>
+               <img src="https://via.placeholder.com/100C/O https://placeholder.com/" alt="world vision logo" />
+              </figure>
+              <figure>
+               <img src="https://via.placeholder.com/100C/O https://placeholder.com/" alt="Aids healthcare foundation logo" />
+              </figure>
+              <figure>
+               <img src="https://via.placeholder.com/100C/O https://placeholder.com/" alt="winco foods logo" />
+              </figure>
+               <div class="mobile-view">
+               <p>World Vision</p>
+               <p>Aids Healthcare Foundation</p>
+               <p>Winco Foods</p>
+               </div>
+             </div>
+             <div class="silver-sponsors">
+               <p>Claudia Jordan</p>
+               <p>DFW-Technology</p>
+               <p>United Black Ellument</p>
+               <p>Deana's Cleaning Service</p>
+               <p>Mommy Dearest Children's Center</p>
+               <p>Alpha Kappa Alpha</p>
+               <p>DFW Technology</p>
+               <p>Just Because</p>
+             </div>
+         </div>
+        </article>
+       </div>
+     </section><!--#donors-volunteers-->
+    
+    <section id="contact" class="wrap">
+      <div class="donate">
+      <article class="post">
+       <header class="post-header">
+         <h2>Join The Movement! Be The Change!</h2>
+           <a class="donate-button" href="http://www.need-to-feed.com/contact-us.html">Donate or Cash App to $Needtofeed</a>
+       </header>
+         <p>Your tax deductible donation will help feed and provide essentials for the hundreds of homeless in our community.</p>
+      </article>
+      </div>
+
+      <!--
+      <div class ="contact-form">
+      <iframe height="519" title="Embedded Wufoo Form" allowtransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none" src="https://jcwualr.wufoo.com/embed/r10o9x0d18aihh1/"> <a href="https://jcwualr.wufoo.com/forms/r10o9x0d18aihh1/">Fill out my Wufoo form!</a> </iframe>
+      </div> 
+-->
+    </section><!--#contact-->
+    
+    <footer><h6>&copy; 2021 Need To Feed</h6></footer>
+   </div><!--.wrapper-->
 </body>
-  
 </html>
