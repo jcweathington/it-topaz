@@ -101,7 +101,7 @@ grid-area: footer;
 
 
 .grid{
-max-width: 900px;
+max-width: 1000px;
 margin: 0 auto;
 display: grid;
 grid-template-columns: 1fr;
@@ -143,16 +143,19 @@ h3{
 font-family: 'ABeeZee', sans-serif;
 color: #8C031C;
 text-align: center;
+line-height: 1.2;
 }
 
 
 h2{
   font-size: 2.5em;
+  padding-top: .8em;
 }
 
 
 h3{
   font-size: 1.5em;
+  margin: 0 auto;
 }
 
 
@@ -273,16 +276,31 @@ border-radius: 16px;
 }
 
 
-#about,
-#gratitudes{
+#join h2,
+#contact h2,
+#about .post h2,
+#team h2{
+  padding-top: 0;
+}
+
+
+
+
+#about .post,
+#gratitudes,
+#sponsors{
 background-color: #FFFF;
 margin: 0;
+padding-bottom: 1.5em;
+
 }
+
 
 
 #join,
 #contact{
 border-top: 2em solid #D9C196;
+border-bottom: 2em solid #D9C196;
 background: #FFFF;
 }
 
@@ -357,7 +375,7 @@ color: #D9C196
 .fixed-wrap{
 position: fixed;
 width: 100%;
-max-width: 900px;
+max-width: 1000px;
 background-color: #FFFF;
 }
 
@@ -471,6 +489,7 @@ header.primary {
 display: flex;
 flex-flow: wrap;
 align-items: center;
+justify-content: space-between;
 }
 
 
