@@ -50,7 +50,29 @@
     </div>
     </div><!--banner-->
     </div>
-    
+          <!-- Slideshow container -->
+    <div class="slideshow-container">
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+    <img src="assets/img/recipient-lodeana-amir.webp"  alt="first">
+    </div>
+
+    <div class="mySlides fade">
+    <img src="assets/img/volunteers-at-resource-booth.webp" style="width:100%" alt="second">
+    </div>
+
+    <div class="mySlides fade">
+    <img src="assets/img/volunteers-in-n2f-tshirts.webp" style="width:100%" alt="third">
+    </div>
+    </div>
+    <br>
+
+<!-- The dots/circles -->
+    <div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
   </header>
     <section id="intro" class="container">
       <div id="join" class="wrap">
@@ -61,7 +83,8 @@
         </header>
           <p>Covid-19 is out here and so is Need to Feed. We are still making sure the homeless community are being taken care of. Your tax deductible donation will help!</p>
        </article>
-        <div class="overlay">
+        <div class="side-image">
+          <img src="assets/img/volunteers-unloading-truck.webp" alt="unloading food and resources">
         </div>
       </div>
       
@@ -101,7 +124,8 @@
          </div>
        </article>
       </div>
-      <div class="overlay">
+      <div class="side-image">
+      <img src="assets/img/volunteers.webp" alt="volunteers">
       </div>
     </section><!--#intro-->
         
@@ -110,13 +134,25 @@
         <article class="post">
          <header class="post-header">
          <h2>The Experience</h2>
-         <h3>Meet Wilbur!</h3>
+         <h3>From Streets To Sheets!</h3>
          </header>
-          <p>He was one of our first participants at the Need to Feed events, and came to every event for help. Thankfully, 
+          <p>Meet Wilbur! He was one of our first participants at the Need to Feed events, and came to every event for help. Thankfully, 
             Need to Feed was able to assist financially with obtaining a home, through the state, and deliver furniture, 
             thanks to great supporters and givers like you!</p>
+            <div class="side-image">
+              <div class="image-wrap">
+                <img src="assets/img/meet-wilbur.jpg"  alt="wilbur" class="first">
+              </div>
+              <div class="image-wrap">
+                <img src="assets/img/wilbur-movingtruck.jpg" alt="wilbur moving" class="second">
+              </div>
+              <div class="image-wrap">
+                <img src="assets/img/wilbur-sofa.jpg"  alt="wilbur in new home" class="third">
+              </div>
+            </div>
             <p>Now, Wilbur attends the events as a volunteer to help serve the same people that are on the same streets as he used to be. On this page, we hope to share more success stories such as these, with your continued support!</p>
         </article>
+
           <div class="overlay">
           </div>
       </div>
@@ -129,7 +165,8 @@
            <p>He was also one of our participants on the street and now Need to Feed Corp. is able to help him with food in his very own home!</p>
          <!--Youtube Embed-->
        </article>
-        <div class="overlay">
+        <div class="side-image">
+          <img src="assets/img/meet-melvin.jpeg"  alt="first">
         </div>
       </div>
     </section><!--#success-stories-->
@@ -142,25 +179,26 @@
          </header>
            <blockquote>“We cannot thank you enough!! To everyone you see throughout this website, we cannot do this without you. Thank you for giving your time, money, and effort in making each event a success!! Also, we wanted to give a special shout out to the companies, above, who have donated so far and we welcome and look forward to future partnerships.”  CEO, Amir Johnson</blockquote>
         </article>
-          <div class="overlay">
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QMBTLvh7NiE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
          </div>
        </div>
       
        <div id="sponsors" class="wrap">
-        <article class="post-header">
-         <header>
+        <article class="post">
+         <header class="post-header">
            <h2>Sponsors</h2>
          </header>
            <div class="sponsor-logos">
              <div class="platinum-sponsors">
               <figure>
-               <img src="https://via.placeholder.com/100C/O https://placeholder.com/" alt="starbucks coffee logo" />
+               <img src="assets/img/starbucks.jpg" alt="starbucks coffee logo" />
               </figure>
               <figure>
-               <img src="https://via.placeholder.com/100C/O https://placeholder.com/" alt="Bombas logo" />
+               <img src="assets/img/bombas.png" alt="Bombas logo" />
               </figure>
               <figure>
-               <img src="https://via.placeholder.com/100C/O https://placeholder.com/" alt="krispy kreme donut logo" />
+               <img src="assets/img/kirspy-kreme.png" alt="krispy kreme donut logo" />
               </figure>
              </div>
              <div class="gold-sponsors">
@@ -194,8 +232,8 @@
        </div>
      </section><!--#donors-volunteers-->
     
-    <section id="contact" class="wrap">
-      <div class="donate">
+    <section id="contact" class="container">
+      <div id="donate" class="wrap">
       <article class="post">
        <header class="post-header">
          <h2>Join The Movement! Be The Change!</h2>
@@ -215,6 +253,8 @@
     <footer><h6>&copy; 2021 Need To Feed</h6></footer>
    </div><!--.wrapper-->
    <script src="assets/js/menu.js"></script>
+   <script src="assets/js/carousel.js"></script>
+
 </body>
 
 </html>
