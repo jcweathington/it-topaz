@@ -38,26 +38,26 @@ function calculate() {
         // To Units
         // Get converstion method that was checked (cm, m, km, in, ft, yd, mi)
         var ToUnit;
-        if (document.getElementById("cm").checked) {
-            operator = document.getElementById("cm").value;
+        if (document.getElementById("cm2").checked) {
+            operator = document.getElementById("cm2").value;
         }
-        if (document.getElementById("m").checked) {
-            operator = document.getElementById("m").value;
+        if (document.getElementById("m2").checked) {
+            operator = document.getElementById("m2").value;
         }
-        if (document.getElementById("km").checked) {
-            operator = document.getElementById("km").value;
+        if (document.getElementById("km2").checked) {
+            operator = document.getElementById("km2").value;
         }
-        if (document.getElementById("in").checked) {
-            operator = document.getElementById("in").value;
+        if (document.getElementById("in2").checked) {
+            operator = document.getElementById("in2").value;
         }
-        if (document.getElementById("ft").checked) {
-            operator = document.getElementById("ft").value;
+        if (document.getElementById("ft2").checked) {
+            operator = document.getElementById("ft2").value;
         }
-        if (document.getElementById("yd").checked) {
-            operator = document.getElementById("yd").value;
+        if (document.getElementById("yd2").checked) {
+            operator = document.getElementById("yd2").value;
         }
-        if (document.getElementById("mi").checked) {
-            operator = document.getElementById("mi").value;
+        if (document.getElementById("mi2").checked) {
+            operator = document.getElementById("mi2").value;
         }
 
         CalculateResult(FromValue, FromUnit, ToUnit);
@@ -92,6 +92,13 @@ function clearform() {
     document.getElementById("ft").checked = false;
     document.getElementById("yd").checked = false;
     document.getElementById("mi").checked = false;
+    document.getElementById("cm2").checked = false;
+    document.getElementById("m2").checked = false;
+    document.getElementById("km2").checked = false;
+    document.getElementById("in2").checked = false;
+    document.getElementById("ft2").checked = false;
+    document.getElementById("yd2").checked = false;
+    document.getElementById("mi2").checked = false;
     document.getElementById("FromUnit").value = "";
     document.getElementById("OperatorMsg").innerHTML = "";
     document.getElementById("ToUnit").value = "";
