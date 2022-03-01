@@ -85,6 +85,7 @@ function clearform() {
     /* Set all of the form values to blank or false */
     document.getElementById("FromValue").value = "";
     document.getElementById("Operand1Msg").innerHTML = "";
+    document.getElementById("OperatorMsg").innerHTML = "";
     document.getElementById("cm").checked = false;
     document.getElementById("m").checked = false;
     document.getElementById("km").checked = false;
@@ -99,9 +100,7 @@ function clearform() {
     document.getElementById("ft2").checked = false;
     document.getElementById("yd2").checked = false;
     document.getElementById("mi2").checked = false;
-    document.getElementById("FromUnit").value = "";
-    document.getElementById("OperatorMsg").innerHTML = "";
-    document.getElementById("ToUnit").value = "";
+    document.getElementById("Operator2Msg").innerHTML = "";
     document.getElementById("Result").innerHTML = "";
 }
 
