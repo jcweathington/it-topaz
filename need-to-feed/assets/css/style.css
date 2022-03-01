@@ -110,6 +110,7 @@ grid-area: intro;
 
 #join{
   grid-area: join;
+  justify-items: center;
 }
 
 
@@ -251,7 +252,7 @@ header.primary {
 
 
 
-.slideshow-container img{
+.header-image img{
   width: 100%;
 }
 
@@ -356,11 +357,15 @@ background: rgba(6, 15, 94, .8);
 }
 
 
-#join img{
-  width: 60%;
+#join{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
+#join .side-image-2{
+  display: none;
+}
 
 .donate-button {
 text-align: center;
@@ -450,7 +455,10 @@ z-index: 1;
 
 
 /*---sponsors flex---*/
-
+#sponsors{
+  background: pink;
+}
+.sponsor-logos,
 .platinum-sponsors,
 .gold-sponsors,
 .mobile-view,
@@ -470,8 +478,11 @@ justify-content: space-around;
 
 .sponsor-logos p{
 padding: .5em;
-font-family: "ABeeZee", sans-serif;
+font-family: "Montserrat", sans-serif;
 }
+
+
+
 
 
 .gold-sponsors figure,
@@ -520,6 +531,8 @@ h2,h3{
   font-size: 3em;
 }
 
+
+
 }
 
 
@@ -533,11 +546,18 @@ margin: 0 60px;
 
 
   .post{
-    margin: auto 40px;
-    padding: 9em 3em;
+    margin: 40px;
+    padding: auto 3em;
 } 
 
 
+
+#about .post{
+  border-top: 2px solid rgba(6, 15, 94, 1);
+  border-right: 2px solid rgba(6, 15, 94, 1);
+  padding: 5em;
+  
+}
 
 
 .founders{
@@ -583,27 +603,30 @@ margin: 0 60px;
 
 @media only screen and (min-width: 1400px){
 
-  
+
+  #join .side-image-2{
+    display: block;
+  }
+
 #join{
-  display: grid;
-  grid-template-columns: 60% 1fr;
-  grid-template-rows: auto;
-  margin-top: 60px;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1200px;
+  align-items: center;
 }
 
 
 #join .post{
-  padding: 0 3em;
-  max-width: 80%;
+  margin: auto 20px;
 }
-
 
 
 
 #join img{
   vertical-align: bottom;
-  border-radius: 50px 2px;
+  border-radius: 20px;
 }
+
 
 
   #story-1 .side-image > :nth-child(-n+4){
@@ -649,9 +672,9 @@ margin: 0 60px;
    }
 
    
-.container .post{
+.wrap .post{
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 60px auto;
   background: 	rgb(255,255,255, .7);
 }
 
