@@ -14,50 +14,50 @@ function calculate() {
         // Get the value associated with the operator that was checked (cm, m, km, in, ft, yd, mi)
         var FromUnit;
         if (document.getElementById("cm").checked) {
-            operator = document.getElementById("cm").value;
+            FromUnit = document.getElementById("cm").value;
         }
         if (document.getElementById("m").checked) {
-            operator = document.getElementById("m").value;
+            FromUnit = document.getElementById("m").value;
         }
         if (document.getElementById("km").checked) {
-            operator = document.getElementById("km").value;
+            FromUnit = document.getElementById("km").value;
         }
         if (document.getElementById("in").checked) {
-            operator = document.getElementById("in").value;
+            FromUnit = document.getElementById("in").value;
         }
         if (document.getElementById("ft").checked) {
-            operator = document.getElementById("ft").value;
+            FromUnit = document.getElementById("ft").value;
         }
         if (document.getElementById("yd").checked) {
-            operator = document.getElementById("yd").value;
+            FromUnit = document.getElementById("yd").value;
         }
         if (document.getElementById("mi").checked) {
-            operator = document.getElementById("mi").value;
+            FromUnit = document.getElementById("mi").value;
         }
         
         // To Units
         // Get converstion method that was checked (cm, m, km, in, ft, yd, mi)
         var ToUnit;
         if (document.getElementById("cm2").checked) {
-            operator = document.getElementById("cm2").value;
+            ToUnit = document.getElementById("cm2").value;
         }
         if (document.getElementById("m2").checked) {
-            operator = document.getElementById("m2").value;
+            ToUnit = document.getElementById("m2").value;
         }
         if (document.getElementById("km2").checked) {
-            operator = document.getElementById("km2").value;
+            ToUnit = document.getElementById("km2").value;
         }
         if (document.getElementById("in2").checked) {
-            operator = document.getElementById("in2").value;
+            ToUnit = document.getElementById("in2").value;
         }
         if (document.getElementById("ft2").checked) {
-            operator = document.getElementById("ft2").value;
+            ToUnit = document.getElementById("ft2").value;
         }
         if (document.getElementById("yd2").checked) {
-            operator = document.getElementById("yd2").value;
+            ToUnit = document.getElementById("yd2").value;
         }
         if (document.getElementById("mi2").checked) {
-            operator = document.getElementById("mi2").value;
+            ToUNit = document.getElementById("mi2").value;
         }
 
         CalculateResult(FromValue, FromUnit, ToUnit);
