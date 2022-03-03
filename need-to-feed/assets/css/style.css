@@ -9,6 +9,7 @@ Color Theme Swatches in RGBA
 .Need-to-Feed-1-rgba { color: rgba(0, 26, 194, 1); }
 .Need-to-Feed-2-rgba { color: rgba(255, 106, 10, 1); }
 .Need-to-Feed-3-rgba { color: rgba(8, 22, 143, 1); }
+                     { color: rgba(6, 15, 94, 1);}
 .Need-to-Feed-4-rgba { color: rgba(217, 193, 150, 1); }
 .Need-to-Feed-5-rgba { color: rgba(191, 4, 4, 1); }
 
@@ -194,9 +195,11 @@ background-color: #FFFF;
 }
 
 
+
 .wrap{
   margin: 0 auto;
 }
+
 
 
 .post-header,
@@ -209,11 +212,15 @@ background-color: #FFFF;
 }
 
 
-.post{
-  margin: auto 10px;
-  padding: 3em 0;
+.post p {
+  padding: 0 1em 1em 1em;
   justify-content: center;
 } 
+
+
+.post{
+  padding: 2em 0;
+}
 
 
 .donate-button {
@@ -228,20 +235,24 @@ h3{
 font-family: 'Montserrat', sans-serif;
 color: #FF6A0A;
 text-align: center;
-line-height: 1.2;
-margin: 0 0 20px 0;
+padding: 0 .2em;
 }
 
 
 h2{
   font-size: 2.5em;
+  padding-top: .5em;
 }
 
 
-h3,
-blockquote{
+
+h3 {
   font-size: 1.5em;
+  padding: 0;
+  color: rgba(6, 15, 94, 1);
 }
+
+
 
 
 header.primary {
@@ -269,10 +280,12 @@ margin: 0 10px;
 color: #BF0404;
 text-shadow: .2px .4px #2D3340;
 border:0;
-font-size: 1.1em;
+font-size: 1.3em;
 font-weight:bold;
 cursor:pointer;
 outline:none;
+margin: 0;
+
 }
 
 
@@ -328,7 +341,6 @@ font-size: .6em;
 color: #BF0404;
 text-shadow: .5px .5px #2D3340;
 margin: 0 30px;
-
 }
 
 
@@ -357,13 +369,29 @@ background: rgba(6, 15, 94, .8);
 }
 
 
-#join{
+#join,
+#story-2{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-#join .side-image-2{
+
+
+#join .side-image-2,
+#story-2 .side-image{
+  width: 100%;
+}
+
+
+#join img,
+#story-2 img{
+  width: 100%;
+}
+
+
+#join .side-image{
   display: none;
 }
 
@@ -430,7 +458,7 @@ font-family: 'Satisfy', cursive;
 
 footer{
 text-align: center;
-color: #D9C196
+color: #FF6A0A;
 }
 
 
@@ -440,6 +468,7 @@ color: #D9C196
 .fixed-wrap{
 position: fixed;
 width: 100%;
+height: 40px;
 background-color: 	rgb(255,255,255, .8);
 border: 0px;
 border-bottom: 1px solid;
@@ -448,9 +477,48 @@ border-image-slice: 3;
 z-index: 1;
 }
 
+
 #join .post-header,
 #contact .post-header{
   width: 80%;
+}
+
+#contact .post{
+  max-width: 80%;
+  margin: 0 auto;
+
+}
+
+
+#join h2,
+#contact h2{
+  font-size: 2em;
+}
+
+
+#story-2,
+#contact{
+  border-top: 8px solid rgba(6, 15, 94, 1);;
+}
+
+
+#story-1 .side-image{
+  padding: 2em 0;
+  margin: 0;
+}
+
+
+blockquote{
+  background:rgba(6, 15, 94, .9);
+  border-radius: 16px;
+  color: #FFF;
+  padding: 2em;
+  max-width: 70%;
+}
+
+
+#gratitudes .post{
+  margin-bottom: 80px;
 }
 
 
@@ -458,6 +526,7 @@ z-index: 1;
 #sponsors{
   background: pink;
 }
+
 .sponsor-logos,
 .platinum-sponsors,
 .gold-sponsors,
@@ -512,16 +581,22 @@ body p{
   font-size: 1.5em;
 }
 
+
 .post{
-  margin: auto 20px;
   padding: 6em auto;
 }
 
+#join h2,
+#contact h2{
+  font-size: 3em;
+}
 
 
 .mobile-view{
   display: none;
 }
+
+
 
 .gold-sponsors figure{
   display: flex;
@@ -536,6 +611,90 @@ h2,h3{
 }
 
 
+
+/*----Mini-Tablet----*/
+
+@media only screen and (min-width: 800px) {
+
+#join,
+#story-2{
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .8em;
+}
+
+
+#join h2{
+  font-size: 2.2em;
+}
+
+
+#join .post,
+#story-2 .post{
+  margin: auto 0;
+  flex: 1 50%;
+}
+
+#join .side-image-2,
+#story-2 .side-image{
+  flex: 2 50%;
+}
+
+
+
+#about .post,
+#gratitudes .post{
+  border-top: 8px solid rgba(6, 15, 94, 1);
+  border-right: 8px solid rgba(6, 15, 94, 1);
+  padding: 5em;
+}
+
+
+
+
+
+#story-1 .side-image > :nth-child(-n+4){
+  display: block;
+}
+
+#story-1 .side-image{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+}
+
+#story-1 .side-image{
+  margin: 0 auto;
+}
+
+
+#story-1 .image-wrap {
+  width: 33%;
+  padding: 3em 1em;
+}
+
+
+
+#story-1 .overlay{
+  text-align: center;
+  height: 500px;
+  width: 100%;
+   background-image: url("../img/wilbur-volunteering.jpg");
+ 
+ /* Create the parallax scrolling effect */
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ 
+ }
+
+
+
+}
 /*---Tablet Design w/ Grid ---*/
 
 @media only screen and (min-width: 1000px) {
@@ -552,12 +711,6 @@ margin: 0 60px;
 
 
 
-#about .post{
-  border-top: 2px solid rgba(6, 15, 94, 1);
-  border-right: 2px solid rgba(6, 15, 94, 1);
-  padding: 5em;
-  
-}
 
 
 .founders{
@@ -569,7 +722,8 @@ margin: 0 60px;
 
 
 #about .overlay,
-#team .overlay{
+#team .overlay,
+#story-1 .overlay{
   height: 900px;
 }
 
@@ -604,83 +758,25 @@ margin: 0 60px;
 @media only screen and (min-width: 1400px){
 
 
-  #join .side-image-2{
-    display: block;
-  }
 
-#join{
-  flex-direction: row;
-  justify-content: space-between;
-  max-width: 1200px;
-  align-items: center;
-}
-
-
-#join .post{
-  margin: auto 20px;
-}
-
-
-
-#join img{
-  vertical-align: bottom;
-  border-radius: 20px;
-}
-
-
-
-  #story-1 .side-image > :nth-child(-n+4){
-    display: block;
-  }
-  
-  #story-1 .side-image{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: baseline;
-  }
-  
-  #story-1 .side-image{
-    margin: 0 auto;
-  }
-  
-  
-  #story-1 .image-wrap {
-    width: 33%;
-    padding: 3em 1em;
-  }
-  
-
-
-  #story-1 .overlay{
-    text-align: center;
-    height: 900px;
-    width: 100%;
-     background-image: url("../img/wilbur-volunteering.jpg");
-   
-   /* Create the parallax scrolling effect */
-   background-attachment: fixed;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   
-   }
 
    #gratitudes {
     max-width: 1200px;
    }
 
    
-.wrap .post{
+.post {
   max-width: 1200px;
   margin: 60px auto;
   background: 	rgb(255,255,255, .7);
 }
 
+
 .wrap{
   background-color: #FFF;
 }
+
+
 
    
 }
