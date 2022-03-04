@@ -429,10 +429,46 @@ text-align: center;
  }
 
 
+ #team{
+   background: ;
+ }
 
 .founders{
   margin: 60px auto;
+  line-height: 0;
+  max-width: 1000px;
 }
+
+#team{
+  background: grey;
+  margin-top: 0;
+}
+
+.founders figure{
+  width: 90%;
+  
+}
+
+.founders img{
+  width: 100%;
+  border: 3px solid #FFF;
+  border-bottom: 3px solid #FFF;
+  background:rgba(255, 106, 10, 1);
+
+}
+
+
+
+figcaption {
+  text-align: center;
+  font-size: 1em;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  padding: 2em;
+  border: 3px solid #FFF;
+  }
+
+
 
  #success-stories{
    padding-bottom: 0;
@@ -444,12 +480,6 @@ text-align: center;
    display: none;
  }
 
-figcaption {
-text-align: center;
-font-size: 1.2em;
-font-weight: 300;
-font-family: "ABeeZee", sans-serif;
-}
 
 
 #gratitudes h2 {
@@ -768,7 +798,6 @@ margin: 0 60px;
 .post {
   max-width: 1200px;
   margin: 60px auto;
-  background: 	rgb(255,255,255, .7);
 }
 
 
