@@ -24,7 +24,6 @@ html {
 /* ---------------Utility Styles----------------- */
 .container{
   margin: 40px auto;
-  max-width: 1200px;
 }
 
 
@@ -57,6 +56,14 @@ header h2{
 
 .author{
 margin: 60px 0;
+}
+
+
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 
