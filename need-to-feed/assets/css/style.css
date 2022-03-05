@@ -574,12 +574,22 @@ justify-content: center;
 align-items: center;
 }
 
+.sponsor-logos{
+  justify-content: space-around;
+  background: grey;
+}
 
 .mobile-view,
 .bronze-view{
 justify-content: space-around;
 }
 
+.sponsor-logos figure{
+  width: 100%;
+  height: 140px;
+  background: red;
+  vertical-align: top;
+}
 
 
 .sponsor-logos p{
@@ -588,6 +598,9 @@ font-family: "Montserrat", sans-serif;
 }
 
 
+.platinum-sponsors{
+  margin-bottom: 20px;
+}
 
 
 
@@ -640,16 +653,15 @@ body p{
 }
 
 
-.gold-sponsors figure,
-.platinum-sponsors figure{
+.gold-sponsors figure{
   display: block;
-  background: red;
 }
 
 .gold-sponsors{
   background: yellow;
 
 }
+
 h2,h3{
   font-size: 3em;
 }
