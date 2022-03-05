@@ -59,7 +59,8 @@ text-decoration: none;
 
 #join,
 .menu,
-.wrap{
+.wrap,
+.founders{
   line-height: 0;
 }
 
@@ -212,9 +213,12 @@ background-color: #FFFF;
 }
 
 
-.post p {
-  padding: 0 1em 1em 1em;
+.post p,
+.founders {
+  padding: 0 1em;
   justify-content: center;
+  background: pink;
+
 } 
 
 
@@ -429,43 +433,42 @@ text-align: center;
  }
 
 
- #team{
-   background: ;
- }
-
+ 
 .founders{
-  margin: 60px auto;
-  line-height: 0;
-  max-width: 1000px;
+  margin-bottom: 40px;
 }
 
-#team{
-  background: grey;
-  margin-top: 0;
-}
 
 .founders figure{
+  margin: 40px 0;
   width: 90%;
-  
 }
+
+
 
 .founders img{
   width: 100%;
-  border: 3px solid #FFF;
-  border-bottom: 3px solid #FFF;
-  background:rgba(255, 106, 10, 1);
-
+  border: 3px solid rgba(6, 15, 94, .8);
+  border-bottom: 3px solid rgba(6, 15, 94, .8);
+  background: rgba(6, 15, 94, .8);
 }
 
 
 
 figcaption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: 300;
   font-family: "Montserrat", sans-serif;
-  padding: 2em;
-  border: 3px solid #FFF;
+  padding: 1em;
+  border: 3px solid rgba(6, 15, 94, 1);
+  background: rgba(6, 15, 94, 1);
+  color: #FFF;
+  line-height: 1.2;
+  height: 110px;
   }
 
 
@@ -485,6 +488,7 @@ figcaption {
 #gratitudes h2 {
 font-family: 'Satisfy', cursive;
 }
+
 
 footer{
 text-align: center;
@@ -543,7 +547,11 @@ blockquote{
   border-radius: 16px;
   color: #FFF;
   padding: 2em;
-  max-width: 70%;
+}
+
+
+#about blockquote{
+  margin-bottom: 20px;
 }
 
 
@@ -553,9 +561,7 @@ blockquote{
 
 
 /*---sponsors flex---*/
-#sponsors{
-  background: pink;
-}
+
 
 .sponsor-logos,
 .platinum-sponsors,
@@ -563,7 +569,7 @@ blockquote{
 .mobile-view,
 .bronze-sponsors{
 display: flex;
-flex-wrap: wrap;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 }
@@ -573,6 +579,7 @@ align-items: center;
 .bronze-view{
 justify-content: space-around;
 }
+
 
 
 .sponsor-logos p{
@@ -622,16 +629,27 @@ body p{
 }
 
 
+
 .mobile-view{
   display: none;
 }
 
 
-
-.gold-sponsors figure{
-  display: flex;
+.platinum-sponsors {
+  background: pink;
 }
 
+
+.gold-sponsors figure,
+.platinum-sponsors figure{
+  display: block;
+  background: red;
+}
+
+.gold-sponsors{
+  background: yellow;
+
+}
 h2,h3{
   font-size: 3em;
 }
@@ -641,6 +659,25 @@ h2,h3{
 }
 
 
+@media only screen and (min-width: 753px){
+  .founders{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   }
+  
+  
+   
+  .founders figure{
+    margin: auto 10px;
+    width: auto;
+  }
+  
+
+  .founders img{
+    max-height: 500px;
+   }
+}
 
 /*----Mini-Tablet----*/
 
@@ -734,21 +771,16 @@ margin: 0 60px;
 }
 
 
-  .post{
-    margin: 40px;
+  .post p{
+    margin: auto 40px;
     padding: auto 3em;
 } 
 
 
 
-
-
-.founders{
-  flex-direction: row;
-  justify-content: space-around;
- }
-
-
+.founders figure{
+  margin: auto 20px;
+}
 
 
 #about .overlay,
