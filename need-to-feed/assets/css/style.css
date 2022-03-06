@@ -220,10 +220,6 @@ background-color: #FFFF;
 } 
 
 
-.post{
-  padding: 2em 0;
-}
-
 
 .donate-button {
   text-align: center;
@@ -367,7 +363,9 @@ transition: .5s;
 
 #intro a:hover, #intro a:active,
 #contact a:hover, #contact a:active{
-background: rgba(6, 15, 94, .8);
+color: rgba(6, 15, 94, 1);
+background: #FFF;
+border: 1px solid #FF6A0A;
 }
 
 
@@ -405,7 +403,7 @@ text-align: center;
 
 #about .overlay{
   text-align: center;
-  height: 500px;
+  height: 300px;
   width: 100%;
    background-image: url("../img/volunteers-and-recipients.webp");
  
@@ -419,7 +417,7 @@ text-align: center;
 
  #team .overlay{
   text-align: center;
-  height: 500px;
+  height: 300px;
   width: 100%;
    background-image: url("../img/volunteers.webp");
  
@@ -434,6 +432,8 @@ text-align: center;
  
 .founders{
   margin-bottom: 40px;
+  max-width: 1200px;
+  background: pink;
 }
 
 
@@ -488,6 +488,12 @@ font-family: 'Satisfy', cursive;
 }
 
 
+#donate .post{
+  background:rgba(6, 15, 94, .8);
+  color: #FFF;
+}
+
+
 footer{
 text-align: center;
 color: #FF6A0A;
@@ -515,10 +521,23 @@ z-index: 1;
   width: 80%;
 }
 
-#contact .post{
-  max-width: 80%;
-  margin: 0 auto;
 
+#contact .post{
+  margin: 0 auto;
+  font-size: .8em;
+}
+
+.contact-form{
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+
+#contact{
+  margin: 0 auto;
+  width: 100%;
 }
 
 
@@ -528,9 +547,15 @@ z-index: 1;
 }
 
 
-#story-2,
+
 #contact{
   border-top: 8px solid rgba(6, 15, 94, 1);;
+}
+
+
+#story-2{
+border-top: 8px solid rgba(6, 15, 94, 1);
+border-right: 8px solid rgba(6, 15, 94, 1);
 }
 
 
@@ -545,6 +570,7 @@ blockquote{
   border-radius: 16px;
   color: #FFF;
   padding: 2em;
+  max-width: 900px;
 }
 
 
@@ -689,6 +715,12 @@ h2,h3{
 
 @media only screen and (min-width: 800px) {
 
+  blockquote{
+  font-size: 1.7em;
+}
+
+
+
 #join,
 #story-2{
   flex-direction: row;
@@ -709,18 +741,20 @@ h2,h3{
   flex: 1 50%;
 }
 
+
+
 #join .side-image-2,
 #story-2 .side-image{
   flex: 2 50%;
 }
 
 
-
-#about .post,
-#gratitudes .post{
+#about .post{
   border-top: 8px solid rgba(6, 15, 94, 1);
   border-right: 8px solid rgba(6, 15, 94, 1);
-  padding: 5em;
+  padding: 3em;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 
@@ -753,7 +787,7 @@ h2,h3{
 
 #story-1 .overlay{
   text-align: center;
-  height: 500px;
+  height: 300px;
   width: 100%;
    background-image: url("../img/wilbur-volunteering.jpg");
  
@@ -765,7 +799,12 @@ h2,h3{
  
  }
 
+ 
 
+
+ #about .overlay{
+   height: 300px;
+ }
 
 }
 /*---Tablet Design w/ Grid ---*/
@@ -792,7 +831,7 @@ margin: 0 60px;
 #about .overlay,
 #team .overlay,
 #story-1 .overlay{
-  height: 900px;
+  height: 500px;
 }
 
 
@@ -838,6 +877,7 @@ margin: 0 60px;
   grid-template-columns: 50% 1fr;
   grid-template-rows: auto;
   margin: 60px auto;
+  max-width: 1200px;
 }
 
 
@@ -847,6 +887,9 @@ margin: 0 60px;
 }
 
 
+#story-2 img{
+  width: 70%;
+}
 
 }
 
@@ -856,19 +899,10 @@ margin: 0 60px;
 
 
    #gratitudes {
-    max-width: 1200px;
    }
 
-   
-.post p{
-  max-width: 1200px;
-  margin: 60px auto;
-}
 
 
-.wrap{
-  background-color: #FFF;
-}
 
 
 
