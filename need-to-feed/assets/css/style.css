@@ -431,7 +431,6 @@ text-align: center;
 
  
 .founders{
-  margin-bottom: 40px;
   max-width: 1200px;
   background: pink;
 }
@@ -497,6 +496,7 @@ font-family: 'Satisfy', cursive;
 footer{
 text-align: center;
 color: #FF6A0A;
+font-size: 1.5em;
 }
 
 
@@ -515,6 +515,14 @@ border-image-slice: 3;
 z-index: 1;
 }
 
+.post{
+  background: yellow;
+}
+
+.overlay,
+.video-container{
+  margin-top: 20px;
+}
 
 #join .post-header,
 #contact .post-header{
@@ -527,6 +535,7 @@ z-index: 1;
   font-size: .8em;
 }
 
+
 .contact-form{
   width: 90%;
   max-width: 900px;
@@ -536,7 +545,7 @@ z-index: 1;
 
 
 #contact{
-  margin: 0 auto;
+  margin: 20px auto;
   width: 100%;
 }
 
@@ -579,9 +588,6 @@ blockquote{
 }
 
 
-#gratitudes .post{
-  margin-bottom: 80px;
-}
 
 
 #gratitudes{
