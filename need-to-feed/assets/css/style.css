@@ -197,6 +197,7 @@ background-color: #FFFF;
 
 
 
+
 .wrap{
   margin: 0 auto;
 }
@@ -355,17 +356,16 @@ font-weight: 700;
 padding: 1em;
 background: rgba(6, 15, 94, 1);
 border-radius: 16px;
-margin: 20px auto;
+margin-bottom: 40px;
 font-size: 1.5em;
-transition: .5s;
+transition: .7s;
 }
 
 
 #intro a:hover, #intro a:active,
 #contact a:hover, #contact a:active{
-color: rgba(6, 15, 94, 1);
 background: #FFF;
-border: 1px solid #FF6A0A;
+border: 2px solid #FF6A0A;
 }
 
 
@@ -377,6 +377,10 @@ border: 1px solid #FF6A0A;
   align-items: center;
 }
 
+#join .post,
+#story-2 .post{
+  padding-bottom: 2em;
+}
 
 
 #join .side-image-2,
@@ -397,6 +401,7 @@ border: 1px solid #FF6A0A;
 
 .donate-button {
 text-align: center;
+max-width: 300px;
 }
 
 
@@ -432,7 +437,6 @@ text-align: center;
  
 .founders{
   max-width: 1200px;
-  background: pink;
 }
 
 
@@ -500,7 +504,6 @@ font-size: 1.5em;
 }
 
 
-
 /*---Additional Elements---*/
 
 .fixed-wrap{
@@ -515,24 +518,25 @@ border-image-slice: 3;
 z-index: 1;
 }
 
-.post{
-  background: yellow;
+
+.video-container{
+  margin-top: 70px;
 }
 
-.overlay,
-.video-container{
-  margin-top: 20px;
-}
 
 #join .post-header,
-#contact .post-header{
-  width: 80%;
+#contact .post-header,
+#contact .post .p{
+  padding: auto 1.5em;
+  max-width: 80%;
 }
 
 
 #contact .post{
   margin: 0 auto;
   font-size: .8em;
+  padding-bottom: 5em;
+  color: #FFF;
 }
 
 
@@ -547,6 +551,8 @@ z-index: 1;
 #contact{
   margin: 20px auto;
   width: 100%;
+  border-top: 8px solid rgba(6, 15, 94, 1);;
+
 }
 
 
@@ -555,11 +561,6 @@ z-index: 1;
   font-size: 2em;
 }
 
-
-
-#contact{
-  border-top: 8px solid rgba(6, 15, 94, 1);;
-}
 
 
 #story-2{
@@ -579,11 +580,8 @@ blockquote{
   border-radius: 16px;
   color: #FFF;
   padding: 2em;
+  font-size: 1.2em;
   max-width: 900px;
-}
-
-
-#about blockquote{
   margin-bottom: 20px;
 }
 
@@ -617,6 +615,7 @@ text-align: center;
 .bronze-view{
 justify-content: space-around;
 }
+
 
 .sponsor-logos figure{
   text-align: center;
@@ -664,6 +663,10 @@ body p{
 
 .post{
   padding: 6em auto;
+}
+
+.post p{
+  padding: auto 1.5em;
 }
 
 #join h2,
@@ -802,7 +805,6 @@ h2,h3{
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
- 
  }
 
  
@@ -865,18 +867,13 @@ margin: 0 60px;
 
 
 .silver-sponsors{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: baseline;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px 5px;
+  text-align: left;
+  padding: 2em 4em;
 }
-
-
-.silver-sponsors p{
-  padding: 1em;
-  width: 200px;
-}
-
 
 #story-2{
   display: grid;
@@ -904,8 +901,6 @@ margin: 0 60px;
 
 
 
-   #gratitudes {
-   }
 
 
 
