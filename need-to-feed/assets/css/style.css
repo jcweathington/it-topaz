@@ -422,32 +422,7 @@ max-width: 400px;
 
 
 
-#about .overlay{
-  text-align: center;
-  height: 400px;
-  width: 100%;
-   background-image: url("../img/volunteers-and-recipients.webp");
- 
- /* Create the parallax scrolling effect */
- background-attachment: fixed;
- background-position: center;
- background-repeat: no-repeat;
- background-size:cover;
- }
 
-
- #team .overlay{
-  text-align: center;
-  height: 400px;
-  width: 100%;
-   background-image: url("../img/volunteers.webp");
- 
- /* Create the parallax scrolling effect */
- background-attachment: fixed;
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
- }
 
  
 .founders{
@@ -464,7 +439,6 @@ max-width: 400px;
 .founders img{
   width: 100%;
   border: 3px solid rgba(6, 15, 94, .8);
-  border-bottom: 3px solid rgba(6, 15, 94, .8);
   background: rgba(6, 15, 94, .8);
 }
 
@@ -543,7 +517,8 @@ z-index: 1;
 #join .post-header,
 #contact .post-header,
 #contact .post .p{
-  padding: auto 1.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
   max-width: 80%;
   text-align: center;
 }
@@ -560,11 +535,18 @@ z-index: 1;
 }
 
 
+#team .mobile-view{
+  margin-bottom: 30px;
+}
+
 #story-1 .post{
   margin: 0 auto;
   padding-bottom: 2em;
 }
 
+#story-1 h2{
+  padding-top: 1em;
+}
 
 #contact .post{
   margin: 0 auto;
@@ -625,7 +607,7 @@ blockquote{
   color: #FFF;
   padding: 2em;
   font-size: 1.2em;
-  max-width: 900px;
+  max-width: 810px;
   margin-bottom: 20px;
 }
 
@@ -642,7 +624,7 @@ blockquote{
 .sponsor-logos,
 .platinum-sponsors,
 .gold-sponsors,
-.mobile-view,
+#sponsors .mobile-view,
 .bronze-sponsors{
 display: flex;
 flex-direction: column;
@@ -653,7 +635,7 @@ text-align: center;
 
 
 
-.mobile-view,
+#sponsors .mobile-view,
 .bronze-view{
 justify-content: space-around;
 }
@@ -691,7 +673,6 @@ display: none;
 
 @media only screen and (min-width: 643px) {
 
-
 .fixed-wrap,
 header .banner{
   height: 70px;
@@ -710,12 +691,14 @@ body p{
 
 
 .post{
-  padding: 6em auto;
+  padding-top: 6em;
+  padding-bottom: 6em;
 }
 
 
 .post p{
-  padding: auto 1.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 
 
@@ -739,6 +722,34 @@ body p{
 h2,h3{
   font-size: 3em;
 }
+
+
+#about .overlay{
+  text-align: center;
+  height: 400px;
+  width: 100%;
+   background-image: url("../img/volunteers-and-recipients.webp");
+ 
+ /* Create the parallax scrolling effect */
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size:cover;
+ }
+
+
+ #team .overlay{
+  text-align: center;
+  height: 400px;
+  width: 100%;
+   background-image: url("../img/volunteers.webp");
+ 
+ /* Create the parallax scrolling effect */
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ }
 
 
 }
@@ -808,7 +819,7 @@ h2,h3{
 #story-1 .post{
   border-top: 8px solid rgba(6, 15, 94, 1);
   border-right: 8px solid rgba(6, 15, 94, 1);
-  padding: 5em;
+  padding: 1.5em 5em 5em;
   max-width: 1200px;
 }
 
@@ -875,7 +886,8 @@ margin: 0 60px;
 
   .post p{
     margin: auto 40px;
-    padding: auto 3em;
+    padding-left: 3em;
+    padding-right: 3em;
 } 
 
 
