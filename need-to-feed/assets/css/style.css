@@ -47,8 +47,6 @@ width: 100%;
 
 
 
-
-
 li {
 list-style: none;
 }
@@ -74,6 +72,7 @@ text-decoration: none;
   line-height: 1.4;
 }
 
+
 .video-container { 
   position: relative; 
   padding-bottom: 56.25%; 
@@ -93,7 +92,6 @@ text-decoration: none;
   width: 100%; 
   height: 80%; 
 }
-
 
 
 /* ---------------Responsive Images----------------- */
@@ -189,10 +187,8 @@ grid-template-areas:
   "footer footer"
   ;
 background: #FFF;
-  max-width: 1800px;
+  max-width: 1200px;
 }
-
-
 
 
 
@@ -207,11 +203,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 
 
-
 .wrap{
   margin: 0 auto;
 }
-
 
 
 .post-header,
@@ -222,6 +216,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   justify-content: space-between;
   align-items: center;
 }
+
 
 #team .founders{
   margin-bottom: 60px;
@@ -238,7 +233,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .donate-button {
   text-align: center;
 }
-
 
  
 
@@ -275,7 +269,6 @@ header.primary {
   line-height: 0;
   border-bottom: .5em solid rgba(6, 15, 94, 1);
 }
-
 
 
 .header-image img{
@@ -360,8 +353,6 @@ padding: 0;
 }
 
 
-
-
 /*---End Banner---*/
 
 
@@ -379,11 +370,13 @@ transition: .7s;
 }
 
 
+
 #intro a:hover, #intro a:active,
 #contact a:hover, #contact a:active{
 background: #FFF;
 border: 2px solid #FF6A0A;
 }
+
 
 
 #join,
@@ -394,9 +387,14 @@ border: 2px solid #FF6A0A;
   align-items: center;
 }
 
-#join .post,
+
 #story-2 .post{
   padding-bottom: 2em;
+}
+
+
+#join{
+  padding-bottom: 4em;
 }
 
 
@@ -416,6 +414,7 @@ border: 2px solid #FF6A0A;
   display: none;
 }
 
+
 .donate-button {
 text-align: center;
 max-width: 400px;
@@ -433,7 +432,7 @@ max-width: 400px;
  background-attachment: fixed;
  background-position: center;
  background-repeat: no-repeat;
- background-size: cover;
+ background-size:cover;
  }
 
 
@@ -450,7 +449,6 @@ max-width: 400px;
  background-size: cover;
  }
 
-
  
 .founders{
   max-width: 1200px;
@@ -463,14 +461,12 @@ max-width: 400px;
 }
 
 
-
 .founders img{
   width: 100%;
   border: 3px solid rgba(6, 15, 94, .8);
   border-bottom: 3px solid rgba(6, 15, 94, .8);
   background: rgba(6, 15, 94, .8);
 }
-
 
 
 figcaption {
@@ -490,11 +486,9 @@ figcaption {
   }
 
 
-
  #success-stories{
    padding-bottom: 0;
  }
-
  
 
  #story-1 .side-image > *:not(:first-child){
@@ -518,7 +512,7 @@ padding-top: 1em;
 
 footer{
 text-align: center;
-color: #FF6A0A;
+color: #BF0404;
 font-size: 1.5em;
 }
 
@@ -527,11 +521,10 @@ font-size: 1.5em;
 
 
 
-
 .fixed-wrap{
 position: fixed;
 width: 100%;
-max-width: 1800px;
+max-width: 1200px;
 height: 50px;
 background-color: 	rgb(255,255,255, .8);
 border: 0px;
@@ -561,13 +554,15 @@ z-index: 1;
   max-width: 900px;
 }
 
+
 .fade{
   margin-bottom: 20px;
 }
 
+
 #story-1 .post{
   margin: 0 auto;
-  padding-bottom: 4em;
+  padding-bottom: 2em;
 }
 
 
@@ -601,26 +596,27 @@ z-index: 1;
 }
 
 
-
 #story-2{
 border-top: 8px solid rgba(6, 15, 94, 1);
 border-right: 8px solid rgba(6, 15, 94, 1);
 }
+
 
 #story-1 h2,
 #story-1 h3{
   margin: 10px auto;
 }
 
+
 #story-1 h3{
   margin-bottom: 20px;
 }
+
 
 #story-1 .side-image{
   padding: 2em 0;
   margin: 0;
 }
-
 
 
 blockquote{
@@ -632,7 +628,6 @@ blockquote{
   max-width: 900px;
   margin-bottom: 20px;
 }
-
 
 
 #gratitudes{
@@ -686,6 +681,7 @@ font-family: "Montserrat", sans-serif;
 display: none;
 }
 
+
 #about .post{
   margin: 30px auto;
 }
@@ -702,9 +698,11 @@ header .banner{
   font-size: 1.3em;
 }
 
+
 header .banner{
   margin: 0 20px;
   }
+
 
 body p{
   font-size: 1.5em;
@@ -715,9 +713,11 @@ body p{
   padding: 6em auto;
 }
 
+
 .post p{
   padding: auto 1.5em;
 }
+
 
 #join h2,
 #contact h2{
@@ -725,11 +725,9 @@ body p{
 }
 
 
-
 .mobile-view{
   display: none;
 }
-
 
 
 .gold-sponsors figure{
@@ -738,13 +736,9 @@ body p{
 }
 
 
-
-
-
 h2,h3{
   font-size: 3em;
 }
-
 
 
 }
@@ -804,14 +798,17 @@ h2,h3{
 
 #story-2 .side-image{
   flex: 2 50%;
+  background: yellow;
 }
+
+
 
 
 
 #story-1 .post{
   border-top: 8px solid rgba(6, 15, 94, 1);
   border-right: 8px solid rgba(6, 15, 94, 1);
-  padding: 3em;
+  padding: 5em;
   max-width: 1200px;
 }
 
@@ -882,20 +879,24 @@ margin: 0 60px;
 } 
 
 
+#join h2,
+#contact h2{
+  font-size: 3.5em;
+}
+
 
 .founders figure{
   margin: auto 20px;
 }
 
 
-
 #about .post{
   border-top: 8px solid rgba(6, 15, 94, 1);
   border-right: 8px solid rgba(6, 15, 94, 1);
   margin: 60px auto;
+  width: 90%;
+  padding: 2em 1em;
 }
-
-
 
 
 .gold-sponsors,
@@ -924,10 +925,11 @@ margin: 0 60px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 20px 5px;
+  gap: 30px 5px;
   text-align: left;
   padding: 2em 4em;
 }
+
 
 #story-2{
   display: grid;
@@ -935,27 +937,35 @@ margin: 0 60px;
   grid-template-rows: auto;
   margin: 60px auto;
   max-width: 1200px;
+  width: 75%;
 }
 
 
 #story-2 .post{
   padding: 0;
-  margin: 0 60px;
 }
 
 
-#story-2 img{
-  width: 70%;
-}
 
 }
 
-@media only screen and (min-width: 1810px){
+
+@media only screen and (min-width: 1200px){
+  #team .overlay,
+  #about .overlay,
+  #story-1 .overlay{
+    height: 800px;
+  }
+
+}
+
+
+@media only screen and (min-width: 1210px){
 
 
 .grid{
-  border-left: 4px solid rgb(0 0 0 / 20%);
-  border-right: 4px solid rgb(0 0 0 / 20%);
+  border-left: 2px solid rgba(217, 194, 150, 0.568);
+  border-right: 2px solid rgba(217, 194, 150, 0.568);
 }
 
 
@@ -968,6 +978,3 @@ margin: 0 60px;
 }
 
 
-
-
-}

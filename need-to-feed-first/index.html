@@ -11,11 +11,7 @@
   <link rel="apple-touch-icon" href="icon.png">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/accessible-slick-theme.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/carousel.css">
-
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,22 +46,28 @@
         </ul>
       </nav>
     <div class="brand">
-    <h1>Need To Feed</h1>
+    <h1><a href="#top">Need To Feed</a></h1>
     </div>
     </div><!--banner-->
     </div>
+          <!-- Slideshow container -->
     <div class="header-image">
-    <!-- Full-width images-->
-    <div class="banner-image">
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
     <img src="assets/img/recipient-lodeana-amir.webp"  alt="first">
     </div>
     </div>
     <br>
-  </header>
 
+<!-- The dots/circles -->
+    <div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </header>
     <section id="intro" class="container">
       <div id="join" class="wrap">
-        <div class="donate">
        <article class="post">
         <header class="post-header">
         <h2>Join The Movement! Be The Change!</h2>
@@ -73,15 +75,9 @@
         </header>
           <p>Covid-19 is out here and so is Need to Feed. We are still making sure the homeless community are being taken care of. Your tax deductible donation will help!</p>
        </article>
-      </div>
-       <div class="fade carousel">
-        <div><img src="assets/img/carousel/founders-and-child.webp" alt="founders and child"></div>
-        <div><img src="assets/img/carousel/goodies.jpg" alt="resources"></div>
-        <div><img src="assets/img/carousel/along-fence.jpg" alt="serving the community"></div>
-        <div><img src="assets/img/carousel/founders-with-sleepingbags.jpg" alt="founders delivering sleeping bags"></div>
-        <div><img src="assets/img/carousel/giving-to-baby.jpg" alt="volunteers giving-to-families-in-need"></div>
-      </div>
-
+        <div class="side-image">
+          <img src="assets/img/founders-and-child.webp" alt="unloading food and resources">
+        </div>
       </div>
       
       <div id="about" class="wrap">
@@ -106,15 +102,15 @@
         </header>
          <div class="founders">
           <figure>
-           <img src="assets/img/founders/amir-johnson.webp" alt="Amir Johnson" />
+           <img src="https://via.placeholder.com/300C/O https://placeholder.com/" alt="Amir Johnson" />
             <figcaption>Amir Johnson, CEO</figcaption>
           </figure>
           <figure>
-           <img src="assets/img/founders/lodeana-jones.webp" alt="Lodeana Jones" />
+           <img src="https://via.placeholder.com/300C/O https://placeholder.com/" alt="Lodeana Jones" />
             <figcaption>Lodeana Jones</figcaption>
           </figure>
           <figure>
-           <img src="assets/img/founders/cornelius-hunter.webp" alt="Cornelius Hunter" />
+           <img src="https://via.placeholder.com/300C/O https://placeholder.com/" alt="Cornelius Hunter" />
             <figcaption>Cornelius Hunter</figcaption>
           </figure>
          </div>
@@ -139,12 +135,6 @@
               <div class="image-wrap">
                 <img src="assets/img/meet-wilbur.jpg"  alt="wilbur" class="first">
               </div>
-              <div class="image-wrap">
-                <img src="assets/img/wilbur-movingtruck.jpg" alt="wilbur moving" class="second">
-              </div>
-              <div class="image-wrap">
-                <img src="assets/img/wilbur-sofa.jpg"  alt="wilbur in new home" class="third">
-              </div>
             </div>
             <p>Now, Wilbur attends the events as a volunteer to help serve the same people that are on the same streets as he used to be. On this page, we hope to share more success stories such as these, with your continued support!</p>
         </article>
@@ -156,7 +146,7 @@
       <div id="story-2" class="wrap">
        <article class="post"> 
          <header class="post-header">
-           <h3>Meet Mr. Melvin!</h3>
+           <h2>Meet Mr. Melvin!</h2>
          </header>
            <p>He was also one of our participants on the street and now Need to Feed Corp. is able to help him with food in his very own home!</p>
          <!--Youtube Embed-->
@@ -167,14 +157,13 @@
       </div>
     </section><!--#success-stories-->
     
-
     <section id="donors-volunteers" class="container">
        <div id="gratitudes" class="wrap">
         <article class="post">
          <header class="post-header">
            <h2>Special Thank You To Our Donors & Volunteers!</h2>
          </header>
-           <blockquote>We cannot thank you enough!! To everyone you see throughout this website, we cannot do this without you. Thank you for giving your time, money, and effort in making each event a success!! Also, we wanted to give a special shout out to the companies, above, who have donated so far and we welcome and look forward to future partnerships.”  CEO, Amir Johnson</blockquote>
+           <blockquote>“We cannot thank you enough!! To everyone you see throughout this website, we cannot do this without you. Thank you for giving your time, money, and effort in making each event a success!! Also, we wanted to give a special shout out to the companies, above, who have donated so far and we welcome and look forward to future partnerships.”  CEO, Amir Johnson</blockquote>
         </article>
           <div class="video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/QMBTLvh7NiE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -189,24 +178,24 @@
            <div class="sponsor-logos">
              <div class="platinum-sponsors">
               <figure>
-               <img src="assets/img/logos/starbucks.jpg" style="width: 110px" alt="starbucks coffee logo" />
+               <img src="assets/img/logos/starbucks.jpg" style="width: 120px" alt="starbucks coffee logo" />
               </figure>
               <figure>
-               <img src="assets/img/logos/bombas.png" style="height: 150px" alt="Bombas logo" />
+               <img src="assets/img/logos/bombas.png" style="width:220px" alt="Bombas logo" />
               </figure>
               <figure>
-               <img src="assets/img/logos/kirspy-kreme.png" style="width: 170px" alt="krispy kreme donut logo" />
+               <img src="assets/img/logos/kirspy-kreme.png" alt="krispy kreme donut logo" />
               </figure>
              </div>
              <div class="gold-sponsors">
               <figure>
-                <img src="assets/img/logos/aids-healthcare-foundation.webp" style="width:102px" alt="Aids healthcare foundation logo" />
-               </figure>
+               <img src="assets/img/logos/world-vision.JPG" style="width: 270px" alt="world vision logo" />
+              </figure>
               <figure>
-               <img src="assets/img/logos/world-vision.JPG" style="width: 190px" alt="world vision logo" />
-              </figure>       
+               <img src="assets/img/logos/aids-healthcare-foundation.webp" style="width:102px" alt="Aids healthcare foundation logo" />
+              </figure>
               <figure>
-               <img src="assets/img/logos/winco-foods.png" style="width: 160px" alt="winco foods logo" />
+               <img src="assets/img/logos/winco-foods.png" style="width: 200px" alt="winco foods logo" />
               </figure>
                <div class="mobile-view">
                <p>World Vision</p>
@@ -237,26 +226,19 @@
        </header>
          <p>Your tax deductible donation will help feed and provide essentials for the hundreds of homeless in our community.</p>
       </article>
-      <div class ="contact-form">
-        <div id="wufoo-r10o9x0d18aihh1">
-          Fill out my <a href="https://jcwualr.wufoo.com/forms/r10o9x0d18aihh1">
-          online form</a>. </div>
-        <script src="assets/js/form.js"></script>
-      </div>
       </div>
 
-      
-       
+      <!--
+      <div class ="contact-form">
+      <iframe height="519" title="Embedded Wufoo Form" allowtransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none" src="https://jcwualr.wufoo.com/embed/r10o9x0d18aihh1/"> <a href="https://jcwualr.wufoo.com/forms/r10o9x0d18aihh1/">Fill out my Wufoo form!</a> </iframe>
+      </div> 
 -->
     </section><!--#contact-->
     
-    <footer><h6>&copy; 2022 Need To Feed, Corp</h6></footer>
+    <footer><h6>&copy; 2021 Need To Feed</h6></footer>
    </div><!--.wrapper-->
    <script src="assets/js/menu.js"></script>
-   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/prism.min.js"></script>       
-   <script src="assets/js/slick.js"></script>
+   <script src="assets/js/carousel.js"></script>
 
 </body>
 
