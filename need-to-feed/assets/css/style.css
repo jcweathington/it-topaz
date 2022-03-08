@@ -708,7 +708,8 @@ body p{
 }
 
 
-.mobile-view{
+.mobile-view,
+#sponsors .mobile-view{
   display: none;
 }
 
