@@ -8,17 +8,19 @@ img{
     margin:40px auto;
     width:70vw;
     /* Set Max Content Width */
-    max-width:300px;
+    max-width:500px;
 }
 
 
 .fade img{
     margin: auto;
+    
 }
 
 .fade div {
     background: #000;
     width: 100%;
+    height: auto;
 }
 /* Customize Previous/Next/Dots/Autoplay */
 
@@ -26,7 +28,12 @@ img{
 .slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
 .slick-dots li button .slick-dot-icon,
 .slick-dots li.slick-active button .slick-dot-icon {
-  color: white;
+  color: #FF6A0A;
+}
+
+.slick-prev {
+    color: red;
+    left: -30px;
 }
 
 /* Customize Previous/Next/Dots/Autoplay - Active State */

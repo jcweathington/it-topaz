@@ -42,7 +42,10 @@ html {
 /* ---------------Utility Styles----------------- */
 .container{
 margin: 0 auto;
+width: 100%;
 }
+
+
 
 
 
@@ -77,6 +80,8 @@ text-decoration: none;
   padding-top: 30px; 
   height: 0; 
   overflow: hidden;
+  margin: 0 auto;
+  width: 90%;
 }
 
 .video-container iframe, 
@@ -86,8 +91,10 @@ text-decoration: none;
   top: 0; 
   left: 0; 
   width: 100%; 
-  height: 100%; 
+  height: 80%; 
 }
+
+
 
 /* ---------------Responsive Images----------------- */
 
@@ -113,6 +120,7 @@ grid-area: intro;
 #join{
   grid-area: join;
   justify-items: center;
+  padding: 2em 1em;
 }
 
 
@@ -213,6 +221,9 @@ background-color: #FFFF;
   align-items: center;
 }
 
+#team .founders{
+  margin-bottom: 45px;
+}
 
 .post p,
 .founders {
@@ -240,7 +251,7 @@ padding: 0 .2em;
 
 h2{
   font-size: 2.5em;
-  padding-top: .5em;
+  margin-top: 40px;
 }
 
 
@@ -252,6 +263,9 @@ h3 {
 }
 
 
+#about h2{
+  margin-top: 0;
+}
 
 
 header.primary {
@@ -270,8 +284,9 @@ header.primary {
 header .banner{
 display:flex;
 justify-content: flex-start;
-align-items: baseline;
+align-items: center;
 margin: 0 10px;
+height: 50px;
 }
 
 
@@ -284,7 +299,6 @@ font-weight:bold;
 cursor:pointer;
 outline:none;
 margin: 0;
-
 }
 
 
@@ -335,11 +349,12 @@ margin-left: 50px;
 }
 
 
-header.primary h1 a{
-font-size: .6em;
+header.primary h1 {
+font-size: 1.3em;
 color: #BF0404;
 text-shadow: .5px .5px #2D3340;
 margin: 0 30px;
+padding: 0;
 }
 
 
@@ -491,7 +506,8 @@ font-family: 'Satisfy', cursive;
 }
 
 
-#donate .post{
+#donate .post,
+#join {
   background:rgba(6, 15, 94, .8);
   color: #FFF;
 }
@@ -506,15 +522,18 @@ font-size: 1.5em;
 
 /*---Additional Elements---*/
 
+
+
+
 .fixed-wrap{
 position: fixed;
 width: 100%;
-height: 40px;
+height: 50px;
 background-color: 	rgb(255,255,255, .8);
 border: 0px;
-border-bottom: 1px solid;
-border-image: linear-gradient(to right, rgb(217, 193, 150), rgb(8, 22, 143), rgb(217, 193, 150));
-border-image-slice: 3;
+box-shadow: 0px 4px 5px 0px rgb(0 0 0 / 20%);
+-webkit-box-shadow: 0px 4px 5px 0px rgb(0 0 0 / 20%);
+-moz-box-shadow: 0px 4px 5px 0px rgb(0 0 0 / 20%);
 z-index: 1;
 }
 
@@ -529,6 +548,21 @@ z-index: 1;
 #contact .post .p{
   padding: auto 1.5em;
   max-width: 80%;
+  text-align: center;
+}
+
+
+.donate .post p{
+  text-align: center;
+  max-width: 900px;
+}
+
+.fade{
+  margin-bottom: 20px;
+}
+
+#story-1 .post{
+  margin: 0 auto;
 }
 
 
@@ -568,11 +602,20 @@ border-top: 8px solid rgba(6, 15, 94, 1);
 border-right: 8px solid rgba(6, 15, 94, 1);
 }
 
+#story-1 h2,
+#story-1 h3{
+  margin: 10px auto;
+}
+
+#story-1 h3{
+  margin-bottom: 20px;
+}
 
 #story-1 .side-image{
   padding: 2em 0;
   margin: 0;
 }
+
 
 
 blockquote{
@@ -584,7 +627,6 @@ blockquote{
   max-width: 900px;
   margin-bottom: 20px;
 }
-
 
 
 
@@ -639,6 +681,9 @@ font-family: "Montserrat", sans-serif;
 display: none;
 }
 
+#about .post{
+  margin: 30px auto;
+}
 
 
 
@@ -730,7 +775,7 @@ h2,h3{
 
 
 
-#join,
+
 #story-2{
   flex-direction: row;
   justify-content: space-between;
@@ -744,7 +789,6 @@ h2,h3{
 }
 
 
-#join .post,
 #story-2 .post{
   margin: auto 0;
   flex: 1 50%;
@@ -752,18 +796,18 @@ h2,h3{
 
 
 
-#join .side-image-2,
+
 #story-2 .side-image{
   flex: 2 50%;
 }
 
 
-#about .post{
+#about .post,
+#story-1 .post{
   border-top: 8px solid rgba(6, 15, 94, 1);
   border-right: 8px solid rgba(6, 15, 94, 1);
   padding: 3em;
   max-width: 1200px;
-  margin: 0 auto;
 }
 
 
@@ -796,7 +840,7 @@ h2,h3{
 
 #story-1 .overlay{
   text-align: center;
-  height: 300px;
+  height: 500px;
   width: 100%;
    background-image: url("../img/wilbur-volunteering.jpg");
  
@@ -810,8 +854,9 @@ h2,h3{
  
 
 
- #about .overlay{
-   height: 300px;
+ #about .overlay,
+ #team .overlay{
+   height: 500px;
  }
 
 }
@@ -835,12 +880,6 @@ margin: 0 60px;
   margin: auto 20px;
 }
 
-
-#about .overlay,
-#team .overlay,
-#story-1 .overlay{
-  height: 500px;
-}
 
 
 
