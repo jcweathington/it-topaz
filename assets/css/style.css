@@ -48,47 +48,74 @@ body{
 
 
 
-header h1,
-header h2{
+header {
+  padding-top: 6vh;
   text-align: center;
+  overflow-wrap: break-word;
 }
+
 
 
 .author{
-margin: 60px 0;
+  font-size: 3em;
+  margin: 60px 0;
 }
 
 
-header{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
 
 nav{
-padding: 0;
-margin: 0 auto;
+  margin: 3vh 0 6vh 0;
 }
 
 
-a{
-display: flex;
-flex-direction: column;
-justify-content: center;
-text-align: center;
-border: 1px solid #cccc;
-width: 200px;
-height: 100%;
-text-decoration: none;
+/*-----GRID STYLE-----*/
+
+nav ul{
+  display: grid;
+  grid-gap: 5vw;
+  padding: 5vw;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+  margin: 0;
+  overflow-wrap: break-word;
 }
+
 
 
 li{
-margin: 10px;
-height: 200px;
+  border-radius: 2px;
+  border: 1px solid #cccc;
 }
+
+
+
+nav a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 340px;
+  text-decoration: none;
+}
+
+
+nav li span{
+  display: block;
+}
+
+
+
+nav li span.title{
+  font-size: 3em;
+  letter-spacing: -1px;
+  margin-top: 60px;
+}
+
+
+nav li span.description{
+  font-size: 2em;
+}
+
 
 
 ul li a:link, 
@@ -96,7 +123,6 @@ ul li a:visited{
 color: #f6f6f6;
 /* background-color:rgba(); to customize opacity*/
 padding: 8px 16px;
-border-radius: 16px;
 transition: .5s;
 }
 
@@ -108,22 +134,6 @@ background-color: #6B826D;
 }
 
 
-/*-----FLEX-STYLE-----*/
-
-ul{
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
-list-style: none;
-padding: 0;
-}
-
-
-
-/*-----GRID STYLE-----*/
-
-
 
 /*-----ADDITIONAL STYLES-----*/
 
@@ -132,16 +142,10 @@ text-decoration: line-through;
 }
 
 
-.title{
-font-size: 1.3rem;
-}
-
-
-.description{
-font-size: .8rem;
-}
-
 
 /*
 
-@media screen and (min-width: 630px){
+@media screen and (min-width: 730px){
+
+
+}
