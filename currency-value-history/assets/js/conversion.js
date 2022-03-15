@@ -10,13 +10,14 @@ async function GetStock() {
     // If all of the form elements are valid, the get the form values
     if (form.valid()) {
         
-        var StockSymbol = document.getElementById("baseCurrency").value;
+        var baseCurrency = document.getElementById("baseCurrency").value;
+        var convertCurreny = document.getElementById("convertCurrency").value;
         var apiKey = "iKgRiCkO2Yx3vF8xHcU3XtzxG2FK1Kz8"
         var FromDate = document.getElementById("FromDate").value;
         var ToDate = document.getElementById("ToDate").value;
 
         /* URL for AJAX Call */
-        var myURL1 = "https://api.polygon.io/v1/meta/symbols/" + StockSymbol + "/company?apiKey=" + apiKey;
+        var myURL1 = "https://api.polygon.io/v1/meta/symbols/" + baseCurrency + "/company?apiKey=" + apiKey;
         /* Make the AJAX call */
         var msg1Object = await fetch(myURL1);
         /* Check the status */
