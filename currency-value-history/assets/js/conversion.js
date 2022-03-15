@@ -156,7 +156,7 @@ async function GetStock() {
             return
         }
     }
-}
+ 
 
 function ClearForm() {
     document.getElementById("baseCurrency").value = "";
@@ -168,7 +168,17 @@ function ClearForm() {
     document.getElementById("convertError").innerHTML = "";
     document.getElementById("convertCurrency").value = "";
     document.getElementById("convertError").innerHTML = "";
-    
+    document.getElementById("USD").checked = false;
+    document.getElementById("MXN").checked = false;
+    document.getElementById("CAD").checked = false;
+    document.getElementById("EUR").checked = false;
+    document.getElementById("CNY").checked = false;
+    document.getElementById("USD2").checked = false;
+    document.getElementById("MXN2").checked = false;
+    document.getElementById("CAD2").checked = false;
+    document.getElementById("EUR2").checked = false;
+    document.getElementById("CNY2").checked = false;
+
     /* Ugly Code to Erase Canvas */
     var canvas0 = document.getElementById("chartjs-0");
     var context0 = canvas0.getContext('2d');    
