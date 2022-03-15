@@ -59,34 +59,14 @@ async function GetStock() {
 
 
         /* URL for AJAX Call */
-        var myURL1 = "https://api.polygon.io/v1/historic/forex/AUD/USD/2020-10-14?limit=100&apiKey=iKgRiCkO2Yx3vF8xHcU3XtzxG2FK1Kz8" + baseCurrency + convertCurrency + "/company?apiKey=" + apiKey;
+        var myURL1 = "https://api.polygon.io/v1/historic/forex/" + baseCurrency + convertCurrency + "/company?apiKey=" + apiKey;
         /* Make the AJAX call */
-        var msg1Object = await fetch(myURL1);
+        let myCalcObject = await fetch(myURL);
         /* Check the status */
-        if (msg1Object.status >= 200 && msg1Object.status <= 299) {            
-            var msg1JSONText = await msg1Object.text();
-            // Parse the JSON string into an object
-            var msg1 = JSON.parse(msg1JSONText);
-            /* Your code to process the result goes here - 
-               display the returned message */
-            document.getElementById("company").innerHTML = msg1.name;
-            document.getElementById("address").innerHTML = msg1.hq_address;
-            document.getElementById("employees").innerHTML = msg1.employees;
-            document.getElementById("ceo").innerHTML = msg1.ceo;
-            document.getElementById("url").innerHTML = msg1.url;
-            document.getElementById("url").href = msg1.url;
-            document.getElementById("logo").src = msg1.logo;
-        }
-        else {
-            /* AJAX complete with error - probably invalid stock ticker symbol */
-                /* Your code to process the result goes here - 
-                   display the returned message */
-            alert("Stock Not Found - Status: " + msg1Object.status)
-            return;
-        }        
- 
+       
+       
         /* URL for AJAX Call */
-        var myURL2 = "https://api.polygon.io/v2/aggs/ticker/" + StockSymbol + "/range/1/day/" + FromDate + "/" + ToDate + "?unadjusted=false&sort=asc&limit=32&apiKey=" + apiKey;
+        var myURL2 = "https://api.polygon.io/v1/historic/forex/" + baseCurrency + "/" + convertCurrency + "/range/1/day/" + FromDate + "/" + ToDate + "?unadjusted=false&sort=asc&limit=32&apiKey=" + apiKey;
         /* Make the AJAX call */
         var msg2Object = await fetch(myURL2);
         /* Check the status */
