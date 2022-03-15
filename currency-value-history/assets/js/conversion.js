@@ -10,14 +10,56 @@ async function GetStock() {
     // If all of the form elements are valid, the get the form values
     if (form.valid()) {
         
-        var baseCurrency = document.getElementById("baseCurrency").value;
-        var convertCurreny = document.getElementById("convertCurrency").value;
         var apiKey = "iKgRiCkO2Yx3vF8xHcU3XtzxG2FK1Kz8"
         var FromDate = document.getElementById("FromDate").value;
         var ToDate = document.getElementById("ToDate").value;
 
+
+        // Base Currency
+        // Get the value associated with the operator that was checked (USD, MXN, CAD, EUR, CNY)
+        var baseCurrency;
+        if (document.getElementById("USD").checked) {
+            baseCurrency = document.getElementById("USD").value;
+        }
+        if (document.getElementById("MXN").checked) {
+            baseCurrency = document.getElementById("MXN").value;
+        }
+        if (document.getElementById("CAD").checked) {
+            baseCurrency = document.getElementById("CAD").value;
+        }
+        if (document.getElementById("EUR").checked) {
+            baseCurrency = document.getElementById("EUR").value;
+        }
+        if (document.getElementById("CNY").checked) {
+            baseCurrency = document.getElementById("CNY").value;
+        }
+        
+
+        // Convert Currency
+        // Get the value associated with the operator that was checked (USD, MXN, CAD, EUR, CNY)
+        var baseUnit;
+        if (document.getElementById("USD2").checked) {
+            convertCurrency = document.getElementById("USD2").value;
+        }
+        if (document.getElementById("MXN2").checked) {
+            convertCurrency = document.getElementById("MXN2").value;
+        }
+        if (document.getElementById("CAD2").checked) {
+            convertCurrency = document.getElementById("CAD2").value;
+        }
+        if (document.getElementById("EUR2").checked) {
+            convertCurrency = document.getElementById("EUR2").value;
+        }
+        if (document.getElementById("CNY2").checked) {
+            convertCurrency = document.getElementById("CNY2").value;
+        }
+
+        CalculateResult(baseCurrency, convertCurrency);
+    }
+
+
         /* URL for AJAX Call */
-        var myURL1 = "https://api.polygon.io/v1/meta/symbols/" + baseCurrency + "/company?apiKey=" + apiKey;
+        var myURL1 = "https://api.polygon.io/v1/historic/forex/AUD/USD/2020-10-14?limit=100&apiKey=iKgRiCkO2Yx3vF8xHcU3XtzxG2FK1Kz8" + baseCurrency + convertCurrency + "/company?apiKey=" + apiKey;
         /* Make the AJAX call */
         var msg1Object = await fetch(myURL1);
         /* Check the status */
