@@ -56,17 +56,10 @@ async function GetStock() {
 
         CalculateResult(baseCurrency, convertCurrency);
     }
-
-
-        /* URL for AJAX Call */
-        var myURL1 = "https://api.polygon.io/v1/historic/forex/" + baseCurrency + convertCurrency + "/company?apiKey=" + apiKey;
-        /* Make the AJAX call */
-        let myCalcObject = await fetch(myURL);
-        /* Check the status */
        
        
         /* URL for AJAX Call */
-        var myURL2 = "https://api.polygon.io/v1/historic/forex/" + baseCurrency + "/" + convertCurrency + "/range/1/day/" + FromDate + "/" + ToDate + "?unadjusted=false&sort=asc&limit=32&apiKey=" + apiKey;
+        var myURL2 = "https://api.polygon.io/v2/aggs/ticker/" + "C:" + baseCurrency + convertCurrency + "/range/1/day/" + FromDate + "/" + ToDate + "?adjusted=true&sort=asc&limit=120&apiKey=" + apiKey;
         /* Make the AJAX call */
         var msg2Object = await fetch(myURL2);
         /* Check the status */
@@ -95,25 +88,8 @@ async function GetStock() {
                     }
                 }
 
-                var stockvaluetable = "";
-                if (numdays > 0) {
-                    stockvaluetable = stockvaluetable + "<table><caption>Stock Price</caption><tr><th>Date</th><th>Price</th></tr>";
-                    for (var i = 0; i < numdays; i++) {
-                        stockvaluetable = stockvaluetable + "<tr><td>" + stockdate[i] + "</td><td>" + stockvalue[i] + "</td></tr>";
-                    }
-                    stockvaluetable = stockvaluetable + "</table>"
-                    document.getElementById("StockValueTable").innerHTML = stockvaluetable;
-                }
-                
-                var stockvolumetable = "";
-                if (numdays > 0) {
-                    stockvolumetable = stockvolumetable + "<table><caption>Stock Volume</caption><tr><th>Date</th><th>Volume</th></tr>";
-                    for (var i = 0; i < numdays; i++) {
-                        stockvolumetable = stockvolumetable + "<tr><td>" + stockdate[i] + "</td><td>" + stockvolume[i] + "</td></tr>";
-                    }
-                    stockvolumetable = stockvolumetable + "</table>"
-                    document.getElementById("StockVolumeTable").innerHTML = stockvolumetable;
-                }
+           
+              
 
                 var ctx0 = document.getElementById("chartjs-0");
                 var myChart = new Chart(ctx0, {
@@ -132,23 +108,7 @@ async function GetStock() {
                     }
                 );
                 
-                var ctx1 = document.getElementById("chartjs-1");
-                var myChart = new Chart(ctx1, {
-                    "type":"line",
-                    "data": {
-                        "labels": stockdate,
-                        "datasets":[{"label":"Stock Volume",
-                        "data": stockvolume,
-                        "fill":false,
-                        "borderColor":"rgb(75, 192, 192)",
-                        "lineTension":0.1}]},
-                        "options":{ 
-                            responsive: false,
-                            maintainAspectRatio: true,
-                        }
-                    }
-                );
-            
+                      
         }
         else {
             /* AJAX completed with error - probably invalid stock ticker symbol */
