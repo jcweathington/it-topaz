@@ -48,7 +48,6 @@ async function GetStock() {
                 var ctx = document.getElementById("chartjs-0");
 
                 var myChart = new Chart(ctx, {
-                    
                     "type":"line",
                     "data": {
                         "labels": forexdate,
@@ -56,15 +55,14 @@ async function GetStock() {
                             "data": forexvalue,
                             "fill": false,
                             "borderColor":"rgb(75, 192, 192)",
-                            "lineTension":0.1}]},
-                        "options":{ 
+                            "lineTension":0.1}]
+                        },
+                    "options":{ 
                         responsive: false,
                         maintainAspectRatio: true,
                         }
                 }
-            );
-              
-                      
+            );                      
         }
         else {
             /* AJAX completed with error - probably invalid stock ticker symbol */
