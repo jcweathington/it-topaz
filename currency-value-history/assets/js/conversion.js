@@ -51,7 +51,7 @@ async function GetStock() {
                     "type":"line",
                     "data": {
                         "labels": forexdate,
-                        "datasets":[{
+                        "datasets":[{"label":"Currency Value History",
                             "data": forexvalue,
                             "fill": false,
                             "borderColor":"rgb(75, 192, 192)",
