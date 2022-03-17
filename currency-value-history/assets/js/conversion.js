@@ -13,53 +13,14 @@ async function GetStock() {
         var apiKey = "iKgRiCkO2Yx3vF8xHcU3XtzxG2FK1Kz8"
         var FromDate = document.getElementById("FromDate").value;
         var ToDate = document.getElementById("ToDate").value;
-
-
-        // Base Currency
-        // Get the value associated with the operator that was checked (USD, MXN, CAD, EUR, CNY)
-        var baseCurrency;
-        if (document.getElementById("USD").checked) {
-            baseCurrency = document.getElementById("USD").value;
-        }
-        if (document.getElementById("MXN").checked) {
-            baseCurrency = document.getElementById("MXN").value;
-        }
-        if (document.getElementById("CAD").checked) {
-            baseCurrency = document.getElementById("CAD").value;
-        }
-        if (document.getElementById("EUR").checked) {
-            baseCurrency = document.getElementById("EUR").value;
-        }
-        if (document.getElementById("CNY").checked) {
-            baseCurrency = document.getElementById("CNY").value;
-        }
-        
-
-        // Convert Currency
-        // Get the value associated with the operator that was checked (USD, MXN, CAD, EUR, CNY)
-        var convertCurrency;
-        if (document.getElementById("USD2").checked) {
-            convertCurrency = document.getElementById("USD2").value;
-        }
-        if (document.getElementById("MXN2").checked) {
-            convertCurrency = document.getElementById("MXN2").value;
-        }
-        if (document.getElementById("CAD2").checked) {
-            convertCurrency = document.getElementById("CAD2").value;
-        }
-        if (document.getElementById("EUR2").checked) {
-            convertCurrency = document.getElementById("EUR2").value;
-        }
-        if (document.getElementById("CNY2").checked) {
-            convertCurrency = document.getElementById("CNY2").value;
-        }
-
-        CalculateResult(baseCurrency, convertCurrency);
-    }
+        var baseCurrency = document.getElementById("baseCurrency").value;
+        var convertCurrency = document.getElementById("convertCurrency").value;
+ }
        
        
         /* URL for AJAX Call */
-        var myURL2 = "https://api.polygon.io/v2/aggs/ticker/" + "C:" + baseCurrency + convertCurrency + "/range/1/day/" + FromDate + "/" + ToDate + "?adjusted=true&sort=asc&limit=120&apiKey=" + apiKey;
+        var myURL2 = "https://api.polygon.io/v2/aggs/ticker/" + "C:" + baseCurrency + convertCurrency + 
+        "/range/1/day/" + FromDate + "/" + ToDate + "?adjusted=true&sort=asc&limit=32&apiKey=" + apiKey;
         /* Make the AJAX call */
         var msg2Object = await fetch(myURL2);
         /* Check the status */
@@ -73,14 +34,12 @@ async function GetStock() {
                     display the returned message */
                 var stockdate = [];
                 var stockvalue = [];
-                var stockvolume = [];
                 var numdays = msg2.results.length;
                 if (numdays > 0) {
                     for (var i = 0; i < numdays; i++) {
                         /* stock close value */
                         stockvalue[i] = msg2.results[i].c;
-                        /* stock volume */
-                        stockvolume[i] = msg2.results[i].v;
+                  
                         /* date is in Unix milleseconds - create a temporary date variable */
                         var tempdate = new Date(msg2.results[i].t);
                         /* extract the date string from the value */
@@ -88,25 +47,25 @@ async function GetStock() {
                     }
                 }
 
-           
-              
+                var ctx = document.getElementById("chartjs-0");
 
-                var ctx0 = document.getElementById("chartjs-0");
-                var myChart = new Chart(ctx0, {
+                var myChart = new Chart(ctx, {
                     "type":"line",
                     "data": {
-                        "labels": stockdate,
-                        "datasets":[{"label":"Stock Close",
-                        "data": stockvalue,
-                        "fill":false,
-                        "borderColor":"rgb(75, 192, 192)",
-                        "lineTension":0.1}]},
-                        "options":{ 
-                            responsive: false,
-                            maintainAspectRatio: true,
-                        }
+                        "labels": dates,
+                        "datasets":[{
+                            "data": values,
+                            fill: false
+                        }]
+                    },
+                    "options":{ 
+                        responsive: false,
+                        maintainAspectRatio: true,
                     }
-                );
+                });
+              
+
+                
                 
                       
         }
