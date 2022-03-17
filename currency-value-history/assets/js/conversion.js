@@ -19,7 +19,7 @@ async function GetStock() {
        
        
         /* URL for AJAX Call */
-        var myURL2 = "https://api.polygon.io/v2/aggs/ticker/" + "C:" + baseCurrency + convertCurrency + 
+        var myURL2 = "https://api.polygon.io/v2/aggs/ticker/C:" + baseCurrency + convertCurrency + 
         "/range/1/day/" + FromDate + "/" + ToDate + "?adjusted=true&sort=asc&limit=32&apiKey=" + apiKey;
         /* Make the AJAX call */
         var msg2Object = await fetch(myURL2);
@@ -39,7 +39,6 @@ async function GetStock() {
                     for (var i = 0; i < numdays; i++) {
                         /* stock close value */
                         forexvalue[i] = msg2.results[i].c;
-                  
                         /* date is in Unix milleseconds - create a temporary date variable */
                         var tempdate = new Date(msg2.results[i].t);
                         /* extract the date string from the value */
@@ -52,13 +51,13 @@ async function GetStock() {
                 var myChart = new Chart(ctx, {
                     "type":"line",
                     "data": {
-                        "labels": dates,
+                        "labels": forexdate,
                         "datasets":[{
-                            "data": values,
-                            fill: false
-                        }]
-                    },
-                    "options":{ 
+                            "data": forexvalue,
+                            "fill": false,
+                            "borderColor":"rgb(75, 192, 192)",
+                            "lineTension":0.1}]},
+                        "options":{ 
                         responsive: false,
                         maintainAspectRatio: true,
                     }
