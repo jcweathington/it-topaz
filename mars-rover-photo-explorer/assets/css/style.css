@@ -1,0 +1,63 @@
+.formcontainer {
+    width: 1000px;
+    padding: 5px;
+}
+
+.formlabel {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    padding: 5px;
+}
+
+.error {
+    color: red;
+    padding-left: 5px;
+}
+
+table {
+    border-collapse: collapse
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid black;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.img-container {
+  float: left;
+  width: 40%;
+  padding: 20px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.notification {
+    animation-direction:normal;
+    text-align: center;
+    background: rgb(253, 120, 10);
+    width: 300px;
+    padding: 1em;
+    border-radius: 20px;
+    font-size: 1.5em;
+    position: relative;
+    animation: myfirst 5s infinite;
+  }
+
+  @keyframes myfirst {
+    0%   {background: rgb(253, 120, 10); left: 0px; top: 0px;}
+    25%  {background: yellow; left: 200px; top: 0px;}
+    50%  {background: rgb(253, 120, 10); left: 200px; top: 400px;}
+    75%  {background: yellow; left: 0px; top: 400px;}
+    100% {background: rgb(253, 120, 10); left: 0px; top: 0px;}
+  }
