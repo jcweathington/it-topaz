@@ -15,12 +15,11 @@ async function GetStock() {
         var ToDate = document.getElementById("ToDate").value;
         var baseCurrency = document.getElementById("baseCurrency").value;
         var convertCurrency = document.getElementById("convertCurrency").value;
- }
+ 
        
        
         /* URL for AJAX Call */
-        var myURL2 = "https://api.polygon.io/v2/aggs/ticker/C:" + baseCurrency + convertCurrency + 
-        "/range/1/day/" + FromDate + "/" + ToDate + "?adjusted=true&sort=asc&limit=32&apiKey=" + apiKey;
+        var myURL2 = "https://api.polygon.io/v2/aggs/ticker/C:" + baseCurrency + convertCurrency + "/range/1/day/" + FromDate + "/" + ToDate + "?adjusted=true&sort=asc&limit=32&apiKey=" + apiKey;
         /* Make the AJAX call */
         var msg2Object = await fetch(myURL2);
         /* Check the status */
@@ -49,6 +48,7 @@ async function GetStock() {
                 var ctx = document.getElementById("chartjs-0");
 
                 var myChart = new Chart(ctx, {
+                    
                     "type":"line",
                     "data": {
                         "labels": forexdate,
@@ -60,12 +60,10 @@ async function GetStock() {
                         "options":{ 
                         responsive: false,
                         maintainAspectRatio: true,
-                    }
-                });
+                        }
+                }
+            );
               
-
-                
-                
                       
         }
         else {
@@ -74,7 +72,7 @@ async function GetStock() {
             return
         }
     }
- 
+}
 
 function ClearForm() {
     document.getElementById("baseCurrency").value = "";
