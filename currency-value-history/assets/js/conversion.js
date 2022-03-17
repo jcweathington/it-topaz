@@ -32,18 +32,18 @@ async function GetStock() {
                display the returned message */
                 /* Your code to process the result goes here  
                     display the returned message */
-                var stockdate = [];
-                var stockvalue = [];
+                var forexdate = [];
+                var forexvalue = [];
                 var numdays = msg2.results.length;
                 if (numdays > 0) {
                     for (var i = 0; i < numdays; i++) {
                         /* stock close value */
-                        stockvalue[i] = msg2.results[i].c;
+                        forexvalue[i] = msg2.results[i].c;
                   
                         /* date is in Unix milleseconds - create a temporary date variable */
                         var tempdate = new Date(msg2.results[i].t);
                         /* extract the date string from the value */
-                        stockdate[i] = tempdate.toLocaleDateString();
+                        forexdate[i] = tempdate.toLocaleDateString();
                     }
                 }
 
