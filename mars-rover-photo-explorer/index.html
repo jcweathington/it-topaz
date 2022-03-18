@@ -11,42 +11,65 @@
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
+<!--
     <div class="notification">
         <p>Hey, I'm workin' here!</p>
     </div>
+-->
+  <header></header>
+    <h2>Mars Rover Photo Explorer</h2>
+  </header>
+    <table>
+        <thead>
+          <tr>
+            <th scope="col">Rover</th>
+            <th scope="col">Mission Start</th>
+            <th scope="col">Mission End</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>Curiosity</td>
+          <td>08/06/2012</td>
+          <td>09/28/2019</td>
+        </tr>
+        <tr>
+          <td>Opportunity</td>
+          <td>01/26/2024</td>
+          <td>06/11/2018</td>
+        </tr>
+        <tr>
+          <td>Spirit</td>
+          <td>01/05/2004</td>
+          <td>03/21/2004</td>
+        </tr>
+        </table>
     <form id="myform">
         <div class="formcontainer">
-            <h2>Mars Rover Photo Explorer</h2>
-            <label for="StockSymbol" class="formlabel" >Enter Symbol: </label>
-            <!--<label for="DisplayStock" class="formlabel" ></label>-->
-            <input type="text" id="StockSymbol" name="StockSymbol" size="6" maxlength="6"
-                    data-rule-required="true"  data-msg-required="Value is Required">
-            <label class="error" for="StockSymbol" id="StockSymbolError"></label><br>
-            <label class="formlabel">From Date:</label>
-            <input type="date" name="FromDate" id="FromDate" 
-                data-rule-required="true" data-msg-required="From Date is Required">
-            <label id="FromDateError" for="FromDate" class="error"></label>
-            <label class="formlabel">To Date:</label>
-            <input type="date" name="ToDate" id="ToDate" 
-			     data-rule-required="true" data-msg-required="To Date is Required">
-		    <label id="ToDateError" for="ToDate" class="error"></label>
+            <h2>Select a rover and a picture date</h2>
+                <label class="formlabel">Rover: </label>
+                <label for="curiosity">
+                    <input type="radio" name="rover" id="curiosity" value = "curiosity"
+                        data-rule-required="true" data-msg-required="A Rover is Required" />Curiosity
+                </label>
+                <label for="opportunity">
+                    <input type="radio" name="rover" id="opportunity" value = "opportunity">Opportunity
+                </label>
+                <label for="spirit">
+                    <input type="radio" name="rover" id="spirit" value = "spirit">Spirit
+                </label>
+            <label for="rover" class="error" id="RoverError"></label>
             <br><br>
-            <input type="button" value="DisplayStock" id="DisplayStock" name="DisplayStock" onclick="GetStock();">
+
+
+            <label class="formlabel">Picture Date:</label>
+            <input type="date" name="PicDate" id="PicDate" 
+                data-rule-required="true" data-msg-required="Date is Required" />
+            <label id="DateError" for="PicDate" class="error"></label>
+            <br><br>
+            <input type="button" value="search" id="search" name="search" onclick="GetPics();">
             <input type="button" value="Clear" id="Clear" name="Clear" onclick="ClearForm();">
             <hr>
             <br>
-            <label for="company" class="formlabel">Company: </label>
-            <span id="company"></span><br>
-            <label for="address" class="formlabel">Address: </label>
-            <span id="address"></span><br>
-            <label for="employees" class="formlabel">Employees: </label>
-            <span id="employees"></span><br>
-            <label for="ceo" class="formlabel">CEO: </label>
-            <span id="ceo"></span><br>
-            <label for="url" class="formlabel">URL: </label>
-            <a id="url"></a><br>
-            <label for="logo" class="formlabel">Logo: </label>
-            <img id="logo"><br>
             <hr>
 
             <div class="clearfix">

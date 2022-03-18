@@ -51,7 +51,8 @@ async function GetStock() {
                     "type":"line",
                     "data": {
                         "labels": forexdate,
-                        "datasets":[{"label":"Currency Value History",
+                        "datasets":[{
+                            "label": baseCurrency + " to " + convertCurrency,
                             "data": forexvalue,
                             "fill": false,
                             "borderColor":"rgb(75, 192, 192)",
@@ -59,8 +60,13 @@ async function GetStock() {
                         },
                     "options":{ 
                         responsive: false,
-                        maintainAspectRatio: true,
-                        }
+                        maintainAspectRatio: true
+                        },
+                    "title:": {
+                            display: true,
+                            "label": baseCurrency + " to " + convertCurrency
+                          }
+                        
                 }
             );                      
         }

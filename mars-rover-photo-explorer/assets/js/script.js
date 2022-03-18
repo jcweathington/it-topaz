@@ -1,4 +1,4 @@
-async function GetStock() {
+async function GetPics() {
     "use strict";
 
     // Get a reference to the form - Use the ID of the form
@@ -136,18 +136,13 @@ async function GetStock() {
 }
 
 function ClearForm() {
-    document.getElementById("StockSymbol").value = "";
-    document.getElementById("FromDate").value = "";
-    document.getElementById("ToDate").value = "";
-    document.getElementById("company").innerHTML = "";
-    document.getElementById("address").innerHTML = "";
-    document.getElementById("employees").innerHTML = "";
-    document.getElementById("ceo").innerHTML = "";
-    document.getElementById("url").innerHTML = "";
-    document.getElementById("url").href = "";
-    document.getElementById("logo").src = "";
-    document.getElementById("StockValueTable").innerHTML = "";
-    document.getElementById("StockVolumeTable").innerHTML = "";
+    document.getElementById("curiosity").checked = false;
+    document.getElementById("opportunity").checked = false;
+    document.getElementById("spirit").value = false;
+    document.getElementById("PicDate").value = false;
+    document.getElementById("RoverError").innerHTML = "";
+    document.getElementById("DateError").innerHTML = "";
+
     
     /* Ugly Code to Erase Canvas */
     var canvas0 = document.getElementById("chartjs-0");
