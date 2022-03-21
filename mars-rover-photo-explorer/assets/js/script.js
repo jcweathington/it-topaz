@@ -13,8 +13,8 @@ async function GetPics() {
         var apiKey = "5HXizXfkzOxxUmN1iglAWI6DKSE2IftCPZN0FYWv";
         var PicDate = document.getElementById("PicDate").value;
         
-        // From Units
-        // Get the value associated with the operator that was checked (cm, m, km, in, ft, yd, mi)
+        
+        // Get the value associated with the Rover that was checked (curiosity, oportunity, spirit)
         var rover;
         if (document.getElementById("curiosity").checked) {
             rover = document.getElementById("curiosity").value;
