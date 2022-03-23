@@ -1,3 +1,18 @@
+function getCuriosity() {
+    document.getElementById("PicDate").value = "2012-08-06";
+}
+
+
+function getOpportunity() {
+    document.getElementById("PicDate").value = "2004-01-26";
+}
+
+
+function getSpirit() {
+    document.getElementById("PicDate").value = "2004-01-05";
+}
+
+
 async function GetPics() {
     "use strict";
 
@@ -12,8 +27,8 @@ async function GetPics() {
         
         var apiKey = "5HXizXfkzOxxUmN1iglAWI6DKSE2IftCPZN0FYWv";
         var PicDate = document.getElementById("PicDate").value;
-        
-        
+      
+
         // Get the value associated with the Rover that was checked (curiosity, oportunity, spirit)
         var rover;
         if (document.getElementById("curiosity").checked) {
@@ -28,7 +43,7 @@ async function GetPics() {
 
  
         /* URL for AJAX Call */
-        var myURL2 = "https://api.nasa.gov/mars-photos/api/v1/rovers/" + rover + "/photos?earth_date=" + PicDate + "&api_key=" + apiKey;
+        var myURL2 = "https://api.nasa.gov/mars-photos/api/v1/rovers/" + rover + "/photos?earth_date=" + PicDate + "&page=1&api_key=" + apiKey;
         /* Make the AJAX call */
         var msgObject = await fetch(myURL2);
         /* Check the status */
@@ -41,16 +56,31 @@ async function GetPics() {
                display the returned message */
                 /* Your code to process the result goes here  
                     display the returned message */
-                    for (i = 0; i < 25; i++) {
+                    var totalpics = msg.photos.length;
+                    if (totalpics > 0){
+                        for (var i = 0; i < 25; i++) {
+                            if (i < totalpics){
                         // Note how we construct the name for image1, image2, etc...this sets the image source
-                        document.getElementById("image" + i).src = msg.photos[i].img_src;
-                       // do something to set the tool tip = msg.photos[i].camera.full_name;
-                    }
-            
+                            document.getElementById("image" + i).src = msg.photos[i].img_src;
+                            document.getElementById("display" + i).href = msg.photos[i].img_src;
+                            document.getElementById("found").innerHTML = msg.photos.length + " photos found";
+                        /*do something to set the tool tip = msg.photos[i].camera.full_name;*/
+                            document.getElementById("image" + i).title = msg.photos[i].camera.full_name;
+                            document.getElementById("fulldisplay").innerHTML = "Click a photo to display full size";
+                            }
+                            
+                            else {
+                            document.getElementById("image" + i).src = "#";
+						    document.getElementById("display" + i).href = "#";
+						    document.getElementById("image" + i).style.display = "none";
+                            }      
+                        }               
+                    }          
         }
+
         else {
-            /* AJAX completed with error - probably invalid stock ticker symbol */
-            alert("Photos Not Found - Status: " + msg2Object.status)
+            /* AJAX completed with error - probably not photos found */
+            alert("Rover Not Found - Status: " + msgObject.status)
             return
         }
     }
@@ -64,12 +94,4 @@ function ClearForm() {
     document.getElementById("RoverError").innerHTML = "";
     document.getElementById("DateError").innerHTML = "";
 
-    
-    /* Ugly Code to Erase Canvas */
-    var canvas0 = document.getElementById("chartjs-0");
-    var context0 = canvas0.getContext('2d');    
-    context0.clearRect(0, 0, canvas0.width, canvas0.height);
-    var canvas1 = document.getElementById("chartjs-1");
-    var context1 = canvas1.getContext('2d');    
-    context1.clearRect(0, 0, canvas1.width, canvas1.height);
 }
