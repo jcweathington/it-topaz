@@ -1,6 +1,30 @@
+
+
+.container,
+table,
+.formcontainer,
+header{
+  margin: 40px auto;
+  max-width: 1000px;
+  background: yellow;
+}
+
+header{
+  text-align: center;
+}
+
+.formlabel{
+   background: green;
+}
+
 .formcontainer {
-    width: 1000px;
     padding: 5px;
+    background: pink;
+    text-align: left;
+}
+
+.wrap{
+    background: blue;
 }
 
 .formlabel {
@@ -42,22 +66,6 @@ tr:nth-child(even) {
 }
 
 
-.notification {
-    animation-direction:normal;
-    text-align: center;
-    background: rgb(253, 120, 10);
-    width: 300px;
-    padding: 1em;
-    border-radius: 20px;
-    font-size: 1.5em;
-    position: relative;
-    animation: myfirst 5s infinite;
-  }
-
-  @keyframes myfirst {
-    0%   {background: rgb(253, 120, 10); left: 0px; top: 0px;}
-    25%  {background: yellow; left: 200px; top: 0px;}
-    50%  {background: rgb(253, 120, 10); left: 200px; top: 400px;}
-    75%  {background: yellow; left: 0px; top: 400px;}
-    100% {background: rgb(253, 120, 10); left: 0px; top: 0px;}
-  }
+#rovers img[src="#"]{
+  display: none;
+}

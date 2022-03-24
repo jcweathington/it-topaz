@@ -11,11 +11,7 @@
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<!--
-    <div class="notification">
-        <p>Hey, I'm workin' here!</p>
-    </div>
--->
+<div class="container">
   <header>
     <h2>Mars Rover Photo Explorer</h2>
   </header>
@@ -45,6 +41,7 @@
         </table>
     <form id="myform">
         <div class="formcontainer">
+          <div class="wrap">
             <h2>Select a rover and a picture date</h2>
 
                 <label class="formlabel">Rover: </label>
@@ -69,6 +66,8 @@
             <input type="button" value="search" id="search" name="search" onclick="GetPics();">
             <input type="button" value="Clear" id="Clear" name="Clear" onclick="ClearForm();">
             <br>
+          </div><!--.wrap-->
+
             <p id="found"></p>
             <hr>
             <br>
@@ -124,8 +123,9 @@
                 <img id="image23" src="#" height="100" width="100" alt="rover"></a>
               <a id="display24" href="#">
                 <img id="image24" src="#" height="100" width="100" alt="rover"></a>
-          </div> 
-        </div>
+          </div><!--.rovers-->
+        </div><!--.formcontainer-->
+      </div><!--.container-->
     </form>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
