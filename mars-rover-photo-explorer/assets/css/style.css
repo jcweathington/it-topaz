@@ -14,45 +14,85 @@ html {
 
 .container,
 table,
-.formcontainer,
 header{
-  margin: 40px auto;
+  margin: auto;
   max-width: 1000px;
-  background: yellow;
 }
 
 
 
 /* ---------------Global Styles----------------- */
 
+body{
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  background: url("../img/milkyway.jpg") 
+  no-repeat center center fixed; 
+  background-size: cover;
+}
+
+
+.container{
+  background: rgb(255,255,255, .2);
+  border-radius: 30px;
+}
+
+
 header{
   text-align: center;
+  margin-top: 60px;
+}
+
+header h2{
+  padding-top: 70px;
 }
 
 h2{
   font-size: 2.5em;
+  font-weight: 400;
 }
 
-.formlabel{
-   background: green;
-}
 
 .formcontainer {
     padding: 5px;
-    background: pink;
-    text-align: left;
+    text-align: center;
 }
 
-.wrap{
-    background: blue;
-}
+
 
 .formlabel {
     display: inline-block;
-    width: 100px;
-    text-align: right;
-    padding: 5px;
+    padding: 10px;
+    background: rgb(255,255,255, .5);
+    border-radius: 10px;
+    font-weight: 400;
 }
+
+
+label[for="curiosity"],
+label[for="opportunity"],
+label[for="spirit"]{
+  background: rgb(255,255,255, .5);
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px 13px 10px 10px;
+  font-weight: 400;
+}
+
+
+input[type="date"]{
+  height: 38px;
+}
+
+
+#found,
+#fulldisplay{
+  color: white;
+  font-weight: 400;
+  text-shadow: 1px 1px #000;
+  font-size: 1.5em;
+}
+
 
 .error {
     color: red;
@@ -61,6 +101,7 @@ h2{
 
 table {
     border-collapse: collapse;
+    background: rgb(255,255,255, .4);
 }
 
 th, td {
@@ -69,9 +110,10 @@ th, td {
   border: 1px solid black;
 }
 
-tr:nth-child(even) {
-    background-color: #f2f2f2;
+td{
+  font-weight: 400;
 }
+
 
 .img-container {
   float: left;
@@ -88,4 +130,9 @@ tr:nth-child(even) {
 
 #rovers img[src="#"]{
   display: none;
+}
+
+
+#rovers {
+  padding-bottom: 40px;
 }
