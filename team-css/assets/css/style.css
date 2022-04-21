@@ -1,0 +1,345 @@
+
+/*Fonts:
+    font-family: tablet-gothic, sans-serif;
+    font-family: spade, sans-serif;
+    font-family: campaign-slab, serif;
+
+    
+*/
+
+
+/*Color Scheme
+    #CFD5D5 - grey    - body
+    #425D68 - drkBlue - links
+*/
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+    font-size: 100%;
+  }
+  
+  
+  /* ---------------Utility Styles----------------- */
+  .container{
+    margin: 40px auto;
+    background-color: grey;
+  }
+  
+  ul{
+    list-style: none;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  .post{
+    background: pink;
+  }
+  
+  /* ---------------Responsive Images----------------- */
+  
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+  
+  /* ---------------Global Styles----------------- */
+  
+  body{
+    background-color: #F2F2F2;
+    font-size: 1em;
+    margin: 0;
+  }
+  
+  
+  h1{
+    font-size: 2em;
+    font-family: campaign-slab, serif; 
+    font-weight: 500;
+  }
+  
+  
+  h2{
+    font-size: 1.7em;
+    font-family: campaign-slab, serif; 
+    font-weight: 500;
+  }
+  
+  
+  h3{
+    font-size: 1.5em;
+    font-family: campaign-slab, serif; 
+    font-weight: 500;
+  }
+  
+  
+  .articles,
+  .hamburger,
+  .directions,
+  footer,
+  .chart-container{
+    margin: auto 10px;
+  }
+  
+  
+  .articles,
+  footer,
+  .brand,
+  .contact,
+  .additional-info,
+  .chart-container,
+  .post{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  
+  
+  
+  /*--HEADER.PRIMARY-BANNER---*/
+  
+  header.primary{
+    background:url("https://www.buffaloriver.com/wp-content/uploads/2022/02/FLOAT-header-648x426.jpg.webp");
+    no-repeat center center fixed; 
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  
+  .bottom-right{
+    align-self: flex-end;
+    padding: 1em;
+    line-height: .8;
+    color: white;
+  }
+  
+  
+  
+  /*--MENU & NAVIGATION---*/
+  /* The side navigation menu */
+  .menu {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #000; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    font-family: campaign-slab, serif;
+  }
+  
+  
+  .menu a:link, .menu a:visited{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #FFF;
+  display: block;
+  transition: .5s;
+  }
+  
+  
+  .menu a:hover, .menu a:active {
+  color: rgba(255, 106, 10, 1);
+  font-weight: 700;
+  }
+  
+  
+  /* Position and style the close button (top right corner) */
+  .menu .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  }
+  
+  
+  .hamburger{
+  color: #D9C196;
+  text-shadow: .2px .4px #2D3340;
+  border:0;
+  font-size: 1.3em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  }
+  
+  
+  .fixed-wrap{
+  position: fixed;
+  width: 320px;
+  height: 50px;
+  background-color:rgb(255,255,255, .8);
+  border: 0px;
+  box-shadow: 0px 4px 5px 0px rgb(0 0 0 / 20%);
+  -webkit-box-shadow: 0px 4px 5px 0px rgb(0 0 0 / 20%);
+  -moz-box-shadow: 0px 4px 5px 0px rgb(0 0 0 / 20%);
+  z-index: 1;
+  }
+  
+  
+  /*--RIVER LEVELS---*/
+  
+  .charts:nth-child(odd) {
+    border: 2px #732222 solid;
+    padding-right: .5em;
+    width:100%;
+  }
+  
+  
+  .charts:nth-child(even) {
+    border: 2px #3591AF solid;
+    padding-right: .5em;
+    width:100%;
+  }
+  
+  
+  .charts {
+    position: relative;
+    margin: 40px auto;
+    height: 50vh;
+    width: 90vw;
+    max-width: 549px;
+  }
+  
+  
+  
+  /*--CAROUSEL ELEMENTS---*/
+  .carousel{
+      margin:40px auto;
+      width:70vw;
+      /* Set Max Content Width */
+      max-width:500px;
+  }
+  
+  
+  .carousel img{
+      margin: auto;
+      border-radius: 20px;
+      border: 1px solid  rgba(6, 15, 94, 0.253);
+  }
+  
+  
+  .carousel div {
+      width: 100%;
+      height: auto;
+      background: rgba(6, 15, 94, 0.253);
+      border-radius: 20px;
+  }
+  
+  
+  /* Customize Previous/Next/Dots/Autoplay */
+  
+  .slick-autoplay-toggle-button,
+  .slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+  .slick-dots li button .slick-dot-icon,
+  .slick-dots li.slick-active button .slick-dot-icon {
+    color: #3591AF;
+  }
+  
+  
+  .slick-prev {
+      color: red;
+      left: -30px;
+  }
+  
+  /* Customize Previous/Next/Dots/Autoplay - Active State */
+  
+  .slick-next:focus .slick-next-icon,
+  .slick-next:focus .slick-prev-icon,
+  .slick-prev:focus .slick-next-icon,
+  .slick-prev:focus .slick-prev-icon,
+  .slick-dots li button:focus .slick-dot-icon:before,
+  .slick-dots li.slick-active button:focus .slick-dot-icon,
+  .slick-autoplay-toggle-button:focus 
+  {
+      color:black;
+  }
+  
+  
+  
+  
+  
+  /*--ADDITIONAL ELEMENTS---*/
+  aside{
+    font-size:1.5em;
+    font-family: campaign-slab, serif;
+  }
+  
+  .post header{
+    text-align: center;
+  }
+  
+  
+  
+  /*--MEDIA QUERIES FOR SCREEN SIZES---*/
+  
+  @media screen and (min-width: 700px){
+      /* Styles for Tablets */
+    body{
+      font-size: 1.5em;
+    }
+    
+  }
+  
+  
+  @media screen and (min-width: 1200px) {
+      /* Styles for Desktops */
+    
+      .charts {
+         margin: 20px auto;
+         height: 400px;
+         width: 400px;
+    }
+    
+      .chart-container{
+          display: grid;
+          grid-template-columns: repeat(2, 500px);
+          gap: 10px;
+      }
+    
+    
+    .post header{
+      grid-area: post-header;
+      text-align: center;
+    }
+    
+   
+    .carousel{
+      grid-area: carousel;
+    }
+    
+    
+    .info{
+      grid-area: info;
+    }
+    
+    
+    .post{
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr)); minmax(0, 1fr));
+      gap: 10px;
+      grid-template-areas:
+        "post-header post-header"
+        "info carousel"   
+    }
+  
+    
+    
+    }
