@@ -12,7 +12,7 @@
     #CFD5D5 - grey    - body
     #425D68 - drkBlue - links
     #3591AF - lgtBue  - background .info, carousel buttons
-    
+    #E8C517 - yellow  - aside font
 */
 html {
     box-sizing: border-box;
@@ -29,6 +29,7 @@ html {
   
   .container{
       margin: 0 auto;
+      max-width: 1800px;
   }
   
   ul{
@@ -80,7 +81,8 @@ html {
   }
   
   
-  .articles .post,
+  .articles .post:not(#canoeing, #lodging, #activities),
+  .info,
   .articles header,
   .hamburger,
   .directions,
@@ -280,10 +282,14 @@ html {
     font-size:1.2em;
     font-family: campaign-slab, serif;
     margin: 20px auto;
-    background: #425D68;
+    background: #043b7a;
     text-align: center;
     width: 100%;
     padding: 1em .3em;
+  }
+
+  aside a{
+    color: #E8C517;
   }
   
   .post header,
@@ -359,6 +365,7 @@ html {
       background: #3591AF;
       color: #FFF;
       padding: 1.5em;
+      margin: 0;
       height: 100%;
       display: flex;
       flex-direction: column;
