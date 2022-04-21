@@ -11,6 +11,8 @@
 /*Color Scheme
     #CFD5D5 - grey    - body
     #425D68 - drkBlue - links
+    #3591AF - lgtBue  - background .info, carousel buttons
+    
 */
 html {
     box-sizing: border-box;
@@ -24,9 +26,9 @@ html {
   
   
   /* ---------------Utility Styles----------------- */
+  
   .container{
-    margin: 40px auto;
-    background-color: grey;
+      margin: 0 auto;
   }
   
   ul{
@@ -37,9 +39,7 @@ html {
     text-decoration: none;
   }
   
-  .post{
-    background: pink;
-  }
+  
   
   /* ---------------Responsive Images----------------- */
   
@@ -53,7 +53,7 @@ html {
   /* ---------------Global Styles----------------- */
   
   body{
-    background-color: #F2F2F2;
+    background-color: #FFF;
     font-size: 1em;
     margin: 0;
   }
@@ -80,7 +80,8 @@ html {
   }
   
   
-  .articles,
+  .articles .post,
+  .articles header,
   .hamburger,
   .directions,
   footer,
@@ -108,7 +109,7 @@ html {
   /*--HEADER.PRIMARY-BANNER---*/
   
   header.primary{
-    background:url("https://www.buffaloriver.com/wp-content/uploads/2022/02/FLOAT-header-648x426.jpg.webp");
+    background:url("../img/DSC08193.jpg");
     no-repeat center center fixed; 
     background-size: cover;
     height: 50vh;
@@ -183,7 +184,7 @@ html {
   
   .fixed-wrap{
   position: fixed;
-  width: 320px;
+  width: 100%;
   height: 50px;
   background-color:rgb(255,255,255, .8);
   border: 0px;
@@ -221,27 +222,25 @@ html {
   
   
   /*--CAROUSEL ELEMENTS---*/
-  .carousel{
-      margin:40px auto;
-      width:70vw;
-      /* Set Max Content Width */
-      max-width:500px;
+  
+  .carousel-container{
+    background-color: yellow;
+    width: 70vw;
   }
+
+  .carousel {
+    margin:40px auto;
+    width: 100%;
+    height: auto;
+  }
+
   
-  
-  .carousel img{
+  .carousel-container img{
       margin: auto;
-      border-radius: 20px;
       border: 1px solid  rgba(6, 15, 94, 0.253);
   }
   
   
-  .carousel div {
-      width: 100%;
-      height: auto;
-      background: rgba(6, 15, 94, 0.253);
-      border-radius: 20px;
-  }
   
   
   /* Customize Previous/Next/Dots/Autoplay */
@@ -278,11 +277,17 @@ html {
   
   /*--ADDITIONAL ELEMENTS---*/
   aside{
-    font-size:1.5em;
+    font-size:1.2em;
     font-family: campaign-slab, serif;
+    margin: 20px auto;
+    background: #425D68;
+    text-align: center;
+    width: 100%;
+    padding: 1em .3em;
   }
   
-  .post header{
+  .post header,
+  .articles header{
     text-align: center;
   }
   
@@ -290,17 +295,40 @@ html {
   
   /*--MEDIA QUERIES FOR SCREEN SIZES---*/
   
-  @media screen and (min-width: 700px){
+  @media screen and (min-width: 667px){
       /* Styles for Tablets */
     body{
       font-size: 1.5em;
     }
+    
+    header.primary{
+      height: 80vh;
+    }
+
+  
+
+    .carousel-container{
+        width: auto;
+      }
+
+
+      .carousel{
+        width: 100vw;
+        max-width: 90%;
+    }
+    
     
   }
   
   
   @media screen and (min-width: 1200px) {
       /* Styles for Desktops */
+  
+  
+      header.primary{
+          height: 100vh;
+        }
+  
     
       .charts {
          margin: 20px auto;
@@ -321,20 +349,29 @@ html {
     }
     
    
-    .carousel{
+    .carousel-container{
       grid-area: carousel;
     }
     
     
     .info{
       grid-area: info;
+      background: #3591AF;
+      color: #FFF;
+      padding: 1.5em;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
     }
     
+   
     
     .post{
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr)); minmax(0, 1fr));
-      gap: 10px;
+      background: pink;
       grid-template-areas:
         "post-header post-header"
         "info carousel"   
