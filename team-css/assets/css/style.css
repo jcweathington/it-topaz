@@ -13,6 +13,7 @@
     #425D68 - drkBlue - links
     #3591AF - lgtBue  - background .info, carousel buttons
     #E8C517 - yellow  - aside font
+    #2C7366 - green   - background
 */
 html {
     box-sizing: border-box;
@@ -226,7 +227,7 @@ html {
   /*--CAROUSEL ELEMENTS---*/
   
   .carousel-container{
-    background-color: yellow;
+    background-color: #2C7366;
     width: 70vw;
   }
 
@@ -251,7 +252,7 @@ html {
   .slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
   .slick-dots li button .slick-dot-icon,
   .slick-dots li.slick-active button .slick-dot-icon {
-    color: #3591AF;
+    color: #E8C517;;
   }
   
   
@@ -282,14 +283,14 @@ html {
     font-size:1.2em;
     font-family: campaign-slab, serif;
     margin: 20px auto;
-    background: #043b7a;
+    background: #E8C517;
     text-align: center;
     width: 100%;
     padding: 1em .3em;
   }
 
   aside a{
-    color: #E8C517;
+    color: #2C7366
   }
   
   .post header,
@@ -378,12 +379,14 @@ html {
     .post{
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr)); minmax(0, 1fr));
-      background: pink;
       grid-template-areas:
         "post-header post-header"
         "info carousel"   
     }
   
+    aside{
+      margin: 0;
+    }
     
     
     }
