@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Buffalo River Adventurers</title>
+  <meta name="description" content="Buffalo River Adventurers love the outdoors and strive to provide outdoor enthusiasts with access to wilderness activities in and around the Buffalo National River. Plan your experience in our cozy, fully furnished cabins, enjoy an adventurous river ride in our canoes, and explore other activities with Buffalo River Adventurers.">
+  <meta name="author" content="Buffalo River Adventurers" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  
+  <!-- Adobe Fonts -->
+  <link rel="stylesheet" href="https://use.typekit.net/wtn3vfh.css">
+  <script src="https://kit.fontawesome.com/a3c5a6b02f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body onload="displayLevels();">
+  <div class="container">
+ <header id="header" class="primary">
+        <div class="fixed-wrap">
+          <div class="banner">
+            <a href="javascript:void(0);" class="icon">
+            <span class="hamburger" onclick="openNav()">&#9776;</span>
+            </a>
+            <nav class="menu">
+              <ul>
+                <li><a href="javascript:void(0);" class="closebtn" onclick="closeNav()">&times;</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="planexperience.html">Plan Your Experience</a></li>
+                <li><a href="canoerental.html">Canoeing</a></li>
+                <li><a href="lodging.html">Lodging</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="riverlevels.html">Buffalo River Levels</a></li>
+                <li><a href="https://www.google.com/maps/place/36%C2%B001'33.6%22N+93%C2%B021'54.6%22W/@36.0261133,-93.3654997,19z/data=!4m5!3m4!1s0x0:0x5a8038d03ba84f9d!8m2!3d36.026009!4d-93.365169">Directions</a></li>
+              </ul>
+           </nav>
+         </div><!--banner-->
+       </div>
+    <!--full-width images-->
+    <div id="riverlevels"class="bottom-right">
+      <h1>Buffalo River Levels</h1>
+    </div>
+      </header>
+ <section class="chart-container">
+  <div class="post-header">
+   <header>
+     <h1>Check Out What's Current</h1>
+   </header>
+   <p>Float or not to float?</p>
+  </div>
+  <div class="charts">
+    <canvas id="chartjs-0"></canvas>
+  </div>
+   
+  <div class="charts">
+    <canvas id="chartjs-1"></canvas>
+  </div>
+  
+  <div class="charts">
+    <canvas id="chartjs-2"></canvas>
+  </div>
+   
+  <div class="charts">
+    <canvas id="chartjs-3"></canvas>
+  </div>
+
+  <div class="charts">
+    <table>
+      <tr>
+        <th>River Height in Feet</th>
+        <th> To Float</th>
+      </tr>
+      <tr>
+        <th>1.2 and Below</th>
+        <th>1.3 to 1.7</th>
+        <th>1.8 to 1.9 </th>
+        <th>2.0 to 2.4</th>
+        <th>2.5 to 2.9</th>
+        <th>3.0 to 3.6</th>
+        <th>4.1 to 4.5</th>
+        <th>4.6 to 5.0</th>
+      </tr>
+      <tr>
+        <th>Too low for canoes to float.</th>
+        <th>Floatable for a short canoe trip but expect some dragging.</th>
+        <th>Too low for rafts, but good for low water canoeing. </th>
+        <th>Mild white waters and may be challenging for beginners because of rocks and other obstacles. </th>
+        <th>Not a casual float, but sailors with experience can manage.</th>
+        <th>Too strong for canoes, but depending on what they are, other vessels may go on. </th>
+        <th>High difficulty sailing, we do not suggest going unless your skills are confirmed. </th>
+        <th>Danger! Too much water for sailing and the surrounding area may be flooded. </th>
+      </tr>
+     </table>
+
+
+     <div class="button your-plan">
+        <div class="button-container">
+        <a href="">Plan Your Experience</a>
+      </div>
+ </section>
+    <footer>
+        <div class="brand">
+    <h4>Buffalo River Adventurers</h4>
+    <h5>Where Your Adventure Awaits</h5>
+    </div>
+        <div class="location">
+          <address>
+            Street city state zip
+          </address>
+          </br>
+        </div>
+        <div class="additional-info">
+         <a href="" title="">Directions</a>
+         <a href=" " class=“btn” >Current River Levels</a>
+        </div>
+        <div class="contact">
+         <p>Phone</p>
+         <a href="" title="">Contact Us</a>
+        </div>
+        <div class=social-media-links>
+        <h6>&copy; 2022 Buffalo River Adventurers</h6>
+        </div>
+   </footer>
+ <!--fixed to bottom button--> 
+  </div><!--.container-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/prism.min.js"></script> 
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

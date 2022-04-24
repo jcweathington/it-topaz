@@ -58,6 +58,7 @@ body{
   background-color: #FFF;
   font-size: 1em;
   margin: 0;
+  font-family: tablet-gothic, sans-serif;
 }
 
 
@@ -92,7 +93,7 @@ h3{
 .articles header,
 .hamburger,
 .directions,
-footer,
+footer div,
 .chart-container{
   margin: auto 10px;
 }
@@ -100,6 +101,7 @@ footer,
 
 .articles,
 footer,
+.footer-container,
 .brand,
 .contact,
 .additional-info,
@@ -112,6 +114,11 @@ footer,
 }
 
 
+footer{
+  background-color: #1b252a;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%23f2f2f2' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");  font-size: .75em;
+  color: #FFF;
+}
 
 
 /*--HEADER.PRIMARY-BANNER---*/
@@ -193,7 +200,7 @@ outline:none;
 .fixed-wrap{
 position: fixed;
 width: 100%;
-height: 50px;
+height: 60px;
 background-color:rgb(255,255,255, .8);
 border: 0px;
 box-shadow: 0px 4px 5px 0px rgb(0 0 0 / 20%);
@@ -284,6 +291,9 @@ z-index: 1;
 
 
 /*--ADDITIONAL ELEMENTS---*/
+
+
+
 aside{
   font-size:1.2em;
   font-family: campaign-slab, serif;
@@ -291,7 +301,7 @@ aside{
   background: #E8C517;
   text-align: center;
   width: 100%;
-  padding: 1em .3em;
+  padding: 1em;
 }
 
 aside a{
@@ -301,14 +311,15 @@ aside a{
 #about-us aside,
 #about-us .image{
   margin: 0;
+  padding: 0;
 }
 
 
 #about-us .image{
-  background: pink;
   padding: 0;
   line-height: 0;
 }
+
 
 
 .post header,
@@ -327,9 +338,94 @@ aside a{
 
 .bottom-right.home h2{
   background:#E8C517;
-  padding: 1em;
+  padding: .2em .2em .2em 1em;
   margin: 0;
   width: 100%;
+}
+
+.lodging{
+  background: pink;
+}
+
+
+.your-plan{
+ position: fixed;
+ bottom: 0;
+ width: 100%;
+ height: 60px;
+ background-color:rgb(255,255,255, .7);
+ border: 0px;
+ box-shadow: 0px 4px 5px 0px rgb(0 0 0 / 20%);
+ -webkit-box-shadow: 0px 4px 5px 0px rgb(0 0 0 / 20%);
+ -moz-box-shadow: 0px 4px 5px 0px rgb(0 0 0 / 20%);
+ text-align: center;
+ font-family: spade, sans-serif;
+}
+
+
+.button a{
+margin: 10px auto;
+color: #BF382C;
+font-size: 2em;
+}
+
+.button-container{
+display: flex;
+justify-content: center;  
+}
+
+
+
+address{
+ margin-top: 20px;
+ text-align: center;
+ font-style: normal;
+}
+
+
+.footer-container{
+padding-top: 2em;
+margin:0;
+}
+
+
+.footer-container a:link, .footer-container a:visited{
+color: #FFF;
+text-decoration: underline;
+}
+
+.footer-container a:hover, .footer-container a:active{
+text-decoration: none;
+}
+
+.contact ul,
+.additional-info ul{
+padding: 0;
+margin: 0;
+text-align: center;
+}
+
+
+.additional-info li,
+.contact li{
+margin-bottom: 10px;
+}
+
+
+.brand h4, 
+.brand h5{
+font-family: campaign-slab, serif;
+margin:0;
+}
+
+
+.brand h4{
+font-size: 1.5em;
+}
+
+
+.footer-container h6{
+font-size: .75em;
 }
 
 /*--MEDIA QUERIES FOR SCREEN SIZES---*/
@@ -355,6 +451,10 @@ aside a{
       width: 100vw;
       max-width: 90%;
   }
+
+  .your-plan{
+    display: none;
+  }
   
   
 }
@@ -365,7 +465,7 @@ aside a{
 
 
     header.primary{
-        height: 100vh;
+        height: 98vh;
       }
 
   
@@ -387,7 +487,7 @@ aside a{
     text-align: center;
   }
   
- 
+     
   .carousel-container, .image{
     grid-area: carousel;
   }
@@ -396,30 +496,79 @@ aside a{
   
   .info{
     grid-area: info;
-    background: #3591AF;
+    background: #425D68;
     color: #FFF;
     padding: 1.5em;
     margin: 0;
     height: 100%;
+  }
+
+  
+  .info:not(.about-us){
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
   }
   
+
+  #about-us .info,
+  #lodging .info{
+    font-size: .8em;
+    padding: 1em;
+  }
+
+  
  
   
-  .post{
+  .post:not(.lodging){
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-areas:
       "post-header post-header"
-      "info carousel"   
+      "info carousel";
   }
+
+  
 
   aside{
     margin: 0;
   }
   
+
+  .brand{
+    grid-area: brand;
+  }
+
+  .location{
+    grid-area: location;
+  }
+
+
+  .contact{
+    grid-area: contact;
+  }
+
+
+  .additional-info{
+    grid-area: info;
+  }
+
+
+  .social-media-links{
+    grid-area: media;
+  }
+
+
+  .footer-container{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-areas:
+    "brand brand brand"
+    "info location contact"
+    "media media media";
+    text-align: center;
+    grid-gap: 20px 10px;
+  }
+
   
   }
