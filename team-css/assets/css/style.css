@@ -294,6 +294,21 @@ z-index: 1;
 
 
 
+.contact-us{
+  background: pink;
+
+}
+
+.contact-us-form{
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+
+
+
 aside{
   font-size:1.2em;
   font-family: campaign-slab, serif;
