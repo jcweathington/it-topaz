@@ -287,27 +287,43 @@ z-index: 1;
 }
 
 
-
-
-
-/*--ADDITIONAL ELEMENTS---*/
-
-
-
-.contact-us{
-  background: pink;
-
-}
+/*--ALL ONLINE FORMS--*/
 
 .contact-us-form{
   width: 90%;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
-  height: 100%;
+  padding: 1em;
+}
+
+.contact-hero h1, .contact-hero h2{
+  display: none;
+}
+
+
+#wufoo-zbcnv4r05gcfht{
+  margin: 80px auto;
+  padding: 1em;
+  background-color:rgb(255,255,255, .7);
 }
 
 
 
+header.contact-us-page{
+  background:#FFF;
+  max-height: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-background{
+  background: url(../img/DSC02228.jpg);
+  no-repeat center center fixed; 
+  background-size: cover;
+}
+
+
+/*--ADDITIONAL ELEMENTS---*/
 
 aside{
   font-size:1.2em;
@@ -442,6 +458,18 @@ font-size: 1.5em;
 .footer-container h6{
 font-size: .75em;
 }
+
+
+.map{
+  max-width: 1000px;
+}
+
+.directions{
+  background: pink;
+}
+
+
+
 
 /*--MEDIA QUERIES FOR SCREEN SIZES---*/
 
