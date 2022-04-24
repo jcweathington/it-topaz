@@ -92,7 +92,6 @@ h3{
 .info,
 .articles header,
 .hamburger,
-.directions,
 footer div,
 .chart-container{
   margin: auto 10px;
@@ -105,6 +104,7 @@ footer,
 .brand,
 .contact,
 .additional-info,
+.directions,
 .chart-container,
 .post{
   display: flex;
@@ -290,8 +290,7 @@ z-index: 1;
 /*--ALL ONLINE FORMS--*/
 
 .contact-us-form{
-  width: 90%;
-  max-width: 1000px;
+  width: 100%;
   margin: 0 auto;
   padding: 1em;
 }
@@ -305,6 +304,7 @@ z-index: 1;
   margin: 80px auto;
   padding: 1em;
   background-color:rgb(255,255,255, .7);
+  width: 100%;
 }
 
 
@@ -460,12 +460,12 @@ font-size: .75em;
 }
 
 
-.map{
-  max-width: 1000px;
-}
-
-.directions{
+.directions-container{
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
   background: pink;
+
 }
 
 
@@ -531,7 +531,9 @@ font-size: .75em;
   }
   
      
-  .carousel-container, .image{
+  .carousel-container, 
+  .image,
+  .directions-container{
     grid-area: carousel;
   }
   
@@ -571,7 +573,15 @@ font-size: .75em;
       "info carousel";
   }
 
-  
+  #contact-background{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas:
+      "post-header post-header"
+      "info carousel";
+      background: pink;
+    width: 100%;
+  }
 
   aside{
     margin: 0;
@@ -613,5 +623,7 @@ font-size: .75em;
     grid-gap: 20px 10px;
   }
 
-  
+ 
+
+
   }
