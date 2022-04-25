@@ -85,7 +85,7 @@ h3{
 
 .articles .post:not(
   #canoeing,
-  #lodging, 
+  #lodging,
   #activities,
   .about
   ),
@@ -145,6 +145,12 @@ header.canoe-hero{
  background:url("../img/DSC05830.jpg"); 
  background-size:cover;
 }
+
+
+header.lodge-hero{
+  background:url("../img/bear-ridge-2.jpg"); 
+  background-size:cover;
+ }
 
 
 
@@ -302,37 +308,44 @@ z-index: 1;
 
 
 /*--ALL ONLINE FORMS--*/
-.articles .contact-background{
+.articles .contact-background,
+.articles .lodge-background{
   width: 100%;
 }
 
 
 
-.contact-us-form{
+.contact-us-form,
+.lodging-form{
   width: 100%;
 }
 
-.contact-hero h1, .contact-hero h2{
+.contact-hero h1, 
+.contact-hero h2,
+.lodge-hero h1,
+.lodge-hero h2{
   display: none;
 }
 
 
-#wufoo-zbcnv4r05gcfht{
+#wufoo-zbcnv4r05gcfht,
+#wufoo-wrbqika10iahwu{
   padding: 1em;
   margin-top: 60px;
   width: 100%;
   background-color:rgb(255,255,255, .6);
-
 }
 
 
 
-header.contact-us-page{
+header.contact-us-page,
+header.lodge-hero{
   background:#FFF;
   max-height: 0;
   display: flex;
   justify-content: center;
 }
+
 
 #contact-background{
   background: url("../img/DSC02228.jpg") no-repeat center center fixed; 
@@ -340,6 +353,12 @@ header.contact-us-page{
   width: 100%;
 }
 
+
+#lodge-background{
+  background: url("../img/DSC02228.jpg") no-repeat center center fixed; 
+  background-size: cover;
+  width: 100%;
+}
 
 /*--ADDITIONAL ELEMENTS---*/
 
@@ -391,6 +410,7 @@ aside a{
   margin: 0;
   width: 100%;
 }
+
 
 .lodging{
   background: pink;
@@ -477,13 +497,15 @@ font-size: 1.5em;
 font-size: .75em;
 }
 
-.directions{
+.directions,
+.lodge{
   width: 100%;
   color: #fff;
   margin: 0;
 }
 
-.directions-container{
+.directions-container,
+.lodge-overview{
   margin: 0 auto;
   text-align: center;
   width: 100%;
@@ -542,13 +564,14 @@ font-size: .75em;
 
 header.plan-hero,
 header.home-hero,
-header.canoe-hero{
+header.canoe-hero,
+header.lodge-hero{
        /* Create the parallax scrolling effect */
  background-attachment: fixed;
  background-position: center;
  background-repeat: no-repeat;
  background-size:cover;
- height: 98vh;
+ height: 100vh;
  }
 }
 
@@ -590,7 +613,7 @@ header.canoe-hero{
     height: 100%;
   }
 
-  .info:not(.directions, .directions-container){
+  .info:not(.directions, .directions-container, .lodge){
     color: #FFF;
     background: #425D68;
   }
@@ -621,7 +644,8 @@ header.canoe-hero{
   }
 
 
-  .articles .contact-background{
+  .articles .contact-background,
+  .articles .lodge-background{
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-areas:
@@ -633,7 +657,8 @@ header.canoe-hero{
 }
 
 
- .directions-container{
+ .directions-container,
+ .lodge-overview{
   color: #000;
 }
 
@@ -645,7 +670,8 @@ header.canoe-hero{
 
 
 
-.directions-container header{
+.directions-container header,
+.lodge-overview{
   padding: 1em;
   background-color:rgb(255,255,255, .6);
   border-radius: 4px;
