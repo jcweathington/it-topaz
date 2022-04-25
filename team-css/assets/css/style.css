@@ -141,8 +141,8 @@ header.plan-hero{
 }
 
 
-header.plan-hero{
- background:url("../img/DSC09184.jpg"); 
+header.canoe-hero{
+ background:url("../img/DSC05830.jpg"); 
  background-size:cover;
 }
 
@@ -541,7 +541,8 @@ font-size: .75em;
 
 
 header.plan-hero,
-header.home-hero{
+header.home-hero,
+header.canoe-hero{
        /* Create the parallax scrolling effect */
  background-attachment: fixed;
  background-position: center;
