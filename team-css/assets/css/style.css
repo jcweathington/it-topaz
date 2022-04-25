@@ -97,7 +97,8 @@ h3{
 .articles header,
 .hamburger,
 footer div,
-.chart-container{
+.chart-container,
+.content{
   margin: auto 10px;
 }
 
@@ -320,7 +321,7 @@ z-index: 1;
 
 
 .contact-us-form,
-#lodging-form{
+.form{
   width: 100%;
 }
 
@@ -403,14 +404,17 @@ aside a{
   text-align: center;
 }
 
+
 .bottom-right{
   padding: 0;
   width: 100%;
 }
 
+
 .bottom-right.home h1{
   padding-left: 1em;
 }
+
 
 .bottom-right.home h2{
   background:#E8C517;
@@ -427,9 +431,11 @@ aside a{
   text-align: center;
 }
 
+
 .lodge .button a{
   color: #E8C517;
 }
+
 
 .lodge img{
   display:none;
@@ -521,6 +527,10 @@ font-size: 1.5em;
 font-size: .75em;
 }
 
+.content p{
+  margin: 20px auto;
+}
+
 .directions,
 .lodge{
   width: 100%;
@@ -571,6 +581,8 @@ font-size: .75em;
 }
 
 
+
+
 /*--MEDIA QUERIES FOR SCREEN SIZES---*/
 
 @media screen and (min-width: 667px){
@@ -583,7 +595,20 @@ font-size: .75em;
     height: 80vh;
   }
 
-  
+  .articles .post:not(
+  #canoeing,
+  #lodging,
+  #activities,
+  .about
+  ),
+.info,
+.articles header,
+.hamburger,
+footer div,
+.chart-container,
+.content{
+  margin: auto 20px;
+}
 
   .carousel-container{
       width: auto;
@@ -629,6 +654,21 @@ header.lodge-hero{
 @media screen and (min-width: 1200px) {
     /* Styles for Desktops */
 
+
+  .articles .post:not(
+  #canoeing,
+  #lodging,
+  #activities,
+  .about
+  ),
+.info,
+.articles header,
+.hamburger,
+footer div,
+.chart-container,
+.content{
+  margin: auto 40px;
+}  
     .charts {
        margin: 20px auto;
        height: 400px;
