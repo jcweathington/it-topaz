@@ -601,7 +601,7 @@ font-size: .75em;
   #activities,
   .about
   ),
-.info,
+.info:not(.directions,.directions-container),
 .articles header,
 .hamburger,
 footer div,
@@ -609,6 +609,7 @@ footer div,
 .content{
   margin: auto 20px;
 }
+
 
   .carousel-container{
       width: auto;
@@ -760,9 +761,7 @@ footer div,
 
 
 
-.directions-container header,
-.lodge-overview{
-  padding: 1em;
+.directions-container{
   background-color:rgb(255,255,255, .4);
   border-radius: 4px;
   width: 100%;
