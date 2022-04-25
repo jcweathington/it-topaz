@@ -24,7 +24,7 @@
 </head>
 <body onload="displayLevels();">
   <div class="container">
- <header id="header" class="primary">
+ <header id="header" class="primary levels-hero">
         <div class="fixed-wrap">
           <div class="banner">
             <a href="javascript:void(0);" class="icon">
@@ -67,68 +67,81 @@
   <div class="charts">
     <canvas id="chartjs-2"></canvas>
   </div>
-   
-  <div class="charts">
-    <canvas id="chartjs-3"></canvas>
-  </div>
-
-  <div class="charts">
-    <table>
+</section>
+<aside class="river-level-table">
+  <table>
+    <caption>Grocery List</caption>
+    <thead>
+      <!--Design Time Attribute - Remove before Prodution-->
       <tr>
-        <th>River Height in Feet</th>
-        <th> To Float</th>
+        <th scope="row">River Level</th>
+        <th scope="col">Is It Floatable?</th>
       </tr>
-      <tr>
-        <th>1.2 and Below</th>
-        <th>1.3 to 1.7</th>
-        <th>1.8 to 1.9 </th>
-        <th>2.0 to 2.4</th>
-        <th>2.5 to 2.9</th>
-        <th>3.0 to 3.6</th>
-        <th>4.1 to 4.5</th>
-        <th>4.6 to 5.0</th>
-      </tr>
-      <tr>
-        <th>Too low for canoes to float.</th>
-        <th>Floatable for a short canoe trip but expect some dragging.</th>
-        <th>Too low for rafts, but good for low water canoeing. </th>
-        <th>Mild white waters and may be challenging for beginners because of rocks and other obstacles. </th>
-        <th>Not a casual float, but sailors with experience can manage.</th>
-        <th>Too strong for canoes, but depending on what they are, other vessels may go on. </th>
-        <th>High difficulty sailing, we do not suggest going unless your skills are confirmed. </th>
-        <th>Danger! Too much water for sailing and the surrounding area may be flooded. </th>
-      </tr>
-     </table>
-
-
-     <div class="button your-plan">
+    </thead>
+    <tr>
+    <td>1.2 or less</td>
+    <td>Too low to float.</td>
+    </tr>
+    <tr>
+    <td>1.3 to 1.7</td>
+    <td>Floatable for a short canoe trip but expect some dragging.</td>
+    </tr>
+    <tr>
+    <td>1.8 to 1.9</td>
+    <td>Too low for rafts, but good for low water canoeing.</td>
+    </tr>
+    <tr>
+    <td>2.0 to 2.4</td>
+    <td>Mild white waters and may be challenging for beginners because of rocks and other obstacles.</td>
+    </tr>
+    <tr>
+    <td>3.0 to 3.6</td>
+    <td>Not a casual float, but sailors with experience can manage.</td>
+    </tr>
+    <tr>
+    <td>4.1 to 4.5</td>
+    <td>Too strong for canoes, but depending on what they are, other vessels may go on.</td>
+    </tr>
+     <tr>
+    <td>4.6 to 5.0</td>
+    <td>High difficulty sailing, we do not suggest going unless your skills are confirmed.</td>
+    </tr>
+  </table>
+</aside>
+       <div class="button your-plan">
         <div class="button-container">
         <a href="">Plan Your Experience</a>
       </div>
- </section>
-    <footer>
-        <div class="brand">
+      </div>
+ <footer>
+  <div class="footer-container">
+  <div class="brand">
     <h4>Buffalo River Adventurers</h4>
     <h5>Where Your Adventure Awaits</h5>
-    </div>
-        <div class="location">
-          <address>
-            Street city state zip
-          </address>
-          </br>
-        </div>
-        <div class="additional-info">
-         <a href="" title="">Directions</a>
-         <a href=" " class=“btn” >Current River Levels</a>
-        </div>
-        <div class="contact">
-         <p>Phone</p>
-         <a href="" title="">Contact Us</a>
-        </div>
-        <div class=social-media-links>
-        <h6>&copy; 2022 Buffalo River Adventurers</h6>
-        </div>
-   </footer>
+  </div>
+      <div class="location">
+        <address>
+          36°01'33.6"N 93°21'54.6"W
+        </address>
+        <br>
+      </div>
+      <div class="additional-info">
+        <ul>
+          <li><a href="https://www.google.com/maps/place/36%C2%B001'33.6%22N+93%C2%B021'54.6%22W/@36.0261133,-93.3654997,19z/data=!4m5!3m4!1s0x0:0x5a8038d03ba84f9d!8m2!3d36.026009!4d-93.365169" title="Directions are tricky in this area. Here are the Lat/Lon Coordinates and Map links." target="_blank">Directions</a></li>
+          <li><a href="riverlevels.html" class=“button” >Current River Levels</a></li>
+        </ul>
+      </div>
+      <div class="contact">
+        <ul>
+          <li>Phone</li>
+          <li><a href="contact.html">Contact Us</a></li>
+       </ul>
+      </div>
+      <div class=social-media-links>
+      <h6>&copy; 2022 Buffalo River Adventurers</h6>
+      </div>
+      </div>
+ </footer>
  <!--fixed to bottom button--> 
   </div><!--.container-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
