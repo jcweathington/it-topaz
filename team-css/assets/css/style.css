@@ -121,7 +121,6 @@ footer,
 .contact,
 .additional-info,
 .chart-container,
-.river-container,
 .post{
   display: flex;
   flex-direction: column;
@@ -277,9 +276,6 @@ z-index: 1;
 }
 
 
-.charts-container{
-  max-width: 534px;
-}
 
 
 /*--river levels table--*/
@@ -294,7 +290,7 @@ table{
 
 
 tr:nth-child(even){
-  background: #E8C517;
+  background: #e8c5177a;
 }
 
 
@@ -475,7 +471,7 @@ aside a{
 
 .post header,
 .articles header,
-.river-container header{
+.river-container .post-header{
   text-align: center;
 }
 
