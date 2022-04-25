@@ -104,7 +104,6 @@ footer,
 .brand,
 .contact,
 .additional-info,
-.directions,
 .chart-container,
 .post{
   display: flex;
@@ -296,9 +295,6 @@ z-index: 1;
 
 .contact-us-form{
   width: 100%;
-  padding: 1em;
-  margin-top: 60px;
-  background-color:rgb(255,255,255, .4);
 }
 
 .contact-hero h1, .contact-hero h2{
@@ -308,7 +304,10 @@ z-index: 1;
 
 #wufoo-zbcnv4r05gcfht{
   padding: 1em;
+  margin-top: 60px;
   width: 100%;
+  background-color:rgb(255,255,255, .6);
+
 }
 
 
@@ -467,6 +466,7 @@ font-size: .75em;
 .directions{
   width: 100%;
   color: #fff;
+  margin: 0;
 }
 
 .directions-container{
@@ -605,19 +605,45 @@ font-size: .75em;
       "info carousel";
     width: 95%;
     align-items: start;
-    margin-bottom: 60px;
+    grid-gap: 0px 35px;
 }
+
 
  .directions-container{
   color: #000;
 }
 
+
+.directions{
+  display: block;
+  padding: 0;
+}
+
+
+
 .directions-container header{
-  margin: 20px auto;
   padding: 1em;
-  background-color:rgb(255,255,255, .3);
+  background-color:rgb(255,255,255, .6);
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+#directions-map{
+  width:100%;
+  margin: 90px 0 40px 0;
+  padding: 0;
+}
+
+#wufoo-zbcnv4r05gcfht{
+  margin: 90px 0 40px 0;
   border-radius: 4px;
 }
+
+.contact-us-form{
+  border-radius: 4px;
+}
+
 
   aside{
     margin: 0;
@@ -656,7 +682,6 @@ font-size: .75em;
     "info location contact"
     "media media media";
     text-align: center;
-    grid-gap: 20px 10px;
   }
 
  
