@@ -685,9 +685,13 @@ font-size: .75em;
 .hamburger,
 footer div,
 .chart-container,
-aside .table-wrap,
-.content{
+aside .table-wrap
+.content {
   margin: auto 20px;
+}
+
+.content p{
+  margin: 10px 20px 40px 20px;
 }
 
 
@@ -748,7 +752,7 @@ header.levels-hero{
     footer div,
     .chart-container,
     aside .table-wrap,
-    .content{
+    .content {
       margin: auto 40px;
     }
 
