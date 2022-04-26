@@ -19,9 +19,13 @@
   transition: .25s ease;
 }
 
+#experience p{
+  margin: 20px 0 20px 0;
+}
+
 .read-more-state:checked ~ .read-more-wrap .read-more-target {
   opacity: 1;
-  font-size: inherit;
+  font-size: .75em;
   max-height: 999em;
 }
 
@@ -784,9 +788,6 @@ aside .table-wrap
   margin: 10px 20px 40px 20px;
 }
 
-  .wrap{
-    margin: 20px;
-  }
  
   
   .carousel-container{
@@ -852,15 +853,17 @@ header.levels-hero{
 
   
     .wrap{
-    margin: 20px 40px 0 40px;
+    margin: 20px 0;
   }
   
    
     #lodging,
     #canoeing,
     #activities{
-      background: none;
+      padding-bottom: 0;
     }
+
+
 
     .charts {
        margin: 20px auto;
@@ -911,8 +914,7 @@ header.levels-hero{
   }
   
 
-  #about-us .info,
-  #lodging .info{
+  #about-us .info{
     font-size: .8em;
     padding: 1em;
   }
