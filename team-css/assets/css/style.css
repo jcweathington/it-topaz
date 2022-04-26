@@ -170,7 +170,7 @@ header.lodge-hero{
 
 
  header.levels-hero{
-  background:url("../img/bear-ridge-1.jpg"); 
+  background:url("../img/DSC05772.jpg"); 
   background-size:cover;
  }
 
@@ -708,7 +708,8 @@ aside .table-wrap,
 header.plan-hero,
 header.home-hero,
 header.canoe-hero,
-header.lodge-hero{
+header.lodge-hero,
+header.levels-hero{
        /* Create the parallax scrolling effect */
  background-attachment: fixed;
  background-position: center;
