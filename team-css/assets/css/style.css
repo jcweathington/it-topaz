@@ -652,6 +652,13 @@ font-size: .75em;
 }
 
 
+#lodging,
+#canoeing,
+#activities{
+  background: #2C7366;
+  padding-bottom: 2em;
+}
+
 
 
 /*--MEDIA QUERIES FOR SCREEN SIZES---*/
@@ -745,6 +752,11 @@ header.levels-hero{
       margin: auto 40px;
     }
 
+    #lodging,
+    #canoeing,
+    #activities{
+      background: none;
+    }
 
     .charts {
        margin: 20px auto;
