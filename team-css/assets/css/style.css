@@ -1,4 +1,90 @@
 
+.wrap{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.dropdown{
+  margin-right: 10px;
+}
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+#post-2 ~ .read-more-trigger:before {
+  content: 'Amenities';
+  text-decoration: underline;
+  color: #E8C517 ;
+}
+
+#post-2:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+
+#post-3 ~ .read-more-trigger:before {
+  content: 'More Activities';
+  text-decoration: underline;
+  color: #E8C517 ;
+}
+
+#post-3:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+
+#post-1 ~ .read-more-trigger:before {
+  content: 'Trip Options';
+  text-decoration: underline;
+  color: #E8C517 ;
+}
+
+#post-1:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #000;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+}
+
+th:first-child {
+  text-align: right;
+  padding-right: 10px;
+}
+
+td {
+  padding-right: 10px;
+}
+
+td:nth-child(3n+1){
+  text-align: right;
+}
+
+/* Other style */ 
+
+
+
 /*Fonts:
     font-family: tablet-gothic, sans-serif;
     font-family: spade, sans-serif;
@@ -41,6 +127,7 @@ ul{
 a{
   text-decoration: none;
 }
+
 
 .cf:before,
 .cf:after {
@@ -113,6 +200,9 @@ aside .table-wrap,
   margin: auto 10px;
 }
 
+.wrap{
+  margin-top: 20px;
+}
 
 .articles,
 footer,
@@ -280,7 +370,7 @@ z-index: 1;
 
 /*--river levels table--*/
 
-table{
+.river-levels-chart{
   width: 100%;
   max-width: 1200px;
   border: 2px solid #000;
@@ -289,19 +379,19 @@ table{
 }
 
 
-tr:nth-child(even){
+.river-levels-chart tr:nth-child(even){
   background: #e8c5177a;
 }
 
 
-th{
+.river-levels-chart th{
   background: #000;
   color: #FFF;
   padding: 8px;
 }
 
 
-td{
+.river-levels-chart td{
   border: 1px solid #ffff;
   padding: 4px;
   text-align: left;
@@ -309,13 +399,13 @@ td{
 }
 
 
-td:nth-child(3n+1){
+.river-levels-chart td:nth-child(3n+1){
   text-align: left;
   padding-left: 26px;
 }
 
 
-tr:last-child{
+.river-levels-chart tr:last-child{
   background: #BF382C;
   color: #FFF;
 }
@@ -694,7 +784,11 @@ aside .table-wrap
   margin: 10px 20px 40px 20px;
 }
 
-
+  .wrap{
+    margin: 20px;
+  }
+ 
+  
   .carousel-container{
       width: auto;
     }
@@ -756,6 +850,12 @@ header.levels-hero{
       margin: auto 40px;
     }
 
+  
+    .wrap{
+    margin: 20px 40px 0 40px;
+  }
+  
+   
     #lodging,
     #canoeing,
     #activities{
