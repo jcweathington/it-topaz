@@ -1,4 +1,405 @@
 
+/*Fonts:
+    font-family: tablet-gothic, sans-serif;
+    font-family: spade, sans-serif;
+    font-family: campaign-slab, serif;
+
+    
+*/
+
+
+/*Color Scheme
+    #CFD5D5 - grey    - body
+    #425D68 - drkBlue - links
+    #3591AF - lgtBue  - background .info, carousel buttons
+    #E8C517 - yellow  - aside font
+    #2C7366 - green   - background
+    #BF382C - red
+*/
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-size: 100%;
+}
+
+
+/* ---------------Utility Styles----------------- */
+
+.container{
+    margin: 0 auto;
+    max-width: 1800px;
+}
+
+
+ul{
+  list-style: none;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+
+/* ---------------Responsive Images----------------- */
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/* ---------------Global Styles----------------- */
+
+body{
+  background-color: #FFF;
+  font-size: 1em;
+  margin: 0;
+  font-family: tablet-gothic, sans-serif;
+}
+
+.grid{
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%235a585d' fill-opacity='0.07' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+h1{
+  font-size: 2em;
+  font-family: campaign-slab, serif; 
+  font-weight: 500;
+}
+
+
+h2{
+  font-size: 1.7em;
+  font-family: campaign-slab, serif; 
+  font-weight: 500;
+}
+
+
+h3{
+  font-size: 1.5em;
+  font-family: campaign-slab, serif; 
+  font-weight: 500;
+}
+
+
+.articles .post:not(
+  #canoeing,
+  #lodging,
+  #activities,
+  .about
+  ),
+.info,
+.articles header,
+.hamburger,
+footer div,
+.river-container,
+aside .table-wrap,
+.content{
+  margin: auto 10px;
+}
+
+
+.wrap{
+  margin-top: 20px;
+}
+
+
+.articles,
+footer,
+.footer-container,
+.brand,
+.contact,
+.additional-info,
+.chart-container,
+.post{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+footer{
+  background-color: #1b252a;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%23f2f2f2' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");  font-size: .75em;
+  color: #FFF;
+}
+
+
+/*--HEADER.PRIMARY-BANNERS---*/
+
+header.primary{
+ height: 70vh;
+ display: flex;
+ justify-content: space-between;
+}
+
+
+header.home-hero{
+ background:url("../img/DSC02499.jpg"); 
+ background-size:cover;
+}
+
+
+header.plan-hero{
+ background:url("../img/DSC09184.jpg"); 
+ background-size:cover;
+}
+
+
+header.canoe-hero{
+ background:url("../img/DSC05830.jpg"); 
+ background-size:cover;
+}
+
+
+header.lodge-hero{
+  background:url("../img/bear-ridge-1.jpg"); 
+  background-size:cover;
+}
+
+
+header.levels-hero{
+  background:url("../img/DSC05772.jpg"); 
+  background-size:cover;
+}
+
+
+.bottom-right{
+  align-self: flex-end;
+  padding: 1em;
+  line-height: .8;
+  color: white;
+}
+
+
+
+/*--MENU & NAVIGATION---*/
+/* The side navigation menu */
+/* The side navigation menu */
+.menu {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #CFD5D4; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  font-family: campaign-slab, serif;
+  }
+  
+  
+  .menu a:link, .menu a:visited{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #425C68;
+  display: block;
+  transition: .5s;
+  }
+  
+  
+  .menu a:hover, .menu a:active {
+  color: #425C68;
+  font-weight: 800;
+  }
+  
+  
+  /* Position and style the close button (top right corner) */
+  .menu .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  }
+  
+  
+  .hamburger{
+  color: #707070;
+  text-shadow: .2px .4px #2D3340;
+  border:0;
+  font-size: 2em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  margin: 0;
+  
+  }
+
+
+
+.fixed-wrap{
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color:rgb(255,255,255, .8);
+  border: 0px;
+  box-shadow: 0px 4px 5px 0px rgb(0 0 0 / 20%);
+-webkit-box-shadow: 0px 4px 5px 0px rgb(0 0 0 / 20%);
+-moz-box-shadow: 0px 4px 5px 0px rgb(0 0 0 / 20%);
+  z-index: 1;
+}
+
+
+/*--RIVER LEVELS---*/
+
+.charts:nth-child(odd) {
+  border: 2px #732222 solid;
+  padding-right: .5em;
+  width:100%;
+}
+
+
+.charts:nth-child(even) {
+  border: 2px #3591AF solid;
+  padding-right: .5em;
+  width:100%;
+}
+
+
+.charts {
+  position: relative;
+  margin: 40px auto;
+  height: 50vh;
+}
+
+
+
+
+/*--river levels table--*/
+
+.river-levels-chart{
+  width: 100%;
+  max-width: 1220px;
+  border: 2px solid #000;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+.river-levels-chart tr:nth-child(even){
+  background: #e8c5177a;
+}
+
+
+.river-levels-chart th{
+  background: #3591AF;
+  color: #FFF;
+  padding: 8px;
+  font-family: campaign-slab, serif;
+  font-weight: 500;
+  text-align: left;
+}
+
+
+.river-levels-chart td{
+  border: 1px solid #ffff;
+  padding: 4px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+
+.river-levels-chart td:nth-child(3n+1),
+.river-levels-chart th:last-child{
+  text-align: left;
+  padding-left: 26px;
+}
+
+
+.river-levels-chart tr:last-child{
+  background: #BF382C;
+  color: #FFF;
+}
+
+aside.river-level-table{
+  background-color: #FFF;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%235a585d' fill-opacity='0.07' fill-rule='evenodd'/%3E%3C/svg%3E");
+  padding: 0em 0 1.5em 0;
+  margin-top: 20px;
+}
+
+
+
+
+/*---PLAN YOUR EXPERIENCE PAGE---*/
+
+/*--carousel elements---*/
+
+.carousel-container{
+  background-color: #2C7366;
+  width: 70vw;
+}
+
+.carousel {
+  margin:40px auto;
+  width: 100%;
+  height: auto;
+}
+
+
+.carousel-container img{
+    margin: auto;
+    border: 1px solid  rgba(6, 15, 94, 0.253);
+}
+
+
+
+
+/* Customize Previous/Next/Dots/Autoplay */
+
+.slick-autoplay-toggle-button,
+.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+.slick-dots li button .slick-dot-icon,
+.slick-dots li.slick-active button .slick-dot-icon {
+  color: #E8C517;;
+}
+
+
+.slick-prev {
+    color: red;
+    left: -30px;
+}
+
+/* Customize Previous/Next/Dots/Autoplay - Active State */
+
+.slick-next:focus .slick-next-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-prev:focus .slick-prev-icon,
+.slick-dots li button:focus .slick-dot-icon:before,
+.slick-dots li.slick-active button:focus .slick-dot-icon,
+.slick-autoplay-toggle-button:focus 
+{
+    color:black;
+}
+
+
+/* Drop Down Buttons */
+
+
 .wrap{
   display: flex;
   justify-content: flex-start;
@@ -85,400 +486,6 @@ td:nth-child(3n+1){
   text-align: right;
 }
 
-/* Other style */ 
-
-
-
-/*Fonts:
-    font-family: tablet-gothic, sans-serif;
-    font-family: spade, sans-serif;
-    font-family: campaign-slab, serif;
-
-    
-*/
-
-
-/*Color Scheme
-    #CFD5D5 - grey    - body
-    #425D68 - drkBlue - links
-    #3591AF - lgtBue  - background .info, carousel buttons
-    #E8C517 - yellow  - aside font
-    #2C7366 - green   - background
-    #BF382C - red
-*/
-html {
-  box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-  font-size: 100%;
-}
-
-
-/* ---------------Utility Styles----------------- */
-
-.container{
-    margin: 0 auto;
-    max-width: 1800px;
-}
-
-ul{
-  list-style: none;
-}
-
-a{
-  text-decoration: none;
-}
-
-
-.cf:before,
-.cf:after {
-  content: " "; /* 1 */
-  display: table; /* 2 */
-}
-
-.cf:after {
-  clear: both;
-}
-
-
-/* ---------------Responsive Images----------------- */
-
-img{
-  max-width: 100%;
-  height: auto;
-}
-
-
-
-/* ---------------Global Styles----------------- */
-
-body{
-  background-color: #FFF;
-  font-size: 1em;
-  margin: 0;
-  font-family: tablet-gothic, sans-serif;
-}
-
-.grid{
-  background-color: #ffffff;
-  background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%235a585d' fill-opacity='0.07' fill-rule='evenodd'/%3E%3C/svg%3E");
-}
-
-h1{
-  font-size: 2em;
-  font-family: campaign-slab, serif; 
-  font-weight: 500;
-}
-
-
-h2{
-  font-size: 1.7em;
-  font-family: campaign-slab, serif; 
-  font-weight: 500;
-}
-
-
-h3{
-  font-size: 1.5em;
-  font-family: campaign-slab, serif; 
-  font-weight: 500;
-}
-
-
-.articles .post:not(
-  #canoeing,
-  #lodging,
-  #activities,
-  .about
-  ),
-.info,
-.articles header,
-.hamburger,
-footer div,
-.river-container,
-aside .table-wrap,
-.content{
-  margin: auto 10px;
-}
-
-.wrap{
-  margin-top: 20px;
-}
-
-.articles,
-footer,
-.footer-container,
-.brand,
-.contact,
-.additional-info,
-.chart-container,
-.post{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-
-footer{
-  background-color: #1b252a;
-  background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%23f2f2f2' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");  font-size: .75em;
-  color: #FFF;
-}
-
-
-/*--HEADER.PRIMARY-BANNERS---*/
-
-header.primary{
- height: 70vh;
- display: flex;
- justify-content: space-between;
-}
-
-
-header.home-hero{
- background:url("../img/DSC02499.jpg"); 
- background-size:cover;
-}
-
-
-header.plan-hero{
- background:url("../img/DSC09184.jpg"); 
- background-size:cover;
-}
-
-
-header.canoe-hero{
- background:url("../img/DSC05830.jpg"); 
- background-size:cover;
-}
-
-
-header.lodge-hero{
-  background:url("../img/bear-ridge-1.jpg"); 
-  background-size:cover;
- }
-
-
- header.levels-hero{
-  background:url("../img/DSC05772.jpg"); 
-  background-size:cover;
- }
-
-
-
-
-.bottom-right{
-  align-self: flex-end;
-  padding: 1em;
-  line-height: .8;
-  color: white;
-}
-
-
-
-/*--MENU & NAVIGATION---*/
-/* The side navigation menu */
-.menu {
-height: 100%; /* 100% Full-height */
-width: 0; /* 0 width - change this with JavaScript */
-position: fixed; /* Stay in place */
-z-index: 1; /* Stay on top */
-top: 0; /* Stay at the top */
-left: 0;
-background-color: #000; /* Black*/
-overflow-x: hidden; /* Disable horizontal scroll */
-padding-top: 60px; /* Place content 60px from the top */
-transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-  font-family: campaign-slab, serif;
-}
-
-
-.menu a:link, .menu a:visited{
-padding: 8px 8px 8px 32px;
-text-decoration: none;
-font-size: 25px;
-color: #FFF;
-display: block;
-transition: .5s;
-}
-
-
-.menu a:hover, .menu a:active {
-color: rgba(255, 106, 10, 1);
-font-weight: 700;
-}
-
-
-/* Position and style the close button (top right corner) */
-.menu .closebtn {
-position: absolute;
-top: 0;
-right: 25px;
-font-size: 36px;
-margin-left: 50px;
-}
-
-
-.hamburger{
-color: #D9C196;
-text-shadow: .2px .4px #2D3340;
-border:0;
-font-size: 1.3em;
-font-weight:bold;
-cursor:pointer;
-outline:none;
-}
-
-
-.fixed-wrap{
-position: fixed;
-width: 100%;
-height: 60px;
-background-color:rgb(255,255,255, .8);
-border: 0px;
-box-shadow: 0px 4px 5px 0px rgb(0 0 0 / 20%);
--webkit-box-shadow: 0px 4px 5px 0px rgb(0 0 0 / 20%);
--moz-box-shadow: 0px 4px 5px 0px rgb(0 0 0 / 20%);
-z-index: 1;
-}
-
-
-/*--RIVER LEVELS---*/
-
-.charts:nth-child(odd) {
-  border: 2px #732222 solid;
-  padding-right: .5em;
-  width:100%;
-}
-
-
-.charts:nth-child(even) {
-  border: 2px #3591AF solid;
-  padding-right: .5em;
-  width:100%;
-}
-
-
-.charts {
-  position: relative;
-  margin: 40px auto;
-  height: 50vh;
-}
-
-
-
-
-/*--river levels table--*/
-
-.river-levels-chart{
-  width: 100%;
-  max-width: 1200px;
-  border: 2px solid #000;
-  margin: 0 auto;
-  padding: 0;
-}
-
-
-.river-levels-chart tr:nth-child(even){
-  background: #e8c5177a;
-}
-
-
-.river-levels-chart th{
-  background: #000;
-  color: #FFF;
-  padding: 8px;
-  font-family: campaign-slab, serif;
-  font-weight: 500;
-  text-align: left;
-}
-
-
-.river-levels-chart td{
-  border: 1px solid #ffff;
-  padding: 4px;
-  text-align: left;
-  padding-left: 20px;
-}
-
-
-.river-levels-chart td:nth-child(3n+1),
-.river-levels-chart th:last-child{
-  text-align: left;
-  padding-left: 26px;
-}
-
-
-.river-levels-chart tr:last-child{
-  background: #BF382C;
-  color: #FFF;
-}
-
-aside.river-level-table{
-  background-color: #FFF;
-  background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%235a585d' fill-opacity='0.07' fill-rule='evenodd'/%3E%3C/svg%3E");
-  padding: 0em 0 1.5em 0;
-  margin-top: 20px;
-}
-
-
-
-
-
-/*--CAROUSEL ELEMENTS---*/
-
-.carousel-container{
-  background-color: #2C7366;
-  width: 70vw;
-}
-
-.carousel {
-  margin:40px auto;
-  width: 100%;
-  height: auto;
-}
-
-
-.carousel-container img{
-    margin: auto;
-    border: 1px solid  rgba(6, 15, 94, 0.253);
-}
-
-
-
-
-/* Customize Previous/Next/Dots/Autoplay */
-
-.slick-autoplay-toggle-button,
-.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
-.slick-dots li button .slick-dot-icon,
-.slick-dots li.slick-active button .slick-dot-icon {
-  color: #E8C517;;
-}
-
-
-.slick-prev {
-    color: red;
-    left: -30px;
-}
-
-/* Customize Previous/Next/Dots/Autoplay - Active State */
-
-.slick-next:focus .slick-next-icon,
-.slick-next:focus .slick-prev-icon,
-.slick-prev:focus .slick-next-icon,
-.slick-prev:focus .slick-prev-icon,
-.slick-dots li button:focus .slick-dot-icon:before,
-.slick-dots li.slick-active button:focus .slick-dot-icon,
-.slick-autoplay-toggle-button:focus 
-{
-    color:black;
-}
-
 
 /*--ALL ONLINE FORMS--*/
 .articles .contact-background,
@@ -537,6 +544,8 @@ header.contact-us-page{
   width: 100%;
 }
 
+
+
 /*--ADDITIONAL ELEMENTS---*/
 
 aside:not(.river-level-table){
@@ -549,15 +558,18 @@ aside:not(.river-level-table){
   padding: 1em;
 }
 
+
 aside a{
   color: #2C7366
 }
+
 
 .river-level-table h2{
   text-align: center;
   width: 100%;
   background: #FFF;
 }
+
 
 #about-us aside,
 #about-us .image{
@@ -570,7 +582,6 @@ aside a{
   padding: 0;
   line-height: 0;
 }
-
 
 
 .post header,
@@ -597,7 +608,6 @@ aside a{
   margin: 0;
   width: 100%;
 }
-
 
 
 .lodge .button{
@@ -852,6 +862,54 @@ header.levels-hero{
 
 @media screen and (min-width: 1200px) {
     /* Styles for Desktops */
+
+
+ 
+    .hamburger{
+      display: none;
+    }
+    
+   .menu {
+  height: 50px; /* 100% Full-height */
+  width: 100%; /* 0 width - change this with JavaScript */ 
+  background: none; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-y: hidden;
+  padding: 5px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    font-family: campaign-slab, serif;
+  }
+   
+    .menu .closebtn{
+      display: none !important;
+    }
+    
+    .menu ul{
+      display:flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    
+    .menu ul li{
+      margin: 0;
+    }
+    
+    
+    .menu li a[href="index.html"]{
+
+    }
+
+  
+    
+    .menu li a:link{
+     font-size: 1em;
+    } 
+
 
     .articles .post:not(
       #canoeing,
