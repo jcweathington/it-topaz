@@ -449,6 +449,17 @@ aside.river-level-table{
   margin: 20px 0 20px 0;
 }
 
+
+#experience a:link:not(aside a), 
+#experience a:visited:not(aside a){
+  color:#E8C517;
+}
+
+
+#experience a:hover, #experience a:active{
+  text-decoration: underline;
+}
+
 .read-more-state:checked ~ .read-more-wrap .read-more-target {
   opacity: 1;
   font-size: .75em;
@@ -458,7 +469,7 @@ aside.river-level-table{
 #post-2 ~ .read-more-trigger:before {
   content: 'Amenities';
   text-decoration: underline;
-  color: #E8C517 ;
+  color: #E8C517;
 }
 
 #post-2:checked ~ .read-more-trigger:before {
