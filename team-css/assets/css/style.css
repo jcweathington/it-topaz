@@ -769,6 +769,7 @@ font-size: 1.5em;
 
 .footer-container h6{
 font-size: .75em;
+margin: 0 auto 35px auto;
 }
 
 .content p{
@@ -966,7 +967,7 @@ header.levels-hero{
     font-family: campaign-slab, serif;
     }
     
-    
+
     .menu .closebtn{
       display: none !important;
     }
@@ -1002,6 +1003,14 @@ header.levels-hero{
     } 
 
     
+    .contact ul{
+      text-align: right;
+    }
+
+    .additional-info ul{
+      text-align: left;
+    }
+
     
     
 
@@ -1078,8 +1087,10 @@ header.levels-hero{
     margin: 0;
     height: 100%;
   }
+  
 
   .info:not(.directions, .directions-container, .lodge){
+    color:#FFF;
     background: #3591AF;
   }
 
@@ -1213,6 +1224,7 @@ article .lodge{
     "info location contact"
     "media media media";
     text-align: center;
+    grid-row-gap: 30px;
   }
  
   }
