@@ -44,6 +44,7 @@ a{
 }
 
 
+
 .cf:before,
 .cf:after {
   content: " "; /* 1 */
@@ -98,23 +99,6 @@ h3{
   font-family: campaign-slab, serif; 
   font-weight: 500;
 }
-
-.bralogo{
-  height: auto;
-    width: auto;
-    max-height: 50px;
-    max-width: 200px;
-    line-height: 30px;
-    vertical-align: middle;
-    padding: 0;
-}
-
-a.bralogo{
-  padding: 0;
-}
-
-
-
 
 
 
@@ -215,6 +199,13 @@ header.levels-hero{
 /*--MENU & NAVIGATION---*/
 /* The side navigation menu */
 /* The side navigation menu */
+
+.menu-icons{
+  width:10%;
+  height:10%;
+  margin-left: 30px;
+}
+
 .menu {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
@@ -229,6 +220,16 @@ header.levels-hero{
   font-family: campaign-slab, serif;
   }
   
+  .menu ul{
+    padding: 20px 20px 20px 0;
+  }
+
+  .menu ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
   
   .menu a:link, .menu a:visited{
   padding: 8px 8px 8px 32px;
@@ -990,7 +991,9 @@ header.levels-hero{
       display: none;
     }
     
-
+.menu-icons{
+  display: none;
+}
     .menu {
     height: 60px; /* 100% Full-height */
     width: 100%; /* 0 width - change this with JavaScript */ 
@@ -1035,6 +1038,19 @@ header.levels-hero{
      margin: auto 0;
     } 
 
+    .bralogo{
+      height: auto;
+        width: auto;
+        max-height: 50px;
+        max-width: 200px;
+        line-height: 30px;
+        vertical-align: middle;
+        padding: 0;
+    }
+    
+    a.bralogo{
+      padding: 0;
+    }
     
     .contact ul{
       text-align: right;
