@@ -118,9 +118,7 @@ a.bralogo{
   padding: 0;
 }
 
-.menu a:link, .menu a:visited:first-of-type{
 
-}
 
 
 
@@ -956,17 +954,18 @@ header.levels-hero{
       display: none;
     }
     
+
     .menu {
     height: 60px; /* 100% Full-height */
     width: 100%; /* 0 width - change this with JavaScript */ 
     background: none; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     overflow-y: hidden;
-    z-index:1;
     padding: 5px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
     font-family: campaign-slab, serif;
     }
+    
     
     .menu .closebtn{
       display: none !important;
