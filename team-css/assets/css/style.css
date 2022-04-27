@@ -399,14 +399,18 @@ aside.river-level-table{
 .slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
 .slick-dots li button .slick-dot-icon,
 .slick-dots li.slick-active button .slick-dot-icon {
-  color: #E8C517;;
+  color: #E8C517;
 }
 
 
 .slick-prev {
-    color: red;
     left: -30px;
 }
+
+.slick-pause-icon{
+  display:none;
+}
+
 
 /* Customize Previous/Next/Dots/Autoplay - Active State */
 
@@ -418,7 +422,7 @@ aside.river-level-table{
 .slick-dots li.slick-active button:focus .slick-dot-icon,
 .slick-autoplay-toggle-button:focus 
 {
-    color:black;
+    color: #E8C517;
 }
 
 
@@ -518,13 +522,26 @@ td {
   padding-right: 10px;
 }
 
-td:first-child{
+td:first-child:not(.canoe-price td){
   text-align: right;
 }
 
 table, th, td {
   border:1px solid black;
 }
+
+.canoe-table{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  color: #F2F2F2;
+}
+
+
+.canoe-table table:first-child{
+  margin-bottom: 20px;
+}
+
 
 /*--ALL ONLINE FORMS--*/
 .articles .contact-background,
@@ -813,6 +830,7 @@ font-size: .75em;
   padding-bottom: 2em;
 }
 
+
 #lodging header,
 #canoeing header,
 #activities header{
@@ -821,6 +839,9 @@ font-size: .75em;
   width: 100%;
 }
 
+#experience .post{
+  color: #FFF;
+}
 
 /*--MEDIA QUERIES FOR SCREEN SIZES---*/
 
@@ -895,11 +916,12 @@ header.levels-hero{
  height: 85vh;
  }
 
+ 
 #wufoo-wrbqika10iahwu{
   max-width: 900px;
 }
 
-
+}
 
 
 
@@ -918,6 +940,7 @@ header.levels-hero{
     background: none; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     overflow-y: hidden;
+    z-index:1;
     padding: 5px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
     font-family: campaign-slab, serif;
@@ -959,7 +982,7 @@ header.levels-hero{
 
     
     
-    }
+    
 
 
     .articles .post:not(
@@ -1036,7 +1059,6 @@ header.levels-hero{
   }
 
   .info:not(.directions, .directions-container, .lodge){
-    color: #FFF;
     background: #3591AF;
   }
 
@@ -1174,9 +1196,3 @@ article .lodge{
  
   }
 
-
-  @media screen and (min-width: 2000px){
-    
-
-
-  }
