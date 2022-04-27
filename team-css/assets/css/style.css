@@ -767,9 +767,32 @@ color: #FFF;
 text-decoration: underline;
 }
 
+
 .footer-container a:hover, .footer-container a:active{
 text-decoration: none;
 }
+
+
+.media-icons img{
+  width:7%;
+  height:auto;
+  margin: 20px;
+  background: white;
+  padding: .3em;
+  border-radius: 4px;
+}
+
+
+.media-icons{
+  display: flex;
+  justify-content: center;
+}
+
+.social-media-links{
+  display: flex;
+  flex-direction: column;
+}
+
 
 .contact ul,
 .additional-info ul{
@@ -936,8 +959,6 @@ aside .table-wrap
   margin: 10px 20px 40px 20px;
 }
 
-
- 
   
   .carousel-container{
       width: auto;
@@ -949,10 +970,14 @@ aside .table-wrap
       max-width: 90%;
   }
 
+
   .your-plan{
     display: none;
   }
   
+  .media-icons img{
+    width: 5%;
+  }
   
 }
 
@@ -1279,6 +1304,9 @@ article .lodge{
     grid-area: media;
   }
 
+  .media-icons img{
+    width: 4%;
+  }
 
   .footer-container{
     display: grid;
