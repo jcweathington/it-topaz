@@ -860,6 +860,12 @@ margin: 0 auto 35px auto;
   margin-left: -1em;
 }
 
+
+#about-us .info header{
+  border-bottom: 1px solid #000;
+}
+
+
 /*--MEDIA QUERIES FOR SCREEN SIZES---*/
 
 @media screen and (min-width: 667px){
@@ -1108,7 +1114,7 @@ header.levels-hero{
 
   #about-us .info header{
     border-bottom: 1px solid #FFF;
-    font-size: 1.5em;
+    font-size: 1.1em;
   }
 
   #about-us .info p{
@@ -1240,3 +1246,10 @@ article .lodge{
  
   }
 
+  @media screen and (min-width: 1305px){
+    
+    #about-us .info header{
+      font-size: 1.5em;
+    }
+
+  }
