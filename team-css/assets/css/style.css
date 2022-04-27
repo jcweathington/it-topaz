@@ -884,7 +884,7 @@ margin: 0 auto 35px auto;
   padding-left: .5em;
 }
 
-#lodging ul li::before {
+#lodging .info ul li::before {
   content: "\2022";
   color: #E8C517;
   font-weight: bold;
