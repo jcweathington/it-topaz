@@ -639,9 +639,17 @@ aside:not(.river-level-table){
 
 
 aside a{
-  color: #2C7366
+  color: #2C7366;
 }
 
+#canoe-rental a:link, #canoe-rental a:visited{
+  color: #BF382C;
+  font-weight: 700;
+}
+
+#canoe-rental a:hover, #canoe-rental a:active{
+  text-decoration:underline;
+}
 
 .river-level-table h2{
   text-align: center;
