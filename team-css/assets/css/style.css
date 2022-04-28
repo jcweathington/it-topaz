@@ -199,12 +199,14 @@ header.levels-hero{
   }
 }
 
-.bottom-right{
-animation: s ease-out 0s 1 slideInLeft;
+.bottom-right h1,
+.bottom-right h2{
+animation: 2.5s ease-out 0s 1;
+animation-name: slideInLeft;
 }
 
 .bottom-right h1{
-  padding: 0em .2em 0em .4em;
+  padding: 0em .2em 0em .5em;
   letter-spacing: .1em;
 }
 
@@ -215,7 +217,7 @@ animation: s ease-out 0s 1 slideInLeft;
 
 
 .bottom-right h2{
-  padding: .2em .2em .2em .4em;
+  padding: .2em .2em .2em .5em;
   margin: 0 auto;
   width: 100%;
   font-size: 2em;
@@ -233,7 +235,7 @@ animation: s ease-out 0s 1 slideInLeft;
   width: 100%;
 }
 
-.bottom-right h2:not(.home-tag h2){
+.bottom-right{
   border-bottom: .3em solid #E8C517;
 }
 
@@ -1149,17 +1151,22 @@ header.levels-hero{
       text-align: right;
     }
 
+
     .additional-info ul{
       text-align: left;
     }
 
+
     .menu a:link, .menu a:visited{
-
       font-size: 1.5em;
-
-      }
+    }
       
+  
     
+.bottom-right h1,
+.bottom-right h2{
+  padding: .2em .2em .2em 1em;
+}
     
 
 
