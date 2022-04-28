@@ -580,9 +580,10 @@ aside.river-level-table{
 
 .read-more-state:checked ~ .read-more-wrap .read-more-target {
   opacity: 1;
-  font-size: .75em;
+  font-size: 1em;
   max-height: 999em;
 }
+
 
 #post-2 ~ .read-more-trigger:before {
   content: 'More Amenities';
@@ -1218,6 +1219,11 @@ header.levels-hero{
     }
       
   
+    .read-more-state:checked ~ .read-more-wrap .read-more-target {
+      opacity: 1;
+      font-size: .75em;
+      max-height: 999em;
+    }
     
 .bottom-right h1,
 .bottom-right h2{
