@@ -187,12 +187,78 @@ header.levels-hero{
 }
 
 
+/*header tagline style*/
+
+/*animation*/
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.bottom-right{
+animation: s ease-out 0s 1 slideInLeft;
+
+}
+
+.bottom-right h1{
+  padding: 0em .2em 0em .4em;
+  letter-spacing: .1em;
+}
+
+
+.bottom-right h1:not(.home-tag h1){
+  margin-bottom: 10px;
+}
+
+
+.bottom-right h2{
+  background:#E8C517;
+  padding: .2em .2em .2em .4em;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
 .bottom-right{
   align-self: flex-end;
-  padding: 1em;
+  padding: 0;
   line-height: .8;
-  color: white;
+  color: #FFF;
+  word-spacing: .5em;
+  font-weight: 400;
+  width: 100%;
 }
+
+
+
+.bottom-right span{
+  font-weight: 900;
+  letter-spacing: .1em;
+}
+
+.bottom-right h2{
+ font-size: 2em;
+}
+
+
+.home-tag h1{
+ line-height: 0;
+}
+
+
+.home-tag span{
+  color: #425D68;
+}
+
+.bottom-right h2:not(.home-tag h2){
+  color: #425D68;
+}
+
+
 
 
 
@@ -679,25 +745,6 @@ aside a{
 }
 
 
-.bottom-right{
-  padding: 0;
-  width: 100%;
-}
-
-
-.bottom-right.home-tag h1{
-  padding-left: 1em;
-}
-
-
-.bottom-right.home-tag h2{
-  background:#E8C517;
-  padding: .2em .2em .2em 1em;
-  margin: 0;
-  width: 100%;
-}
-
-
 .lodge .button{
   background: #425D68;
   margin: 0 auto;
@@ -934,6 +981,8 @@ margin: 0 auto 35px auto;
   .hamburger{
     font-size: 1.3em;
   }
+
+
 
   header.primary{
     height: 80vh;
