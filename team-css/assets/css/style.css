@@ -280,7 +280,7 @@ animation-name: slideInLeft;
 .mobile-logo{
   height: 50px;
   width: 200px;
-  max-width: 320px
+  max-width: 320px;
   line-height: 0;
   margin: 6px 10px 0 20px;
 }
@@ -292,8 +292,9 @@ animation-name: slideInLeft;
 }
 
 .menu-icons{
-  width:10%;
-  height:10%;
+
+  max-width: 7%;
+  max-height: 7%;
   margin-left: 35px;
 }
 
@@ -862,6 +863,12 @@ text-decoration: none;
   border-radius: 4px;
 }
 
+nav .media-icons img{
+  width: 10%;
+  background: none;
+  border: 3px solid #2C7366;
+}
+
 
 .media-icons{
   display: flex;
@@ -1022,15 +1029,24 @@ margin: 0 auto 35px auto;
 
    
   .menu a:link, .menu a:visited{
-    font-size: 1em; 
+    font-size: 1.3em; 
   }
     
+
+  .menu ul li{
+    margin-bottom: 30px;
+  }
 
 
   .hamburger{
     font-size: 1.3em;
   }
 
+
+
+  nav .media-icons img{
+    width: 13%;
+  }
 
 
   header.primary{
