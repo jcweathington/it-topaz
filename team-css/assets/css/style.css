@@ -1135,6 +1135,10 @@ header.levels-hero{
 @media screen and (min-width: 1200px) {
     /* Styles for Desktops */
 
+  #home-icon{
+    display: none;
+  }
+  
  .fixed-wrap{
    height:65px;
  }
