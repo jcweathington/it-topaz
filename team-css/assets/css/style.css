@@ -254,6 +254,9 @@ animation-name: slideInLeft;
  line-height: .8;
 }
 
+.lodge-title h2{
+  font-size:1.8em;
+}
 
 .home-tag span{
   color: #425D68;
@@ -1068,6 +1071,11 @@ aside .table-wrap
 
   .your-plan{
     display: none;
+  }
+
+
+  .lodge-title h2{
+    font-size: 2em;
   }
   
   .media-icons img{
