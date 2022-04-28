@@ -274,6 +274,19 @@ animation-name: slideInLeft;
 /*--MENU & NAVIGATION---*/
 /* The side navigation menu */
 /* The side navigation menu */
+.mobile-logo{
+  height: 50px;
+  width: 200px;
+  max-width: 320px
+  line-height: 0;
+  margin: 6px 10px 0 20px;
+}
+
+.banner{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 
 .menu-icons{
   width:10%;
@@ -990,7 +1003,8 @@ margin: 0 auto 35px auto;
   body{
     font-size: 1.5em;
   }
-  
+
+   
   .menu a:link, .menu a:visited{
     font-size: 1em; 
   }
@@ -1082,7 +1096,8 @@ header.levels-hero{
  .fixed-wrap{
    height:65px;
  }
-    .hamburger{
+    .hamburger,
+    .mobile-logo{
       display: none;
     }
     
