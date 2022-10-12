@@ -48,7 +48,7 @@ body{
 
 
 
-header {
+header, article {
   padding-top: 6vh;
   text-align: center;
   overflow-wrap: break-word;
@@ -72,7 +72,7 @@ nav{
 
 /*-----GRID STYLE-----*/
 
-nav ul{
+.entry ul{
   display: grid;
   grid-gap: 5vw;
   padding: 5vw;
@@ -84,9 +84,14 @@ nav ul{
   max-width: 1200px;
 }
 
+nav ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
 
 
-li{
+.entry li{
   border-radius: 2px;
   border: 1px solid #cccc;
   margin: 0 auto;
@@ -96,7 +101,7 @@ li{
 
 
 
-nav a{
+.entry a{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -106,13 +111,13 @@ nav a{
 }
 
 
-nav li span.title{
+.entry li span.title{
   font-size: 1.8em;
   letter-spacing: -1px;
 }
 
 
-nav li span.description{
+.entry li span.description{
   font-size: 1.3em;
 }
 
@@ -168,32 +173,32 @@ text-decoration: line-through;
 
 
 @media screen and (min-width: 600px){
-  nav ul{
+  .entry ul{
     grid-template-columns: repeat(2, 1fr);
   
   }
   
 
-  nav a {
+  .entry a {
     justify-content: space-between;
     align-items: center;
     padding: .5em;
   }
   
   
-  nav a span{
+  .entry a span{
     width: 100%;
     height: inherit;
   }
   
   
-   nav li span.title{
+   .entry li span.title{
      padding-top: 1em;
      font-size: 1.4em;
      
 }
   
-  nav li span.description{
+  .entry li span.description{
     font-size: 1em;
     padding-top: 1em;
   }
@@ -204,13 +209,13 @@ text-decoration: line-through;
 
 @media screen and (min-width: 800px){
   
- nav ul{
+ .entry ul{
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2vw;
 }
   
   
-nav li span.description{
+.entry li span.description{
   font-size: 1em;
 }
   
@@ -219,10 +224,8 @@ nav li span.description{
 
 
 @media screen and (min-width: 1090px){
-nav ul{
+.entry ul{
   grid-template-columns: repeat(4, 1fr);
 }
-  
- 
  
 }
