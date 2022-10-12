@@ -78,21 +78,22 @@ nav{
 
 .entry ul{
   display: grid;
-  grid-gap: 5vw;
-  padding: 5vw;
-  grid-template-columns: 1fr;
+  gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   list-style: none;
   margin: 0 auto;
   overflow-wrap: break-word;
-  max-width: 1200px;
+  background: pink;
 }
+
 
 nav ul{
   display: flex;
   justify-content: center;
   list-style: none;
 }
+
 
 nav ul li{
   background: pink;
@@ -104,7 +105,6 @@ nav ul li{
   border: 1px solid #cccc;
   margin: 0 auto;
   width: 100%;
-  height: 170px;
 }
 
 
@@ -116,6 +116,7 @@ nav ul li{
   align-items: center;
   text-decoration: none;
   height: inherit;
+  background: yellow;
 }
 
 
