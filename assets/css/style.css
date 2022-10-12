@@ -46,6 +46,10 @@ body{
   color: #CCCCCC;
 }
 
+.container{
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
 
 header, article {
