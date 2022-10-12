@@ -90,6 +90,10 @@ nav ul{
   list-style: none;
 }
 
+nav ul li{
+  background: pink;
+}
+
 
 .entry li{
   border-radius: 2px;
