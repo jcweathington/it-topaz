@@ -99,6 +99,11 @@ article header {
 }
 
 
+section.intro{
+  margin-bottom: 60px;
+}
+
+
 section.intro a:link, section.intro a:visited{
  color: #FF9D87;
  text-decoration: none;
@@ -155,6 +160,7 @@ nav ul {
   font-size: 2em;
   padding: 0;
 }
+
 
 
 
