@@ -13,6 +13,7 @@
 */
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -102,6 +103,17 @@ section.intro {
 }
 
 
+section.intro a:link, section.intro a:visited{
+ color: #FF9D87;
+ text-decoration: none;
+}
+
+
+section.intro a:hover, section.intro a:active{
+  text-decoration: underline;
+ }
+
+
 .container {
   margin: 0 40px;
 }
@@ -131,7 +143,7 @@ article.post header {
 
 .entry ul {
   display: grid;
-  grid-gap: 5vw;
+  gap: 5vw;
   padding: 5vw;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -281,7 +293,6 @@ ul li a:active {
 
   .entry ul {
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2vw;
   }
 
 
