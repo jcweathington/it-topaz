@@ -114,13 +114,16 @@ section.intro {
 
 .articles header:not(.post header) {
   height: 300px;
-  margin-bottom: 60px;
 }
 
 
 article.post header {
   height: 50px;
   font-size: 1.8em;
+}
+
+.entry li span.course{
+  margin-bottom: 20px;
 }
 
 
