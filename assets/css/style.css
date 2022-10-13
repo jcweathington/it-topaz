@@ -22,11 +22,6 @@ html {
   box-sizing: inherit;
 }
 
-/* ---------------Utility Styles----------------- */
-.container {
-  margin: 40px auto;
-}
-
 
 /* ---------------Responsive Images----------------- */
 
@@ -53,6 +48,7 @@ main {
   display:flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
 }
 
@@ -65,6 +61,7 @@ section {
 
 header.primary {
   height: 300px;
+  width: 100%;
   margin: 0 0 60px 0;
   padding: 1em 0;
   background-color: #2d3340;
@@ -121,7 +118,7 @@ section.intro a:hover, section.intro a:active{
 
 
 .articles h1:not(.post h1) {
-  font-size: 3em;
+  font-size: 2em;
 }
 
 
@@ -129,7 +126,7 @@ section.intro a:hover, section.intro a:active{
 
 article.post header {
   height: 50px;
-  font-size: 1.8em;
+  font-size: 1.25em;
 }
 
 .entry li span.course{
@@ -157,10 +154,9 @@ nav ul {
   display: flex;
   justify-content: center;
   list-style: none;
-  font-size: 2em;
+  font-size: 1.25em;
   padding: 0;
 }
-
 
 
 
@@ -178,7 +174,7 @@ nav a {
 .entry li {
   border-radius: 2px;
   border: 1px solid #cccc;
-  margin: 0 auto;
+  margin: 0 0 40px 0;
   width: 100%;
   height: 240px;
 }
@@ -198,15 +194,9 @@ nav a {
 
 
 .entry li span.title {
-  font-size: 1.8em;
+  font-size: 1.3em;
   letter-spacing: -1px;
 }
-
-
-.entry li span.description {
-  font-size: 1.3em;
-}
-
 
 
 ul li a:link,
@@ -227,6 +217,8 @@ ul li a:active {
 
 
 .back-to-top {
+  position: fixed;
+  right: 0;
   text-align: center;
   height: 50px;
 }
@@ -255,7 +247,7 @@ ul li a:active {
 /*-----ADDITIONAL STYLES-----*/
 
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 635px) {
   .entry ul {
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
@@ -288,7 +280,7 @@ ul li a:active {
 }
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 930px) {
 
   .entry ul {
     grid-template-columns: repeat(3, 1fr);
@@ -300,8 +292,10 @@ ul li a:active {
   }
 
 
-body p {
-  font-size: 1.4em;
+  body p {
+    font-size: 1.4em;
+  }
+
+  
 }
 
-}
