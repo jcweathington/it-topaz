@@ -139,14 +139,13 @@ article.post header {
 .entry ul {
   display: grid;
   gap: 5vw;
-  padding: 5vw;
+  padding: 4vw;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   list-style: none;
   margin: 0 auto;
   overflow-wrap: break-word;
   justify-items: center;
-  text-align: center;
 }
 
 
@@ -176,7 +175,7 @@ nav a {
   border: 1px solid #cccc;
   margin: 0 0 40px 0;
   width: 100%;
-  height: 240px;
+  height: 220px;
 }
 
 
@@ -185,7 +184,6 @@ nav a {
   display: flex;
   flex-direction: column;
   justify-items: space-between;
-  align-items: center;
   text-decoration: none;
   height: inherit;
   overflow: wrap;
@@ -196,6 +194,7 @@ nav a {
 .entry li span.title {
   font-size: 1.3em;
   letter-spacing: -1px;
+  padding-bottom: .5em
 }
 
 
@@ -253,10 +252,28 @@ ul li a:active {
 /*-----ADDITIONAL STYLES-----*/
 
 
+.web-development{
+  margin-top: 60px;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  padding-top: 3.75em;
+}
+
+
+
+
 @media screen and (min-width: 635px) {
   .entry ul {
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
+  }
+
+
+  .entry li {
+    border-radius: 2px;
+    border: 1px solid #cccc;
+    margin: 0 0 40px 0;
+    width: 100%;
+    height: 240px;
   }
 
 
@@ -272,14 +289,11 @@ ul li a:active {
 
 
   .entry li span.title {
-    padding-top: 1em;
     font-size: 1.4em;
-
   }
 
   .entry li span.description {
     font-size: 1em;
-    padding-top: 1em;
   }
 
 
