@@ -44,6 +44,11 @@ body {
 }
 
 
+ul{
+  list-style: none;
+  padding: 0;
+}
+
 main {
 
   margin: 0 auto;
@@ -148,9 +153,7 @@ article.post header {
 nav ul {
   display: flex;
   justify-content: center;
-  list-style: none;
   font-size: 1.25em;
-  padding: 0;
 }
 
 
@@ -179,10 +182,9 @@ nav a {
 .entry a {
   display: flex;
   flex-direction: column;
-  justify-items: space-between;
+  justify-content: space-between;
   text-decoration: none;
   height: inherit;
-  overflow: wrap;
   padding: 1em;
 }
 
@@ -249,7 +251,7 @@ ul li a:active {
 
 
 #wufoo-zqhh0rt05osywk, .contact-info{
-  margin: 60px auto;
+  margin: 60px 20px;
   max-width: 1200px;
 }
 
@@ -273,14 +275,16 @@ footer{
 }
 
 
-dl{
+.contact-info ul {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
-dd{
-  margin: 0 30px 0 10px;
+.contact-info li{
+  margin: 0 20px;
 }
+
 
 
 
