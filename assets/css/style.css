@@ -220,7 +220,7 @@ ul li a:active {
   text-align: center;
   height: 50px;
   width: 10%;
-  background: rgba(255, 255, 255, 0.4);
+  background: #ff9d8779;
   border-radius: 16px 0 16px 0;
 }
 
@@ -246,8 +246,13 @@ ul li a:active {
   border: 2px solid rgba(255, 255, 255);
   /*maybe change border only*/
   background-color: #6B826D;
+  border-radius: 16px 0 16px 0;
 }
 
+
+footer{
+  text-align: center;
+}
 /*-----ADDITIONAL STYLES-----*/
 
 
